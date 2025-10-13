@@ -1,6 +1,6 @@
 ---
-sidebar_label: "flutter_tutorial"
-sidebar_position: 5
+sidebar_label: "flutter"
+sidebar_position: 4
 ---
 # 学习教程
 

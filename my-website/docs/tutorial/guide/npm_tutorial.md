@@ -1,6 +1,6 @@
 ---
-sidebar_label: "npm_tutorial"
-sidebar_position: 4
+sidebar_label: "npm"
+sidebar_position: 3
 ---
 # 论如何优雅的使用 npm 包管理工具
 

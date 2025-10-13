@@ -1,6 +1,6 @@
 ---
-sidebar_label: "cloude_server_tutorial"
-sidebar_position: 4
+sidebar_label: "cloude_server"
+sidebar_position: 3
 ---
 
 # 云服务器教程
@@ -46,7 +46,7 @@ sudo apt-get install git
    sudo docker info
    ```
 5. 返回如下信息，即表示安装成功。  
-   ![安装成功](../../src/image/t_image19.png)
+   ![安装成功](../src/image/t_image19.png)
 
 ## 云服务器配置 GitHub SSH 教程
 

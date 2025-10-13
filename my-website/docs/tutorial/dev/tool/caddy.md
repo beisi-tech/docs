@@ -1,6 +1,6 @@
 ---
-sidebar_label: "caddy_tutorial"
-sidebar_position: 4
+sidebar_label: "caddy"
+sidebar_position: 3
 ---
 # caddy 教程
 

@@ -1,6 +1,6 @@
 ---
-sidebar_label: "tailwindcss_tutorial"
-sidebar_position: 4
+sidebar_label: "tailwindcss"
+sidebar_position: 3
 ---
 # 使用 Tailwind CSS 3 进行开发
 
@@ -23,8 +23,8 @@ npx tailwindcss init -p
 
 ## 示例图片
 
-![示例图片](../../../src/image/t_image23.png)
-![示例图片](../../../src/image/t_image24.png)
+![示例图片](../../src/image/t_image23.png)
+![示例图片](../../src/image/t_image24.png)
 
 ## tailwindcss 官方文档
 

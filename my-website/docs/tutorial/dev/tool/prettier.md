@@ -1,6 +1,6 @@
 ---
-sidebar_label: "prettier_tutorial"
-sidebar_position: 4
+sidebar_label: "prettier"
+sidebar_position: 3
 ---
 # Prettier 简明使用教程
 

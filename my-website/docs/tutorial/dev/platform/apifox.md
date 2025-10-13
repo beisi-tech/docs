@@ -1,6 +1,6 @@
 ---
-sidebar_label: "0apifox_tutorial"
-sidebar_position: 5
+sidebar_label: "0apifox"
+sidebar_position: 4
 ---
 # 使用教程
 
