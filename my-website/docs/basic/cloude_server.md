@@ -1,10 +1,9 @@
 ---
 sidebar_label: "cloude_server"
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # 云服务器教程
-
 ## 服务器安装 Docker 教程链接
 
 详细教程链接：https://cloud.tencent.com/document/product/213/46000#1H-kXbk9zoqvzYMVPVsBO
@@ -46,7 +45,7 @@ sudo apt-get install git
    sudo docker info
    ```
 5. 返回如下信息，即表示安装成功。  
-   ![安装成功](../../../src/image/t_image19.png)
+   ![安装成功](../../src/image/t_image19.png)
 
 ## 云服务器配置 GitHub SSH 教程
 
