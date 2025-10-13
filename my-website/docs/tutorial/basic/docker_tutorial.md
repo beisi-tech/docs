@@ -1,5 +1,5 @@
 ---
-sidebar_label: "03_docker_tutorial"
+sidebar_label: "docker_tutorial"
 sidebar_position: 4
 ---
 # Docker 教程

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "02_ide_tutorial"
+sidebar_label: "ide_tutorial"
 sidebar_position: 4
 ---
 # VS Code 教程

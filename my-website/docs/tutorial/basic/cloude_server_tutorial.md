@@ -1,5 +1,5 @@
 ---
-sidebar_label: "05_cloude_server_tutorial"
+sidebar_label: "cloude_server_tutorial"
 sidebar_position: 4
 ---
 

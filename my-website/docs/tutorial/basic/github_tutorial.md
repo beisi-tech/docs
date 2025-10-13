@@ -1,5 +1,5 @@
 ---
-sidebar_label: "01_github_tutorial"
+sidebar_label: "github_tutorial"
 sidebar_position: 4
 ---
 # GitHub 教程

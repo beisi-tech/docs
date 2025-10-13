@@ -2,7 +2,7 @@
 id: beisi-tutorials
 title: beisi-tutorials
 displayed_title: BEISI Tutorials
-slug: /tutorials/beisi-tutorials
+slug: /tutorial
 ---
 
 # beisi-tutorials
@@ -21,44 +21,44 @@ slug: /tutorials/beisi-tutorials
 
 ## 教程
 ### 全栈最核心的几个能力
-1. [Github 使用教程](../../docs/beisi-tutorials/tutorials/01_basic/01_github_tutorial.md)
-2. [VS Code 教程](../../docs/beisi-tutorials/tutorials/01_basic/02_ide_tutorial.md)
-3. [Docker 教程](../../docs/beisi-tutorials/tutorials/01_basic/03_docker_tutorial.md)
-4. [数据库教程](../../docs/beisi-tutorials/tutorials/01_basic/04_database_tutorial.md)
-5. [云服务器教程](../../docs/beisi-tutorials/tutorials/01_basic/05_cloude_server_tutorial.md)
+1. [Github 使用教程](../../docs/beisi-tutorials/tutorials/basic/github_tutorial.md)
+2. [VS Code 教程](../../docs/beisi-tutorials/tutorials/basic/ide_tutorial.md)
+3. [Docker 教程](../../docs/beisi-tutorials/tutorials/basic/docker_tutorial.md)
+4. [数据库教程](../../docs/beisi-tutorials/tutorials/basic/database_tutorial.md)
+5. [云服务器教程](../../docs/beisi-tutorials/tutorials/basic/cloude_server_tutorial.md)
 
 ### 实用的开发工具
 #### 平台
-1. [Apifox 教程](../../docs/beisi-tutorials/tutorials/02_dev/01_platform/apifox_tutorial.md)
-2. [宝塔教程](../../docs/beisi-tutorials/tutorials/02_dev/01_platform/baota_tutorial.md)
-3. [K8s 教程](../../docs/beisi-tutorials/tutorials/02_dev/01_platform/k8s_tutorial.md)
-4. [Navicat 教程](../../docs/beisi-tutorials/tutorials/02_dev/01_platform/navicat_tutorial.md)
-5. [Nodejs 教程](../../docs/beisi-tutorials/tutorials/02_dev/01_platform/nodejs_tutorial.md)
+1. [Apifox 教程](../../docs/tutorial/tutorials/dev/platform/apifox_tutorial.md)
+2. [宝塔教程](../../docs/tutorial/tutorials/dev/platform/baota_tutorial.md)
+3. [K8s 教程](../../docs/tutorial/tutorials/dev/platform/k8s_tutorial.md)
+4. [Navicat 教程](../../docs/tutorial/tutorials/dev/platform/navicat_tutorial.md)
+5. [Nodejs 教程](../../docs/tutorial/tutorials/dev/platform/nodejs_tutorial.md)
 
 #### 框架
-1. [Flutter 教程](../../docs/beisi-tutorials/tutorials/02_dev/02_framework/flutter_tutorial.md)
-2. [Mini program 教程](../../docs/beisi-tutorials/tutorials/02_dev/02_framework/mini_program_tutorial.md)
-3. [React 教程](../../docs/beisi-tutorials/tutorials/02_dev/02_framework/react_tutorial.md)
-4. [UniApp 教程](../../docs/beisi-tutorials/tutorials/02_dev/02_framework/uniapp_tutorial.md)
+1. [Flutter 教程](../../docs/tutorial/tutorials/dev/framework/flutter_tutorial.md)
+2. [Mini program 教程](../../docs/tutorial/tutorials/dev/framework/mini_program_tutorial.md)
+3. [React 教程](../../docs/tutorial/tutorials/dev/framework/react_tutorial.md)
+4. [UniApp 教程](../../docs/tutorial/tutorials/dev/framework/uniapp_tutorial.md)
 
 #### 语言
-1. [Dart 教程](../../docs/beisi-tutorials/tutorials/02_dev/03_language/dart_tutorial.md)
-2. [Html Css Js 教程](../../docs/beisi-tutorials/tutorials/02_dev/03_language/html_css_js_tutorial.md)
-3. [Markdown 教程](../../docs/beisi-tutorials/tutorials/02_dev/03_language/markdown_tutorial.md)
-4. [Python 教程](../../docs/beisi-tutorials/tutorials/02_dev/03_language/python_tutorial.md)
-5. [Typescript 教程](../../docs/beisi-tutorials/tutorials/02_dev/03_language/typescript_tutorial.md)
+1. [Dart 教程](../../docs/tutorial/tutorials/dev/language/dart_tutorial.md)
+2. [Html Css Js 教程](../../docs/tutorial/tutorials/dev/language/html_css_js_tutorial.md)
+3. [Markdown 教程](../../docs/tutorial/tutorials/dev/language/markdown_tutorial.md)
+4. [Python 教程](../../docs/tutorial/tutorials/dev/language/python_tutorial.md)
+5. [Typescript 教程](../../docs/tutorial/tutorials/dev/language/typescript_tutorial.md)
 
 #### 工具
-1. [Caddy 教程](../../docs/beisi-tutorials/tutorials/02_dev/04_tool/caddy_tutorial.md)
-2. [Prettier 使用教程](../../docs/beisi-tutorials/tutorials/02_dev/04_tool/prettier_tutorial.md)
-3. [Tailwind CSS 3 使用教程](../../docs/beisi-tutorials/tutorials/02_dev/04_tool/tailwindcss_tutorial.md)
+1. [Caddy 教程](../../docs/tutorial/tutorials/dev/tool/caddy_tutorial.md)
+2. [Prettier 使用教程](../../docs/tutorial/tutorials/dev/tool/prettier_tutorial.md)
+3. [Tailwind CSS 3 使用教程](../../docs/tutorial/tutorials/dev/tool/tailwindcss_tutorial.md)
 
 ### 设计
-1. [Photoshop 教程](../../docs/beisi-tutorials/tutorials/03_design/photoshop_tutorial.md)
+1. [Photoshop 教程](../../docs/tutorial/tutorials/design/photoshop_tutorial.md)
 
 ### 指南
-1. [Npm 教程](../../docs/beisi-tutorials/tutorials/04_guide/npm_tutorial.md)
-2. [访问外网教程](../../docs/beisi-tutorials/tutorials/04_guide/vpn_tutorial.md)
+1. [Npm 教程](../../docs/tutorial/tutorials/guide/npm_tutorial.md)
+2. [访问外网教程](../../docs/tutorial/tutorials/guide/vpn_tutorial.md)
 
 ### 其他
-1. [微信开发相关教程](../../docs/beisi-tutorials/tutorials/05_other/wx_tutorial.md)
+1. [微信开发相关教程](../../docs/tutorial/tutorials/other/wx_tutorial.md)

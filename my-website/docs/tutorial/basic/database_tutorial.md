@@ -1,5 +1,5 @@
 ---
-sidebar_label: "04_database_tutorial"
+sidebar_label: "database_tutorial"
 sidebar_position: 4
 ---
 # 数据库教程
