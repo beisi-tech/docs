@@ -134,7 +134,7 @@ sidebar_position: 3
 
    - 在本地编辑器中对代码进行修改。
    - 返回 GitHub Desktop，查看更改详情。
-   - 按照 [Git 提交规范](../../src/image/提交规范.png) 填写提交信息，确保描述清晰准确。
+   - 按照Git 提交规范 填写提交信息，确保描述清晰准确。
    - 点击 `Commit to <branch-name>` 提交更改到本地分支。
 
 5. **推送分支到远程仓库**
