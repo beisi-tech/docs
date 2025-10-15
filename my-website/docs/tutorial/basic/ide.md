@@ -7,13 +7,13 @@ sidebar_position: 3
 ## VS Code 连接远程服务器教程
 
 1. 下载 SSH 远程连接插件
-   ![alt text](../../src/image/t_image31.png)
+   ![alt text](../../../src/image/t_image31.png)
 2. 添加远程服务器
-   ![alt text](../../src/image/t_image32.png)
+   ![alt text](../../../src/image/t_image32.png)
 3. 输入服务器公网 IP
-   ![alt text](../../src/image/t_image33.png)
+   ![alt text](../../../src/image/t_image33.png)
 4. 选择 SSH 配置文件位置，可以保存在本地
-   ![alt text](../../src/image/t_image34.png)
+   ![alt text](../../../src/image/t_image34.png)
 
 # Cursor 教程
 
