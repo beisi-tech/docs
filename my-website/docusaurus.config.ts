@@ -37,15 +37,14 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'docs/tutorial',
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          routeBasePath: 'tutorial',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/beisi-tech/docs/tree/main/my-website/',
         },
         blog: {
           showReadingTime: true,
@@ -68,7 +67,17 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id:'rule',
+        path: 'docs/rule',
+        routeBasePath: 'rule',
+        sidebarPath:'./sidebars.ts',
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -84,9 +93,15 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          docSidebarId: 'tutorial-intro', // 直接链接到具体文档
           position: 'left',
           label: 'Tutorial',
+        },
+        {
+          type: 'docSidebar',
+          docSidebarId: 'rule-intro',
+          position: 'left',
+          label: 'Rule',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {

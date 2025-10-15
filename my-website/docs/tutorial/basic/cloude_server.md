@@ -45,7 +45,7 @@ sudo apt-get install git
    sudo docker info
    ```
 5. 返回如下信息，即表示安装成功。  
-   ![安装成功](../../src/image/t_image19.png)
+   ![安装成功](../../../src/image/t_image19.png)
 
 ## 云服务器配置 GitHub SSH 教程
 

@@ -14,11 +14,11 @@ title: UniApp 教程
    打开 `src/config` 文件夹。
 
 2. **修改服务器地址**：  
-   编辑 `config.js` 文件，将服务器地址配置为实际的 URL ![配置H5服务器URL](../../../src/image/t_image25.png)。  
-   ![配置H5Web发行](../../../src/image/t_image26.png)
+   编辑 `config.js` 文件，将服务器地址配置为实际的 URL ![配置H5服务器URL](../../../../src/image/t_image25.png)。  
+   ![配置H5Web发行](../../../../src/image/t_image26.png)
 
 3. **配置 WEB 发行**：  
-   ![Web发行域名配置界面](../../../src/image/t_image27.png)
+   ![Web发行域名配置界面](../../../../src/image/t_image27.png)
 
 ### 2. 执行打包操作
 
@@ -30,7 +30,7 @@ title: UniApp 教程
    - `index.html`
    - `static/`（静态资源目录）
    - `asserts/`  
-     ![打包生成文件](../../../src/image/t_image28.png)
+     ![打包生成文件](../../../../src/image/t_image28.png)
 
 ## 二、APK 打包流程
 
@@ -49,14 +49,14 @@ title: UniApp 教程
 3. **点击打包**：  
    完成配置后点击打包按钮，生成 APK 文件。  
    打包完成后会生成一个 APK 文件。  
-   ![打包生成文件](../../../src/image/t_image29.png)
+   ![打包生成文件](../../../../src/image/t_image29.png)
 
 ### 2. 修改版本号
 
 如果需要修改版本号，请在前端目录下的 `manifest.json` 文件中进行修改。  
 找到对应字段并更新版本号：
 
-![打包生成文件](../../../src/image/t_image30.png)
+![打包生成文件](../../../../src/image/t_image30.png)
 
 ### 3.插件市场安装 scss 插件
 

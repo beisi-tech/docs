@@ -16,7 +16,7 @@ sidebar_position: 4
    解决：
    1. Windows 服务打开 hyper V
    2. 打开虚拟机平台  
-      ![alt text](../../src/image/t_image20.png)
+      ![alt text](../../../src/image/t_image20.png)
 
 ## 项目容器排布
 
