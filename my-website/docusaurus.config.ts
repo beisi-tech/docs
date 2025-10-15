@@ -93,13 +93,13 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          docSidebarId: 'tutorial-intro', // 直接链接到具体文档
+          sidebarId: 'tutorialSidebar', // 直接链接到具体文档
           position: 'left',
           label: 'Tutorial',
         },
         {
           type: 'docSidebar',
-          docSidebarId: 'rule-intro',
+          sidebarId: 'ruleSidebar',
           position: 'left',
           label: 'Rule',
         },
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/tutorial/tutorial-intro',
             },
           ],
         },
