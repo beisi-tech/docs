@@ -67,17 +67,17 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id:'rule',
-        path: 'docs/rule',
-        routeBasePath: 'rule',
-        sidebarPath:'./sidebars.ts',
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id:'rule',
+  //       path: 'docs/rule',
+  //       routeBasePath: 'rule',
+  //       sidebarPath:'./sidebars.ts',
+  //     },
+  //   ],
+  // ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -97,12 +97,12 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'ruleSidebar',
-          position: 'left',
-          label: 'Rule',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'ruleSidebar',
+        //   position: 'left',
+        //   label: 'Rule',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/beisi-tech/docs',
