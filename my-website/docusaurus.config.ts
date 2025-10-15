@@ -67,17 +67,17 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id:'rule',
-        path: 'docs/rule',
-        routeBasePath: 'rule',
-        sidebarPath:'./sidebars.ts',
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id:'rule',
+  //       path: 'docs/rule',
+  //       routeBasePath: 'rule',
+  //       sidebarPath:'./sidebars.ts',
+  //     },
+  //   ],
+  // ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -93,16 +93,16 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          docSidebarId: 'tutorial-intro', // 直接链接到具体文档
+          sidebarId: 'tutorialSidebar', // 直接链接到具体文档
           position: 'left',
           label: 'Tutorial',
         },
-        {
-          type: 'docSidebar',
-          docSidebarId: 'rule-intro',
-          position: 'left',
-          label: 'Rule',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'ruleSidebar',
+        //   position: 'left',
+        //   label: 'Rule',
+        // },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/beisi-tech/docs',
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/tutorial/tutorial-intro',
             },
           ],
         },
