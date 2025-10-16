@@ -5,7 +5,7 @@ sidebar_position: 5
 
 Other languages:
 
-- [English](README.en.md)
+- [English](readme.en.md)
 
 ---
 
