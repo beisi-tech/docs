@@ -121,6 +121,10 @@ const config: Config = {
               label: 'Tutorial',
               to: '/docs/tutorial/tutorial-intro',
             },
+            {
+              label: 'Rule',
+              to: '/docs/rule/rule-intro',
+            },
           ],
         },
         {
