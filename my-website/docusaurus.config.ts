@@ -72,7 +72,7 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id:'rule',
-        path: 'docs/rule',
+        path: 'rule',
         routeBasePath: 'rule',
         sidebarPath:'./sidebars.ts',
       },
@@ -100,6 +100,7 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'ruleSidebar',
+          docsPluginId: 'rule',
           position: 'left',
           label: 'Rule',
         },
@@ -123,7 +124,7 @@ const config: Config = {
             },
             {
               label: 'Rule',
-              to: '/docs/rule/rule-intro',
+              to: '/rule/rule-intro',
             },
           ],
         },
