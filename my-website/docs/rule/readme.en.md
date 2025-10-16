@@ -6,7 +6,7 @@ sidebar_position: 6
 Chinese copywriting guidelines for better written communication.
 Other languages:
 
-- [Chinese Simplified](README.md)
+- [Chinese Simplified](readme.md)
 
 ---
 
