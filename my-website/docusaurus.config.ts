@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Beisi Docs',
+  tagline: 'Organize Knowledge, Empower Teams.',
+  favicon: 'img/favicon(1).ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -85,9 +85,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Beisi Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'My Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -159,7 +159,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fuzhou Beisi Network Technology Co., Ltd. Company knowledge base.`,
     },
     prism: {
       theme: prismThemes.github,
