@@ -92,10 +92,10 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar', // 直接链接到具体文档
-          position: 'left',
+          to: '/docs/tutorial/tutorial-intro',
           label: 'Tutorial',
+          position: 'left',
+          activeBaseRegex: '^/docs/tutorial/',
         },
         {
           type: 'docSidebar',
