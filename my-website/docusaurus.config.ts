@@ -77,6 +77,15 @@ const config: Config = {
         sidebarPath:'./sidebars.ts',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id:'project',
+        path: 'project',
+        routeBasePath: 'project',
+        sidebarPath:'./sidebars.ts',
+      },
+    ],
   ],
   themeConfig: {
     // Replace with your project's social card
@@ -104,6 +113,13 @@ const config: Config = {
           position: 'left',
           label: 'Rule',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'projectSidebar',
+          docsPluginId: 'project',
+          position: 'left',
+          label: 'Project',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/beisi-tech/docs',
@@ -125,6 +141,10 @@ const config: Config = {
             {
               label: 'Rule',
               to: '/rule/rule-intro',
+            },
+            {
+              label: 'Project',
+              to: '/project/project-intro',
             },
           ],
         },
