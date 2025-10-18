@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## 项目概述
 
-[Swift Shoes Store](https://shop.beisi.tech/) 是一个现代化的专业运动鞋电商平台，由福州贝斯网络科技有限公司开发和运营。平台专注于为全球用户提供高品质的运动鞋产品和优质的购物体验。
+[Swift Shoes Store](https://shop.beisi.tech/) 是一个现代化的专业运动鞋电商平台，由福州倍司网络科技有限公司开发和运营。平台专注于为全球用户提供高品质的运动鞋产品和优质的购物体验。
 
 ## 公司背景
 
@@ -70,5 +70,5 @@ sidebar_position: 4
 
 ---
 
-*© 2025 福州贝斯网络科技有限公司 版权所有*
+*© 2025 福州倍司网络科技有限公司 版权所有*
 *Powered by Mr.Lin*
