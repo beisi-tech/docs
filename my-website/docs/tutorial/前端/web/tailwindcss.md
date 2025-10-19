@@ -1,6 +1,6 @@
 ---
 sidebar_label: "tailwindcss"
-sidebar_position: 2
+sidebar_position: 3
 ---
 # 使用 Tailwind CSS 3 进行开发
 
