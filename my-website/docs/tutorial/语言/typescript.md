@@ -1,4 +1,4 @@
 ---
-sidebar_label: "typescript"
-sidebar_position: 5
+sidebar_label: "Typescript"
+sidebar_position: 1
 ---

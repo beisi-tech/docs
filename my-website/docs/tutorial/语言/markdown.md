@@ -1,5 +1,5 @@
 ---
-sidebar_label: "markdown"
+sidebar_label: "Markdown"
 sidebar_position: 3
 ---
 # Markdown 教程
