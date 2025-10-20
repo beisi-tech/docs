@@ -2,7 +2,7 @@
 sidebar_label: "flutter"
 sidebar_position: 1
 ---
-# 学习教程
+# Flutter 学习教程
 
 ## bilibili Flutter 教程
 

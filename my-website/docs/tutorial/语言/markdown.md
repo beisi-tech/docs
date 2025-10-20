@@ -6,13 +6,6 @@ sidebar_position: 3
 
 [Markdown 简单教程](https://www.bilibili.com/video/BV1si4y1472o/?share_source=copy_web&vd_source=7f54efe1da20c04e64d8b69684311984)
 
-## VS code Markdown 推荐插件
-
-1. Markdown All in One  
-   ![alt text](../../../src/image/t_image22.png)
-2. Markdown Link Updater  
-   ![alt text](../../../src/image/t_image21.png)
-
 ## Markdown 常用语法参考
 
 ### 1. 标题语法
@@ -82,3 +75,10 @@ print(hello world!)
 ### 5. 换行语法
 
 两个空格加回车换行
+
+## VS code Markdown 推荐插件
+
+1. Markdown All in One  
+   ![alt text](../../../src/image/t_image22.png)
+2. Markdown Link Updater  
+   ![alt text](../../../src/image/t_image21.png)

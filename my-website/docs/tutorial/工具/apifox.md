@@ -2,7 +2,7 @@
 sidebar_label: "apifox"
 sidebar_position: 1
 ---
-# 使用教程
+# Apifox 使用教程
 
 [Apifox 官方教程](https://www.bilibili.com/video/BV1Jc41147xC/)
 
