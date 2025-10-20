@@ -7,10 +7,6 @@ sidebar_position: 2
 
 TailwindCSS 是一个功能类优先的 CSS 框架，它提供了大量预定义的实用类，让你能够快速构建现代化的用户界面，而无需编写自定义 CSS。
 
-## 什么是 TailwindCSS？
-
-TailwindCSS 是一个高度可定制的、低级别的 CSS 框架，它提供了构建现代 Web 应用所需的所有构建块。与传统的 CSS 框架不同，TailwindCSS 不提供预构建的组件，而是提供实用类来构建自定义设计。
-
 ### TailwindCSS 的特点
 
 - **实用类优先**：使用预定义的实用类快速构建界面

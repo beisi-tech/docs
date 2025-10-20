@@ -1,5 +1,5 @@
 ---
-sidebar_label: "vpn"
+sidebar_label: "Vpn"
 sidebar_position: 2
 ---
 ## 访问外网教程

@@ -1,5 +1,5 @@
 ---
-sidebar_label: "caddy"
+sidebar_label: "Caddy"
 sidebar_position: 1
 ---
 # Caddy 教程

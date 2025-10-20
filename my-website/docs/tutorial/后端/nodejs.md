@@ -1,5 +1,5 @@
 ---
-sidebar_label: "nodejs"
+sidebar_label: "Node.js"
 sidebar_position: 1
 ---
 # Node.js 后端开发

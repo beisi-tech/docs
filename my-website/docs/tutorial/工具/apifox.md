@@ -1,5 +1,5 @@
 ---
-sidebar_label: "apifox"
+sidebar_label: "Apifox"
 sidebar_position: 1
 ---
 # Apifox 使用教程
