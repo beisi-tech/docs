@@ -6,11 +6,6 @@ sidebar_position: 2
 # Flask 框架教程
 
 Flask 是一个轻量级的 Python Web 框架，被称为"微框架"。它使用 Werkzeug WSGI 工具包和 Jinja2 模板引擎，提供了构建 Web 应用所需的核心功能，同时保持简单和灵活。
-
-## 什么是 Flask？
-
-Flask 是一个用 Python 编写的轻量级 Web 应用框架。它的设计哲学是"微框架"，只提供核心功能，其他功能通过扩展来实现。这使得 Flask 既简单又强大。
-
 ### Flask 的特点
 
 - **轻量级**：核心功能简单，易于理解和学习

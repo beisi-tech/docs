@@ -1,5 +1,5 @@
 ---
-sidebar_label: "flutter"
+sidebar_label: "Flutter"
 sidebar_position: 1
 ---
 # Flutter 学习教程

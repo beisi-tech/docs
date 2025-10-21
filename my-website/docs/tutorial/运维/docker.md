@@ -1,5 +1,5 @@
 ---
-sidebar_label: "docker"
+sidebar_label: "Docker"
 sidebar_position: 3
 ---
 # Docker 教程

@@ -1,6 +1,6 @@
 ---
 sidebar_label: "VS Code"
-sidebar_position: 4
+sidebar_position: 1
 --- 
 # VS Code 教程
 

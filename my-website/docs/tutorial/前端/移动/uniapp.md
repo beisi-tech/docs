@@ -1,7 +1,6 @@
 ---
-sidebar_label: "uniapp"
+sidebar_label: "Uniapp"
 sidebar_position: 3
-id: uniapp_tutorial
 title: UniApp 教程
 ---
 # UniApp 打包操作指南

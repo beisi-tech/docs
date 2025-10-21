@@ -1,5 +1,5 @@
 ---
-sidebar_label: "kubernetes"
-sidebar_position: 2
+sidebar_label: "Kubernetes"
+sidebar_position: 4
 ---
 # Kubernetes
