@@ -1,10 +1,10 @@
 ---
-sidebar_label: "code_rules"
+sidebar_label: "Commit 提交规范"
 sidebar_position: 2
 ---
 # 项目开发编码规范
 
-## commit 提交规范
+## Commit 提交规范
 
 | 类型     | 说明                                           |
 | -------- | ---------------------------------------------- |
