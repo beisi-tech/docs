@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 ---
-# Swift Shoes Store - 电商平台项目介绍
+# Swift Shoes Store
 
 ## 项目概述
 

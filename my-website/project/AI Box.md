@@ -1,4 +1,7 @@
-# AI Box 项目介绍
+---
+sidebar_position: 3
+---
+# AI Box
 
 ## 项目概述
 [AI Box](https://aibox.beisi.tech/) 是一款集成了多种主流AI大模型的一站式智能服务平台，为用户提供多维度的AI能力整合体验。通过统一界面，用户可以轻松切换不同的AI模型，满足各种场景下的智能交互需求。
