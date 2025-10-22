@@ -21,7 +21,7 @@ sidebar_position: 4
 
 ## 联系我们
 
-- **邮箱**: xiaolinbenben@gmail.comm
+- **邮箱**: xiaolinbenben@gmail.com
 - **电话**: +86 15715077455
 - **地址**: 福建省福州市
 - **网站**: [https://shop.beisi.tech/](https://shop.beisi.tech/)
