@@ -1,12 +1,12 @@
 ---
-sidebar_label: "Vpn"
+sidebar_label: "VPN"
 sidebar_position: 6
 ---
 ## 访问外网教程
 
-### 第一部分.打开 Vpn 环境
+### 第一部分.打开 VPN 环境
 
-1.如果已经自备 Vpn，则打开 Vpn，直接跳到教程第二部分；
+1.如果已经自备 VPN ，则打开 VPN，直接跳到教程第二部分；
 
 ![图片2.1.png](../../../src/image/t_image11.png)
 
@@ -14,7 +14,7 @@ sidebar_position: 6
 
 ![图片2.2.png](../../../src/image/t_image12.png)
 
-按照首页教程打开 Vpn 环境，
+按照首页教程打开 VPN 环境，
 
 ![图片2.3.png](../../../src/image/t_image13.png)
 

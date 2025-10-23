@@ -179,7 +179,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Fuzhou Beisi Network Technology Co., Ltd. Company knowledge base.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fuzhou Beisi Network Technology Co., Ltd.`,
     },
     prism: {
       theme: prismThemes.github,
