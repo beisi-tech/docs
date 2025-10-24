@@ -94,8 +94,3 @@ prettier .\pages -w
 ```bash
 prettier .\index.json -w
 ```
-
-# 关于 Dart
-
-对于 Flutter 前端项目代码（Dart 语言）  
-使用 Dart 自带的 **Dark format** 工具
