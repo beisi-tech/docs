@@ -44,7 +44,7 @@ const config: Config = {
           sidebarPath: './sidebarsTutorial.ts',
           routeBasePath: 'tutorial',
           editUrl:
-            'https://github.com/beisi-tech/docs/tree/main/my-website/docs/tutorial/',
+            'https://github.com/beisi-tech/docs/tree/main/my-website/',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/beisi-tech/docs/tree/main/my-website/docs/blog/',
+            'https://github.com/beisi-tech/docs/tree/main/my-website/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -76,7 +76,7 @@ const config: Config = {
         routeBasePath: 'rule',
         sidebarPath:'./sidebarsRule.ts',
         editUrl:
-          'https://github.com/beisi-tech/docs/tree/main/my-website/docs/rule/',
+          'https://github.com/beisi-tech/docs/tree/main/my-website/',
       },
     ],
     [
@@ -87,7 +87,7 @@ const config: Config = {
         routeBasePath: 'project',
         sidebarPath:'./sidebarsProject.ts',
         editUrl:
-          'https://github.com/beisi-tech/docs/tree/main/my-website/docs/project/',
+          'https://github.com/beisi-tech/docs/tree/main/my-website/',
       },
     ],
   ],
