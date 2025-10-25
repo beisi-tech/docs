@@ -1,8 +1,8 @@
 {
-  "label": "前端",
+  "label": "移动",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "slug": "frontend"
+    "slug": "frontend/mobile"
   }
 }
