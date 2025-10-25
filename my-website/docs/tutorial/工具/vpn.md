@@ -1,7 +1,9 @@
 ---
 sidebar_label: "VPN"
 sidebar_position: 6
+slug: /tutorial/tools/vpn
 ---
+
 ## 访问外网教程
 
 ### 第一部分.打开 VPN 环境

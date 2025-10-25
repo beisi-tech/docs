@@ -1,6 +1,7 @@
 ---
 sidebar_label: "TypeScript"
 sidebar_position: 1
+slug: /tutorial/language/typescript
 ---
 
 # TypeScript 教程
@@ -53,14 +54,14 @@ npx tsc --init
 // tsconfig.json
 {
   "compilerOptions": {
-    "target": "ES2020",                    // 编译目标
-    "module": "commonjs",                  // 模块系统
-    "lib": ["ES2020", "DOM"],             // 包含的库
-    "outDir": "./dist",                    // 输出目录
-    "rootDir": "./src",                    // 源码目录
-    "strict": true,                        // 严格模式
-    "esModuleInterop": true,              // ES 模块互操作
-    "skipLibCheck": true,                 // 跳过库检查
+    "target": "ES2020", // 编译目标
+    "module": "commonjs", // 模块系统
+    "lib": ["ES2020", "DOM"], // 包含的库
+    "outDir": "./dist", // 输出目录
+    "rootDir": "./src", // 源码目录
+    "strict": true, // 严格模式
+    "esModuleInterop": true, // ES 模块互操作
+    "skipLibCheck": true, // 跳过库检查
     "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
@@ -96,7 +97,7 @@ let person: [string, number] = ["张三", 25];
 enum Color {
   Red = "red",
   Green = "green",
-  Blue = "blue"
+  Blue = "blue",
 }
 let favoriteColor: Color = Color.Red;
 
@@ -142,22 +143,22 @@ let currentStatus: Status = "loading";
 interface Person {
   name: string;
   age: number;
-  email?: string;  // 可选属性
-  readonly id: number;  // 只读属性
+  email?: string; // 可选属性
+  readonly id: number; // 只读属性
 }
 
 // 使用接口
 let user: Person = {
   name: "张三",
   age: 25,
-  id: 1
+  id: 1,
 };
 
 // 可选属性
 let user2: Person = {
   name: "李四",
   age: 30,
-  id: 2
+  id: 2,
   // email 是可选的，可以不提供
 };
 ```
@@ -170,7 +171,7 @@ interface SearchFunc {
   (source: string, subString: string): boolean;
 }
 
-let mySearch: SearchFunc = function(src: string, sub: string): boolean {
+let mySearch: SearchFunc = function (src: string, sub: string): boolean {
   let result = src.search(sub);
   return result > -1;
 };
@@ -208,9 +209,9 @@ class Clock implements ClockInterface {
 class Animal {
   // 属性
   name: string;
-  private age: number;  // 私有属性
-  protected species: string;  // 受保护属性
-  public isAlive: boolean = true;  // 公共属性
+  private age: number; // 私有属性
+  protected species: string; // 受保护属性
+  public isAlive: boolean = true; // 公共属性
 
   // 构造函数
   constructor(name: string, age: number, species: string) {
@@ -351,7 +352,9 @@ class GenericNumber<T> {
 
 let myGenericNumber = new GenericNumber<number>();
 myGenericNumber.zeroValue = 0;
-myGenericNumber.add = function(x, y) { return x + y; };
+myGenericNumber.add = function (x, y) {
+  return x + y;
+};
 ```
 
 ### 泛型约束
@@ -399,20 +402,20 @@ export default function subtract(a: number, b: number): number {
 }
 
 // 重新导出
-export { add as addNumbers } from './math';
+export { add as addNumbers } from "./math";
 ```
 
 ### 导入
 
 ```typescript
 // main.ts
-import subtract, { add, multiply, PI } from './math';
-import * as MathUtils from './math';
+import subtract, { add, multiply, PI } from "./math";
+import * as MathUtils from "./math";
 
-console.log(add(2, 3));        // 5
-console.log(multiply(2, 3));    // 6
-console.log(subtract(5, 2));   // 3
-console.log(PI);               // 3.14159
+console.log(add(2, 3)); // 5
+console.log(multiply(2, 3)); // 6
+console.log(subtract(5, 2)); // 3
+console.log(PI); // 3.14159
 
 // 使用命名空间导入
 console.log(MathUtils.add(2, 3));
@@ -444,7 +447,11 @@ class BugReport {
 
 ```typescript
 function enumerable(value: boolean) {
-  return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  return function (
+    target: any,
+    propertyKey: string,
+    descriptor: PropertyDescriptor
+  ) {
     descriptor.enumerable = value;
   };
 }
@@ -493,8 +500,8 @@ type RequiredUser = Required<User>;
 // 条件类型
 type NonNullable<T> = T extends null | undefined ? never : T;
 
-type Example1 = NonNullable<string | null>;  // string
-type Example2 = NonNullable<number | undefined>;  // number
+type Example1 = NonNullable<string | null>; // string
+type Example2 = NonNullable<number | undefined>; // number
 ```
 
 ### 工具类型
@@ -511,17 +518,17 @@ interface Person {
 type PartialPerson = Partial<Person>;
 
 // Pick - 选择特定属性
-type NameAndAge = Pick<Person, 'name' | 'age'>;
+type NameAndAge = Pick<Person, "name" | "age">;
 
 // Omit - 排除特定属性
-type WithoutEmail = Omit<Person, 'email'>;
+type WithoutEmail = Omit<Person, "email">;
 
 // Record - 创建记录类型
 type StringRecord = Record<string, string>;
 
 // ReturnType - 获取函数返回类型
 function getUser() {
-  return { name: 'John', age: 30 };
+  return { name: "John", age: 30 };
 }
 type User = ReturnType<typeof getUser>;
 ```
@@ -535,17 +542,17 @@ type User = ReturnType<typeof getUser>;
 class ValidationError extends Error {
   constructor(message: string) {
     super(message);
-    this.name = 'ValidationError';
+    this.name = "ValidationError";
   }
 }
 
 // 错误处理函数
 function validateAge(age: number): void {
   if (age < 0) {
-    throw new ValidationError('年龄不能为负数');
+    throw new ValidationError("年龄不能为负数");
   }
   if (age > 150) {
-    throw new ValidationError('年龄不能超过150岁');
+    throw new ValidationError("年龄不能超过150岁");
   }
 }
 
@@ -554,9 +561,9 @@ try {
   validateAge(-5);
 } catch (error) {
   if (error instanceof ValidationError) {
-    console.error('验证错误:', error.message);
+    console.error("验证错误:", error.message);
   } else {
-    console.error('未知错误:', error);
+    console.error("未知错误:", error);
   }
 }
 ```
@@ -567,7 +574,7 @@ try {
 
 ```typescript
 // types.d.ts
-declare module 'my-library' {
+declare module "my-library" {
   export function doSomething(): void;
   export const version: string;
 }
@@ -580,7 +587,7 @@ declare global {
 }
 
 // 模块声明
-declare module '*.css' {
+declare module "*.css" {
   const content: { [className: string]: string };
   export default content;
 }
@@ -612,7 +619,7 @@ let userData: UserData = data;
 
 ```typescript
 // 使用联合类型而不是 any
-type Status = 'loading' | 'success' | 'error';
+type Status = "loading" | "success" | "error";
 
 // 使用接口定义对象结构
 interface ApiResponse<T> {
@@ -640,7 +647,7 @@ namespace MyApp {
   export class UserService {
     static getUser(id: number): User {
       // 实现
-      return { name: 'John', age: 30 };
+      return { name: "John", age: 30 };
     }
   }
 }
@@ -654,7 +661,7 @@ export interface User {
 
 export class UserService {
   static getUser(id: number): User {
-    return { name: 'John', age: 30 };
+    return { name: "John", age: 30 };
   }
 }
 ```
@@ -669,10 +676,13 @@ export class UserService {
 ## 常见问题
 
 ### Q: TypeScript 和 JavaScript 有什么区别？
+
 A: TypeScript 是 JavaScript 的超集，添加了静态类型检查，编译后生成 JavaScript 代码。
 
 ### Q: 如何将现有的 JavaScript 项目迁移到 TypeScript？
+
 A: 可以逐步迁移，先添加类型注解，然后逐步完善类型定义。
 
 ### Q: TypeScript 会影响性能吗？
+
 A: TypeScript 只在编译时进行类型检查，运行时性能与 JavaScript 相同。

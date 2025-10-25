@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Vue"
 sidebar_position: 2
+slug: /tutorial/frontend/web/vue
 ---
 
 # Vue.js 教程
@@ -59,27 +60,27 @@ npm run dev
 ```html
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Vue 3 App</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="app">
-        <h1>{{ message }}</h1>
+      <h1>{{ message }}</h1>
     </div>
 
     <script>
-        const { createApp } = Vue;
-        
-        createApp({
-            data() {
-                return {
-                    message: 'Hello Vue!'
-                }
-            }
-        }).mount('#app');
+      const { createApp } = Vue;
+
+      createApp({
+        data() {
+          return {
+            message: "Hello Vue!",
+          };
+        },
+      }).mount("#app");
     </script>
-</body>
+  </body>
 </html>
 ```
 
@@ -90,24 +91,22 @@ npm run dev
   <div>
     <!-- 文本插值 -->
     <p>{{ message }}</p>
-    
+
     <!-- 原始 HTML -->
     <div v-html="rawHtml"></div>
-    
+
     <!-- 属性绑定 -->
     <div v-bind:id="dynamicId"></div>
     <div :id="dynamicId"></div>
-    
+
     <!-- 条件渲染 -->
     <p v-if="seen">现在你看到我了</p>
-    
+
     <!-- 列表渲染 -->
     <ul>
-      <li v-for="item in items" :key="item.id">
-        {{ item.text }}
-      </li>
+      <li v-for="item in items" :key="item.id">{{ item.text }}</li>
     </ul>
-    
+
     <!-- 事件监听 -->
     <button v-on:click="doThis">点击我</button>
     <button @click="doThis">点击我</button>
@@ -129,21 +128,21 @@ npm run dev
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
+    msg: String,
   },
   data() {
     return {
-      count: 0
-    }
+      count: 0,
+    };
   },
   methods: {
     increment() {
-      this.count++
-    }
-  }
-}
+      this.count++;
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -157,18 +156,18 @@ export default {
 
 ```javascript
 // 全局注册
-import { createApp } from 'vue'
-import MyComponent from './MyComponent.vue'
+import { createApp } from "vue";
+import MyComponent from "./MyComponent.vue";
 
-const app = createApp({})
-app.component('my-component', MyComponent)
+const app = createApp({});
+app.component("my-component", MyComponent);
 
 // 局部注册
 export default {
   components: {
-    MyComponent
-  }
-}
+    MyComponent,
+  },
+};
 ```
 
 ### 组件通信
@@ -179,31 +178,28 @@ export default {
 <!-- 父组件 -->
 <template>
   <div>
-    <child-component 
-      :message="parentMessage" 
-      @update="handleUpdate"
-    />
+    <child-component :message="parentMessage" @update="handleUpdate" />
   </div>
 </template>
 
 <script>
-import ChildComponent from './ChildComponent.vue'
+import ChildComponent from "./ChildComponent.vue";
 
 export default {
   components: {
-    ChildComponent
+    ChildComponent,
   },
   data() {
     return {
-      parentMessage: 'Hello from parent'
-    }
+      parentMessage: "Hello from parent",
+    };
   },
   methods: {
     handleUpdate(newMessage) {
-      this.parentMessage = newMessage
-    }
-  }
-}
+      this.parentMessage = newMessage;
+    },
+  },
+};
 </script>
 ```
 
@@ -219,14 +215,14 @@ export default {
 <script>
 export default {
   props: {
-    message: String
+    message: String,
   },
   methods: {
     updateParent() {
-      this.$emit('update', 'Updated from child')
-    }
-  }
-}
+      this.$emit("update", "Updated from child");
+    },
+  },
+};
 </script>
 ```
 
@@ -257,56 +253,56 @@ export default {
 ### 响应式基础
 
 ```javascript
-import { ref, reactive, computed, watch } from 'vue'
+import { ref, reactive, computed, watch } from "vue";
 
 export default {
   setup() {
     // ref 用于基本类型
-    const count = ref(0)
-    
+    const count = ref(0);
+
     // reactive 用于对象
     const state = reactive({
-      name: 'Vue',
-      version: '3.0'
-    })
-    
+      name: "Vue",
+      version: "3.0",
+    });
+
     // 计算属性
-    const doubleCount = computed(() => count.value * 2)
-    
+    const doubleCount = computed(() => count.value * 2);
+
     // 监听器
     watch(count, (newVal, oldVal) => {
-      console.log(`count changed from ${oldVal} to ${newVal}`)
-    })
-    
+      console.log(`count changed from ${oldVal} to ${newVal}`);
+    });
+
     return {
       count,
       state,
-      doubleCount
-    }
-  }
-}
+      doubleCount,
+    };
+  },
+};
 ```
 
 ### 生命周期钩子
 
 ```javascript
-import { onMounted, onUpdated, onUnmounted } from 'vue'
+import { onMounted, onUpdated, onUnmounted } from "vue";
 
 export default {
   setup() {
     onMounted(() => {
-      console.log('组件已挂载')
-    })
-    
+      console.log("组件已挂载");
+    });
+
     onUpdated(() => {
-      console.log('组件已更新')
-    })
-    
+      console.log("组件已更新");
+    });
+
     onUnmounted(() => {
-      console.log('组件已卸载')
-    })
-  }
-}
+      console.log("组件已卸载");
+    });
+  },
+};
 ```
 
 ## 路由
@@ -319,29 +315,29 @@ npm install vue-router@4
 
 ```javascript
 // router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
-  }
-]
+    path: "/about",
+    name: "About",
+    component: About,
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
 ```
 
 ```vue
@@ -365,14 +361,14 @@ router.beforeEach((to, from, next) => {
   if (to.meta.requiresAuth) {
     // 检查用户是否已登录
     if (isAuthenticated()) {
-      next()
+      next();
     } else {
-      next('/login')
+      next("/login");
     }
   } else {
-    next()
+    next();
   }
-})
+});
 ```
 
 ## 状态管理
@@ -385,29 +381,29 @@ npm install vuex@next
 
 ```javascript
 // store/index.js
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    count: 0
+    count: 0,
   },
   mutations: {
     increment(state) {
-      state.count++
+      state.count++;
     },
     decrement(state) {
-      state.count--
-    }
+      state.count--;
+    },
   },
   actions: {
     increment({ commit }) {
-      commit('increment')
-    }
+      commit("increment");
+    },
   },
   getters: {
-    doubleCount: state => state.count * 2
-  }
-})
+    doubleCount: (state) => state.count * 2,
+  },
+});
 ```
 
 ### Pinia（推荐）
@@ -418,21 +414,21 @@ npm install pinia
 
 ```javascript
 // stores/counter.js
-import { defineStore } from 'pinia'
+import { defineStore } from "pinia";
 
-export const useCounterStore = defineStore('counter', {
+export const useCounterStore = defineStore("counter", {
   state: () => ({
-    count: 0
+    count: 0,
   }),
   actions: {
     increment() {
-      this.count++
-    }
+      this.count++;
+    },
   },
   getters: {
-    doubleCount: (state) => state.count * 2
-  }
-})
+    doubleCount: (state) => state.count * 2,
+  },
+});
 ```
 
 ## 表单处理
@@ -453,17 +449,17 @@ export default {
   data() {
     return {
       form: {
-        name: '',
-        email: ''
-      }
-    }
+        name: "",
+        email: "",
+      },
+    };
   },
   methods: {
     handleSubmit() {
-      console.log('Form submitted:', this.form)
-    }
-  }
-}
+      console.log("Form submitted:", this.form);
+    },
+  },
+};
 </script>
 ```
 
@@ -473,8 +469,8 @@ export default {
 <template>
   <form @submit.prevent="handleSubmit">
     <div>
-      <input 
-        v-model="form.email" 
+      <input
+        v-model="form.email"
         :class="{ error: errors.email }"
         placeholder="邮箱"
       />
@@ -491,37 +487,37 @@ export default {
   data() {
     return {
       form: {
-        email: ''
+        email: "",
       },
-      errors: {}
-    }
+      errors: {},
+    };
   },
   computed: {
     isValid() {
-      return Object.keys(this.errors).length === 0
-    }
+      return Object.keys(this.errors).length === 0;
+    },
   },
   watch: {
-    'form.email'(value) {
-      this.validateEmail(value)
-    }
+    "form.email"(value) {
+      this.validateEmail(value);
+    },
   },
   methods: {
     validateEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        this.errors.email = '请输入有效的邮箱地址'
+        this.errors.email = "请输入有效的邮箱地址";
       } else {
-        delete this.errors.email
+        delete this.errors.email;
       }
     },
     handleSubmit() {
       if (this.isValid) {
-        console.log('Form submitted:', this.form)
+        console.log("Form submitted:", this.form);
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 ```
 
@@ -535,14 +531,14 @@ npm install axios
 
 ```javascript
 // api/index.js
-import axios from 'axios'
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'https://api.example.com',
-  timeout: 5000
-})
+  baseURL: "https://api.example.com",
+  timeout: 5000,
+});
 
-export default api
+export default api;
 ```
 
 ```vue
@@ -558,23 +554,23 @@ export default api
 </template>
 
 <script>
-import api from '@/api'
+import api from "@/api";
 
 export default {
   data() {
     return {
-      users: []
-    }
+      users: [],
+    };
   },
   async mounted() {
     try {
-      const response = await api.get('/users')
-      this.users = response.data
+      const response = await api.get("/users");
+      this.users = response.data;
     } catch (error) {
-      console.error('获取用户列表失败:', error)
+      console.error("获取用户列表失败:", error);
     }
-  }
-}
+  },
+};
 </script>
 ```
 
@@ -587,18 +583,18 @@ npm install --save-dev @vue/test-utils jest
 ```
 
 ```javascript
-import { mount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mount } from "@vue/test-utils";
+import HelloWorld from "@/components/HelloWorld.vue";
 
-describe('HelloWorld.vue', () => {
-  test('renders props.msg when passed', () => {
-    const msg = 'new message'
+describe("HelloWorld.vue", () => {
+  test("renders props.msg when passed", () => {
+    const msg = "new message";
     const wrapper = mount(HelloWorld, {
-      props: { msg }
-    })
-    expect(wrapper.text()).toMatch(msg)
-  })
-})
+      props: { msg },
+    });
+    expect(wrapper.text()).toMatch(msg);
+  });
+});
 ```
 
 ## 部署
@@ -641,10 +637,13 @@ netlify deploy --prod --dir=dist
 ## 常见问题
 
 ### Q: Vue 2 和 Vue 3 有什么区别？
+
 A: Vue 3 引入了 Composition API、更好的 TypeScript 支持、更小的包体积和更好的性能。
 
 ### Q: 什么时候使用 Vuex 还是 Pinia？
+
 A: 新项目推荐使用 Pinia，它更简单、类型安全，并且与 Vue 3 的 Composition API 配合更好。
 
 ### Q: 如何优化 Vue 应用性能？
+
 A: 使用 v-memo、keep-alive、懒加载、代码分割等技术来优化性能。

@@ -1,7 +1,9 @@
 ---
 sidebar_label: "Dart"
 sidebar_position: 5
+slug: /tutorial/language/dart
 ---
+
 # Dart 教程
 
 Dart 是 Google 开发的一门现代化、面向对象且具备空安全（null safety）的编程语言，常与 Flutter 一起用于跨平台应用开发（iOS/Android/Web/桌面）。Dart 同时适用于服务端、脚本和命令行工具开发。
@@ -17,15 +19,18 @@ Dart 是 Google 开发的一门现代化、面向对象且具备空安全（null
 ## 环境与工具
 
 ### 安装 Dart SDK
+
 - 推荐安装 Flutter（包含 Dart SDK）：参考 Flutter 官方安装文档
 - 或单独安装 Dart SDK：访问 `https://dart.dev/get-dart`
 
 验证安装：
+
 ```bash
 dart --version
 ```
 
 ### 常用命令
+
 ```bash
 # 运行 Dart 文件
 dart run bin/main.dart
@@ -43,6 +48,7 @@ dart analyze
 ## 语法基础
 
 ### 变量与常量
+
 ```dart
 // 明确类型
 type name = value;
@@ -60,6 +66,7 @@ int count = 0;            // 非空，必须初始化
 ```
 
 ### 内置类型与字面量
+
 ```dart
 int a = 1;
 double b = 2.5;
@@ -76,6 +83,7 @@ Map<String, int> score = {'Tom': 90, 'Jerry': 88};
 ```
 
 ### 控制流
+
 ```dart
 if (a > 0) {
   // ...
@@ -100,6 +108,7 @@ do {
 ```
 
 ### 函数与参数
+
 ```dart
 // 普通函数
 int add(int x, int y) {
@@ -128,6 +137,7 @@ void apply(List<int> list, int Function(int) f) {
 ## 面向对象
 
 ### 类与构造函数
+
 ```dart
 class Person {
   final String name;
@@ -151,6 +161,7 @@ class Person {
 ```
 
 ### 继承、接口、抽象
+
 ```dart
 abstract class Animal {
   void speak();
@@ -173,6 +184,7 @@ class LoggerDog extends Dog implements Loggable {
 ```
 
 ### Mixins 与扩展方法
+
 ```dart
 mixin Walkable {
   void walk() => print('Walking');
@@ -186,6 +198,7 @@ extension StringX on String {
 ```
 
 ## 集合与可迭代
+
 ```dart
 final list = <int>[1, 2, 3];
 list.add(4);
@@ -200,6 +213,7 @@ map.update('a', (v) => v + 10, ifAbsent: () => 0);
 ```
 
 ## 空安全与可空类型
+
 ```dart
 int? maybe;
 // 空判断
@@ -213,6 +227,7 @@ int sure = maybe!;          // 若 maybe 为 null 将抛异常
 ## 异步编程：Future 与 Stream
 
 ### Future 与 async/await
+
 ```dart
 Future<int> fetchNumber() async {
   await Future.delayed(Duration(milliseconds: 300));
@@ -230,6 +245,7 @@ Future<void> main() async {
 ```
 
 ### Stream（数据流）
+
 ```dart
 Stream<int> counter(int max) async* {
   for (var i = 1; i <= max; i++) {
@@ -246,6 +262,7 @@ void listenDemo() async {
 ```
 
 ## 错误与异常
+
 ```dart
 int safeParse(String s) {
   try {
@@ -266,12 +283,13 @@ int safeParse(String s) {
 ## 包管理（pub）
 
 `pubspec.yaml` 示例：
+
 ```yaml
 name: dart_demo
 description: Demo project
 version: 0.1.0
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: ">=3.0.0 <4.0.0"
 dependencies:
   http: ^1.2.0
 dev_dependencies:
@@ -279,6 +297,7 @@ dev_dependencies:
 ```
 
 常用命令：
+
 ```bash
 # 获取依赖
 dart pub get
@@ -291,6 +310,7 @@ dart test
 ```
 
 使用第三方包：
+
 ```dart
 import 'package:http/http.dart' as http;
 
@@ -305,6 +325,7 @@ Future<void> fetchTodo() async {
 ## CLI 项目示例
 
 项目结构：
+
 ```
 project/
 ├─ bin/
@@ -315,6 +336,7 @@ project/
 ```
 
 `bin/main.dart`：
+
 ```dart
 import 'package:project/utils.dart';
 
@@ -325,11 +347,13 @@ void main(List<String> args) {
 ```
 
 `lib/utils.dart`：
+
 ```dart
 int sum(List<int> nums) => nums.fold(0, (a, b) => a + b);
 ```
 
 运行：
+
 ```bash
 dart run bin/main.dart a b c
 ```
@@ -337,6 +361,7 @@ dart run bin/main.dart a b c
 ## 并发模型：Isolates（了解）
 
 Dart 通过 Isolate 提供多线程并行能力，每个 Isolate 有独立内存，通过消息传递通信：
+
 ```dart
 import 'dart:isolate';
 

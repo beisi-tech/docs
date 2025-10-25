@@ -2,7 +2,9 @@
 sidebar_label: "Uniapp"
 sidebar_position: 3
 title: UniApp 教程
+slug: /tutorial/frontend/mobile/uniapp
 ---
+
 # UniApp 打包操作指南
 
 ## 一、H5 打包流程
@@ -70,6 +72,7 @@ https://ext.dcloud.net.cn/plugin?id=2046
 https://ext.dcloud.net.cn/plugin?name=uview-plus
 
 ### 3.main.js
+
 以下是在项目中配置 uview-plus 的代码：
 
 ```js
@@ -84,7 +87,7 @@ https://ext.dcloud.net.cn/plugin?name=uview-plus
 将<code>&lt;style&gt;&lt;/style&gt;</code>替换为
 
 &lt;style lang="scss"&gt;
-	@import "@/uni_modules/uview-plus/index.scss";
+@import "@/uni_modules/uview-plus/index.scss";
 &lt;/style&gt;
 
 ### 5.uni.scss
@@ -103,6 +106,7 @@ npm i dayjs
 npm i clipboard
 
 ### 8. pages.json
+
 在 pages 同级配置 easycom：
 
 在 `pages.json` 中与 pages 同级配置 `easycom`：
@@ -118,4 +122,4 @@ npm i clipboard
     }
   }
 }
-
+```

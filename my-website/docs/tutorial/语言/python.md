@@ -1,12 +1,12 @@
 ---
 sidebar_label: "Python"
 sidebar_position: 4
+slug: /tutorial/language/python
 ---
 
 # Python 教程
 
 Python 是一种高级、解释型、通用的编程语言。它以简洁的语法和强大的功能而闻名，被广泛应用于 Web 开发、数据科学、人工智能、自动化脚本等领域。
-
 
 ## Python 的特点
 
@@ -198,10 +198,10 @@ class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
+
     def introduce(self):
         return f"我是{self.name}，{self.age}岁"
-    
+
     def have_birthday(self):
         self.age += 1
         return f"{self.name}现在{self.age}岁了"
@@ -215,7 +215,7 @@ class Student(Person):
     def __init__(self, name, age, student_id):
         super().__init__(name, age)
         self.student_id = student_id
-    
+
     def study(self, subject):
         return f"{self.name}正在学习{subject}"
 
@@ -530,10 +530,10 @@ plt.show()
 def calculate_average(numbers):
     """
     计算数字列表的平均值
-    
+
     Args:
         numbers (list): 数字列表
-    
+
     Returns:
         float: 平均值
     """
@@ -547,7 +547,7 @@ from typing import List, Optional
 def process_data(data: List[int], threshold: Optional[int] = None) -> float:
     if threshold is None:
         threshold = 10
-    
+
     filtered_data = [x for x in data if x > threshold]
     return sum(filtered_data) / len(filtered_data) if filtered_data else 0
 ```
@@ -561,7 +561,7 @@ class TestCalculator(unittest.TestCase):
     def test_add(self):
         self.assertEqual(add(2, 3), 5)
         self.assertEqual(add(-1, 1), 0)
-    
+
     def test_multiply(self):
         self.assertEqual(multiply(2, 3), 6)
         self.assertEqual(multiply(-2, 3), -6)
@@ -580,10 +580,13 @@ if __name__ == '__main__':
 ## 常见问题
 
 ### Q: Python 2 和 Python 3 有什么区别？
+
 A: Python 3 是 Python 的未来，有更好的 Unicode 支持、语法改进等。建议使用 Python 3。
 
 ### Q: 如何提高 Python 代码性能？
+
 A: 使用适当的数据结构、避免不必要的循环、使用生成器、考虑使用 NumPy 等优化库。
 
 ### Q: 如何处理 Python 中的内存问题？
+
 A: 使用生成器、及时释放大对象、使用 `del` 语句、监控内存使用情况。

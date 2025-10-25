@@ -1,6 +1,8 @@
 ---
 sidebar_position: 4
+slug: /project/swift-shoes-store
 ---
+
 # Swift Shoes Store
 
 ## 项目概述
@@ -10,11 +12,13 @@ sidebar_position: 4
 ## 核心特色
 
 ### 🛍️ 产品优势
-- **品牌精选**：汇集Salomon等知名运动品牌
+
+- **品牌精选**：汇集 Salomon 等知名运动品牌
 - **品类齐全**：涵盖各类运动鞋款，满足不同需求
 - **价格透明**：价格透明，用户可自主选择
 
 ### 💻 技术特点
+
 - 现代化电商平台架构
 - 响应式设计，支持多设备访问
 - 安全稳定的交易系统
@@ -28,5 +32,5 @@ sidebar_position: 4
 
 ---
 
-*© 2025 福州倍司网络科技有限公司 版权所有*
-*Powered by Mr.Lin*
+_© 2025 福州倍司网络科技有限公司 版权所有_
+_Powered by Mr.Lin_

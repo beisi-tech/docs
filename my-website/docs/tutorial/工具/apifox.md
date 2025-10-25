@@ -1,7 +1,9 @@
 ---
 sidebar_label: "Apifox"
 sidebar_position: 3
+slug: /tutorial/tools/apifox
 ---
+
 # Apifox 使用教程
 
 [Apifox 官方教程](https://www.bilibili.com/video/BV1Jc41147xC/)

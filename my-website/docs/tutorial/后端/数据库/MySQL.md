@@ -1,8 +1,10 @@
 ---
 sidebar_label: "MySQL"
 sidebar_position: 1
+slug: /tutorial/backend/database/mysql
 ---
-#  MySQL 数据库
+
+# MySQL 数据库
 
 1. MySQL 数据库命令：
    1. 导出数据库命令：`system mysqldump -u root -p hsck_data > 路径\hsck.sql`
@@ -13,5 +15,3 @@ sidebar_position: 1
 
 1. 测试 MySQL 数据库密码统一改成 123123
 2. MySQL 数据库版本使用 8.0 版本
-
-

@@ -1,7 +1,9 @@
 ---
 sidebar_label: "Docker"
 sidebar_position: 3
+slug: /tutorial/devops/docker
 ---
+
 # Docker 教程
 
 ## 搭建私人 docker 镜像源教程

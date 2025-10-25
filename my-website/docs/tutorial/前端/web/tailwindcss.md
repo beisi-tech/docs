@@ -1,6 +1,7 @@
 ---
 sidebar_label: "TailwindCSS"
 sidebar_position: 2
+slug: /tutorial/frontend/web/tailwindcss
 ---
 
 # TailwindCSS 教程
@@ -38,15 +39,12 @@ npx tailwindcss init -p
 ```javascript
 // tailwind.config.js
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 ### 添加 TailwindCSS 指令
@@ -168,16 +166,22 @@ module.exports = {
 
 ```html
 <!-- 基础按钮 -->
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+>
   点击我
 </button>
 
 <!-- 不同样式的按钮 -->
-<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg">
+<button
+  class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg"
+>
   成功按钮
 </button>
 
-<button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+<button
+  class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full"
+>
   危险按钮
 </button>
 ```
@@ -186,7 +190,7 @@ module.exports = {
 
 ```html
 <div class="max-w-sm rounded overflow-hidden shadow-lg">
-  <img class="w-full" src="/img/card-top.jpg" alt="Card image">
+  <img class="w-full" src="/img/card-top.jpg" alt="Card image" />
   <div class="px-6 py-4">
     <div class="font-bold text-xl mb-2">卡片标题</div>
     <p class="text-gray-700 text-base">
@@ -194,10 +198,14 @@ module.exports = {
     </p>
   </div>
   <div class="px-6 pt-4 pb-2">
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+    <span
+      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+    >
       #标签1
     </span>
-    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+    <span
+      class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+    >
       #标签2
     </span>
   </div>
@@ -212,22 +220,35 @@ module.exports = {
     <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
       用户名
     </label>
-    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-           id="username" type="text" placeholder="请输入用户名">
+    <input
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      id="username"
+      type="text"
+      placeholder="请输入用户名"
+    />
   </div>
   <div class="mb-6">
     <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
       密码
     </label>
-    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" 
-           id="password" type="password" placeholder="请输入密码">
+    <input
+      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+      id="password"
+      type="password"
+      placeholder="请输入密码"
+    />
   </div>
   <div class="flex items-center justify-between">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-            type="button">
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      type="button"
+    >
       登录
     </button>
-    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+    <a
+      class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+      href="#"
+    >
       忘记密码？
     </a>
   </div>
@@ -240,19 +261,13 @@ module.exports = {
 
 ```html
 <!-- 移动端优先 -->
-<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-  响应式宽度
-</div>
+<div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">响应式宽度</div>
 
 <!-- 文本大小响应式 -->
-<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-  响应式标题
-</h1>
+<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">响应式标题</h1>
 
 <!-- 间距响应式 -->
-<div class="p-2 sm:p-4 md:p-6 lg:p-8">
-  响应式内边距
-</div>
+<div class="p-2 sm:p-4 md:p-6 lg:p-8">响应式内边距</div>
 ```
 
 ### 显示/隐藏
@@ -270,38 +285,32 @@ module.exports = {
 
 ```html
 <!-- 基础过渡 -->
-<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">
+<button
+  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300"
+>
   悬停效果
 </button>
 
 <!-- 变换效果 -->
 <div class="transform hover:scale-105 transition duration-300">
-  <img src="/image.jpg" alt="图片" class="w-full">
+  <img src="/image.jpg" alt="图片" class="w-full" />
 </div>
 
 <!-- 旋转效果 -->
-<div class="transform hover:rotate-45 transition duration-500">
-  悬停旋转
-</div>
+<div class="transform hover:rotate-45 transition duration-500">悬停旋转</div>
 ```
 
 ### 动画
 
 ```html
 <!-- 淡入动画 -->
-<div class="animate-fade-in">
-  淡入内容
-</div>
+<div class="animate-fade-in">淡入内容</div>
 
 <!-- 弹跳动画 -->
-<div class="animate-bounce">
-  弹跳效果
-</div>
+<div class="animate-bounce">弹跳效果</div>
 
 <!-- 脉冲动画 -->
-<div class="animate-pulse">
-  脉冲效果
-</div>
+<div class="animate-pulse">脉冲效果</div>
 ```
 
 ## 自定义配置
@@ -314,20 +323,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-blue': '#1e40af',
-        'brand-green': '#059669',
+        "brand-blue": "#1e40af",
+        "brand-green": "#059669",
       },
       fontFamily: {
-        'sans': ['Inter', 'sans-serif'],
-        'serif': ['Georgia', 'serif'],
+        sans: ["Inter", "sans-serif"],
+        serif: ["Georgia", "serif"],
       },
       spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-      }
+        18: "4.5rem",
+        88: "22rem",
+      },
     },
   },
-}
+};
 ```
 
 ### 自定义组件
@@ -338,11 +347,11 @@ module.exports = {
   .btn-primary {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
   }
-  
+
   .card {
     @apply bg-white rounded-lg shadow-md p-6;
   }
-  
+
   .input-field {
     @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
   }
@@ -354,14 +363,14 @@ module.exports = {
 ```css
 @layer utilities {
   .text-shadow {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -374,25 +383,28 @@ module.exports = {
 
 ```jsx
 // React 组件
-import React from 'react';
+import React from "react";
 
-const Button = ({ children, variant = 'primary', size = 'md' }) => {
-  const baseClasses = 'font-bold rounded focus:outline-none focus:shadow-outline';
-  
+const Button = ({ children, variant = "primary", size = "md" }) => {
+  const baseClasses =
+    "font-bold rounded focus:outline-none focus:shadow-outline";
+
   const variantClasses = {
-    primary: 'bg-blue-500 hover:bg-blue-700 text-white',
-    secondary: 'bg-gray-500 hover:bg-gray-700 text-white',
-    danger: 'bg-red-500 hover:bg-red-700 text-white',
+    primary: "bg-blue-500 hover:bg-blue-700 text-white",
+    secondary: "bg-gray-500 hover:bg-gray-700 text-white",
+    danger: "bg-red-500 hover:bg-red-700 text-white",
   };
-  
+
   const sizeClasses = {
-    sm: 'py-1 px-2 text-sm',
-    md: 'py-2 px-4',
-    lg: 'py-3 px-6 text-lg',
+    sm: "py-1 px-2 text-sm",
+    md: "py-2 px-4",
+    lg: "py-3 px-6 text-lg",
   };
-  
+
   return (
-    <button className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`}>
+    <button
+      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`}
+    >
       {children}
     </button>
   );
@@ -408,14 +420,22 @@ export default Button;
   <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden">
     <div class="md:flex">
       <div class="md:shrink-0">
-        <img class="h-48 w-full object-cover md:h-full md:w-48" 
-             :src="imageUrl" :alt="title">
+        <img
+          class="h-48 w-full object-cover md:h-full md:w-48"
+          :src="imageUrl"
+          :alt="title"
+        />
       </div>
       <div class="p-8">
-        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+        <div
+          class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+        >
           {{ category }}
         </div>
-        <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+        <a
+          href="#"
+          class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+        >
           {{ title }}
         </a>
         <p class="mt-2 text-slate-500">{{ description }}</p>
@@ -430,9 +450,9 @@ export default {
     title: String,
     description: String,
     imageUrl: String,
-    category: String
-  }
-}
+    category: String,
+  },
+};
 </script>
 ```
 
@@ -444,12 +464,12 @@ export default {
 // tailwind.config.js
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './public/index.html',
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
     // 确保包含所有使用 TailwindCSS 的文件
   ],
   // 其他配置...
-}
+};
 ```
 
 ### 生产构建
@@ -480,10 +500,13 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ## 常见问题
 
 ### Q: TailwindCSS 和 Bootstrap 有什么区别？
+
 A: TailwindCSS 是实用类优先，更灵活；Bootstrap 是组件优先，开箱即用。
 
 ### Q: 如何自定义 TailwindCSS 主题？
+
 A: 在 `tailwind.config.js` 中的 `theme.extend` 中扩展主题配置。
 
 ### Q: TailwindCSS 会影响性能吗？
+
 A: 正确配置后，TailwindCSS 只会包含使用的样式，文件体积很小，性能很好。

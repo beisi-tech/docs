@@ -1,6 +1,8 @@
 ---
 sidebar_position: 6
+slug: /rule/chinese-copywriting-guidelines-en
 ---
+
 # Chinese Copywriting Guidelines
 
 Chinese copywriting guidelines for better written communication.

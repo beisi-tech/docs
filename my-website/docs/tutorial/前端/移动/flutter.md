@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Flutter"
 sidebar_position: 1
+slug: /tutorial/frontend/mobile/flutter
 ---
 
 # Flutter 学习教程
@@ -10,18 +11,23 @@ Flutter 是一个由 Google 开发的开源 UI 框架，用于构建高性能、
 ## 学习路径建议
 
 ### 1. 掌握 Dart 语言
+
 Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建议先熟悉 Dart 的基本语法和特性。Dart 是一门简单易学的语言，适合初学者。
 
 ### 2. 了解 Flutter 基础
+
 学习 Flutter 的核心概念，如 Widget、State 管理、导航、动画等。可以通过官方文档和视频教程快速上手。
 
 ### 3. 实践项目
+
 通过构建小型项目（如 Todo 应用、天气应用）来巩固知识，熟悉 Flutter 的开发流程。
 
 ### 4. 深入高级主题
+
 学习状态管理（如 Provider、Riverpod、Bloc）、网络请求、数据库操作、性能优化等。
 
 ### 5. 参与社区
+
 加入 Flutter 社区，参与讨论、阅读开源代码，了解最新的框架更新和最佳实践。
 
 ## Bilibili Flutter 教程

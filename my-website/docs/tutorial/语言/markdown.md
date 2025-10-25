@@ -1,7 +1,9 @@
 ---
 sidebar_label: "Markdown"
 sidebar_position: 3
+slug: /tutorial/language/markdown
 ---
+
 # Markdown 教程
 
 [Markdown 简单教程](https://www.bilibili.com/video/BV1si4y1472o/?share_source=copy_web&vd_source=7f54efe1da20c04e64d8b69684311984)

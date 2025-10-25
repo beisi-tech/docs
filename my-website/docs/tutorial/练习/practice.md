@@ -1,6 +1,7 @@
 ---
 sidebar_label: "练习项目"
 sidebar_position: 1
+slug: /tutorial/practice/projects
 ---
 
 # 练习项目

@@ -1,6 +1,7 @@
 ---
 sidebar_label: "Next.js"
 sidebar_position: 4
+slug: /tutorial/frontend/web/nextjs
 ---
 
 # Next.js 教程
@@ -64,7 +65,7 @@ export default function Home() {
       <h1>首页</h1>
       <p>欢迎来到 Next.js!</p>
     </div>
-  )
+  );
 }
 ```
 
@@ -72,13 +73,13 @@ export default function Home() {
 
 ```jsx
 // pages/posts/[id].js
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 
 export default function Post() {
-  const router = useRouter()
-  const { id } = router.query
+  const router = useRouter();
+  const { id } = router.query;
 
-  return <p>文章 ID: {id}</p>
+  return <p>文章 ID: {id}</p>;
 }
 ```
 
@@ -112,18 +113,18 @@ export default function Posts({ posts }) {
         <li key={post.id}>{post.title}</li>
       ))}
     </ul>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://api.example.com/posts')
-  const posts = await res.json()
+  const res = await fetch("https://api.example.com/posts");
+  const posts = await res.json();
 
   return {
     props: {
       posts,
     },
-  }
+  };
 }
 ```
 
@@ -132,18 +133,18 @@ export async function getStaticProps() {
 ```jsx
 // pages/user/[id].js
 export default function User({ user }) {
-  return <h1>{user.name}</h1>
+  return <h1>{user.name}</h1>;
 }
 
 export async function getServerSideProps({ params }) {
-  const res = await fetch(`https://api.example.com/users/${params.id}`)
-  const user = await res.json()
+  const res = await fetch(`https://api.example.com/users/${params.id}`);
+  const user = await res.json();
 
   return {
     props: {
       user,
     },
-  }
+  };
 }
 ```
 
@@ -157,32 +158,32 @@ export default function Post({ post }) {
       <h1>{post.title}</h1>
       <p>{post.content}</p>
     </div>
-  )
+  );
 }
 
 export async function getStaticPaths() {
-  const res = await fetch('https://api.example.com/posts')
-  const posts = await res.json()
+  const res = await fetch("https://api.example.com/posts");
+  const posts = await res.json();
 
   const paths = posts.map((post) => ({
     params: { id: post.id.toString() },
-  }))
+  }));
 
   return {
     paths,
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(`https://api.example.com/posts/${params.id}`)
-  const post = await res.json()
+  const res = await fetch(`https://api.example.com/posts/${params.id}`);
+  const post = await res.json();
 
   return {
     props: {
       post,
     },
-  }
+  };
 }
 ```
 
@@ -193,7 +194,7 @@ export async function getStaticProps({ params }) {
 ```jsx
 // pages/api/hello.js
 export default function handler(req, res) {
-  res.status(200).json({ message: 'Hello from API!' })
+  res.status(200).json({ message: "Hello from API!" });
 }
 ```
 
@@ -202,16 +203,16 @@ export default function handler(req, res) {
 ```jsx
 // pages/api/users.js
 export default function handler(req, res) {
-  if (req.method === 'GET') {
+  if (req.method === "GET") {
     // 获取用户列表
-    res.status(200).json({ users: [] })
-  } else if (req.method === 'POST') {
+    res.status(200).json({ users: [] });
+  } else if (req.method === "POST") {
     // 创建新用户
-    const { name, email } = req.body
-    res.status(201).json({ message: '用户创建成功' })
+    const { name, email } = req.body;
+    res.status(201).json({ message: "用户创建成功" });
   } else {
-    res.setHeader('Allow', ['GET', 'POST'])
-    res.status(405).end(`Method ${req.method} Not Allowed`)
+    res.setHeader("Allow", ["GET", "POST"]);
+    res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 }
 ```
@@ -221,17 +222,17 @@ export default function handler(req, res) {
 ```jsx
 // pages/api/users/[id].js
 export default function handler(req, res) {
-  const { id } = req.query
+  const { id } = req.query;
 
-  if (req.method === 'GET') {
+  if (req.method === "GET") {
     // 获取特定用户
-    res.status(200).json({ id, name: 'John Doe' })
-  } else if (req.method === 'PUT') {
+    res.status(200).json({ id, name: "John Doe" });
+  } else if (req.method === "PUT") {
     // 更新用户
-    res.status(200).json({ message: '用户更新成功' })
-  } else if (req.method === 'DELETE') {
+    res.status(200).json({ message: "用户更新成功" });
+  } else if (req.method === "DELETE") {
     // 删除用户
-    res.status(200).json({ message: '用户删除成功' })
+    res.status(200).json({ message: "用户删除成功" });
   }
 }
 ```
@@ -255,14 +256,14 @@ export default function handler(req, res) {
 
 ```jsx
 // pages/index.js
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>首页</h1>
     </div>
-  )
+  );
 }
 ```
 
@@ -274,8 +275,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -298,7 +299,7 @@ npm install sass
 // styles/Home.module.scss
 .container {
   padding: 0 2rem;
-  
+
   .title {
     margin: 0;
     line-height: 1.15;
@@ -312,25 +313,19 @@ npm install sass
 ### next/image 组件
 
 ```jsx
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Profile() {
   return (
-    <Image
-      src="/profile.jpg"
-      alt="Profile"
-      width={500}
-      height={500}
-      priority
-    />
-  )
+    <Image src="/profile.jpg" alt="Profile" width={500} height={500} priority />
+  );
 }
 ```
 
 ### 响应式图片
 
 ```jsx
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function ResponsiveImage() {
   return (
@@ -343,7 +338,7 @@ export default function ResponsiveImage() {
         layout="responsive"
       />
     </div>
-  )
+  );
 }
 ```
 
@@ -352,7 +347,7 @@ export default function ResponsiveImage() {
 ### 使用 Google Fonts
 
 ```jsx
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -363,23 +358,21 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <h1 style={{ fontFamily: 'Inter, sans-serif' }}>首页</h1>
+      <h1 style={{ fontFamily: "Inter, sans-serif" }}>首页</h1>
     </>
-  )
+  );
 }
 ```
 
 ### 使用 next/font
 
 ```jsx
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <h1 className={inter.className}>首页</h1>
-  )
+  return <h1 className={inter.className}>首页</h1>;
 }
 ```
 
@@ -398,13 +391,13 @@ NEXT_PUBLIC_API_URL=https://api.example.com
 ```jsx
 // pages/api/data.js
 export default function handler(req, res) {
-  const dbUrl = process.env.DATABASE_URL
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
-  
-  res.status(200).json({ 
-    message: '环境变量已配置',
-    apiUrl 
-  })
+  const dbUrl = process.env.DATABASE_URL;
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  res.status(200).json({
+    message: "环境变量已配置",
+    apiUrl,
+  });
 }
 ```
 
@@ -414,22 +407,22 @@ export default function handler(req, res) {
 
 ```jsx
 // middleware.js
-import { NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
 
 export function middleware(request) {
   // 检查用户认证
-  const token = request.cookies.get('token')
-  
-  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {
-    return NextResponse.redirect(new URL('/login', request.url))
+  const token = request.cookies.get("token");
+
+  if (!token && request.nextUrl.pathname.startsWith("/dashboard")) {
+    return NextResponse.redirect(new URL("/login", request.url));
   }
-  
-  return NextResponse.next()
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*']
-}
+  matcher: ["/dashboard/:path*"],
+};
 ```
 
 ## 部署
@@ -471,21 +464,21 @@ CMD ["npm", "start"]
 ### 代码分割
 
 ```jsx
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-const DynamicComponent = dynamic(() => import('../components/Heavy'), {
+const DynamicComponent = dynamic(() => import("../components/Heavy"), {
   loading: () => <p>加载中...</p>,
-})
+});
 
 export default function Home() {
-  return <DynamicComponent />
+  return <DynamicComponent />;
 }
 ```
 
 ### 预加载
 
 ```jsx
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Navigation() {
   return (
@@ -494,7 +487,7 @@ export default function Navigation() {
         关于我们
       </Link>
     </nav>
-  )
+  );
 }
 ```
 
@@ -516,10 +509,13 @@ export default function Navigation() {
 ## 常见问题
 
 ### Q: 什么时候使用 SSG 还是 SSR？
+
 A: SSG 适合静态内容，构建时生成；SSR 适合动态内容，每次请求时生成。
 
 ### Q: 如何优化 Next.js 应用性能？
+
 A: 使用图片优化、代码分割、预加载、缓存等技术。
 
 ### Q: 如何处理 SEO？
+
 A: 使用正确的元数据、结构化数据、sitemap 等。

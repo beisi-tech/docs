@@ -1,12 +1,15 @@
 ---
 sidebar_label: "Nodejs"
 sidebar_position: 1
+slug: /tutorial/backend/nodejs
 ---
+
 # Node.js 后端开发
+
 ## 论如何优雅的使用 npm 包管理工具
 
 > Author:
-> 
+>
 > First Creation: 2025-03-01
 
 ## 常见的 npm 包管理工具
@@ -22,6 +25,7 @@ sidebar_position: 1
 优点显而易见：无需配置，随 NodeJS 安装。
 
 但缺点较多：
+
 - 无法更换国内镜像源
 - 每个项目都需要重复下载安装 node_modules
 - 不支持并行下载
@@ -52,12 +56,12 @@ pnpm config set registry https://registry.npmjs.org
 
 ## 如何获取这些包管理工具
 
-|包管理工具| 获取方式                                                            |
-|---|-----------------------------------------------------------------|
-|npm| Node.JS 自带                                                      |
-|yarn| `npm install -g yarn`                                           |
-|cnpm| `npm install -g cnpm --registry=https://registry.npmmirror.com` |
-|pnpm| `npm install -g pnpm`                                           |
+| 包管理工具 | 获取方式                                                        |
+| ---------- | --------------------------------------------------------------- |
+| npm        | Node.JS 自带                                                    |
+| yarn       | `npm install -g yarn`                                           |
+| cnpm       | `npm install -g cnpm --registry=https://registry.npmmirror.com` |
+| pnpm       | `npm install -g pnpm`                                           |
 
 ## Powershell 无法运行 npm 命令？
 

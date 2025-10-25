@@ -1,11 +1,13 @@
 ---
 sidebar_label: "Flask"
 sidebar_position: 2
+slug: /tutorial/backend/flask
 ---
 
 # Flask 框架教程
 
 Flask 是一个轻量级的 Python Web 框架，被称为"微框架"。它使用 Werkzeug WSGI 工具包和 Jinja2 模板引擎，提供了构建 Web 应用所需的核心功能，同时保持简单和灵活。
+
 ### Flask 的特点
 
 - **轻量级**：核心功能简单，易于理解和学习
@@ -121,12 +123,12 @@ def hello(name):
 <!-- templates/hello.html -->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Hello</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Hello, {{ name }}!</h1>
-</body>
+  </body>
 </html>
 ```
 
@@ -136,30 +138,25 @@ def hello(name):
 <!-- templates/base.html -->
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>{% block title %}{% endblock %}</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>我的网站</h1>
+      <h1>我的网站</h1>
     </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    <main>{% block content %}{% endblock %}</main>
     <footer>
-        <p>&copy; 2024 我的网站</p>
+      <p>&copy; 2024 我的网站</p>
     </footer>
-</body>
+  </body>
 </html>
 ```
 
 ```html
 <!-- templates/index.html -->
-{% extends "base.html" %}
-
-{% block title %}首页{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}首页{% endblock %} {% block content
+%}
 <h2>欢迎来到我的网站</h2>
 <p>这是一个使用 Flask 构建的网站。</p>
 {% endblock %}
@@ -170,16 +167,16 @@ def hello(name):
 ```html
 <!-- 条件语句 -->
 {% if user %}
-    <p>欢迎, {{ user.name }}!</p>
+<p>欢迎, {{ user.name }}!</p>
 {% else %}
-    <p>请先登录</p>
+<p>请先登录</p>
 {% endif %}
 
 <!-- 循环 -->
 <ul>
-{% for item in items %}
-    <li>{{ item.name }}</li>
-{% endfor %}
+  {% for item in items %}
+  <li>{{ item.name }}</li>
+  {% endfor %}
 </ul>
 
 <!-- 过滤器 -->
@@ -227,11 +224,11 @@ def allowed_file(filename):
 def upload_file():
     if 'file' not in request.files:
         return '没有文件'
-    
+
     file = request.files['file']
     if file.filename == '':
         return '没有选择文件'
-    
+
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
@@ -374,11 +371,11 @@ def get_users():
 def create_user():
     username = request.form['username']
     email = request.form['email']
-    
+
     user = User(username=username, email=email)
     db.session.add(user)
     db.session.commit()
-    
+
     return '用户创建成功'
 
 # 查询用户
@@ -394,7 +391,7 @@ def update_user(user_id):
     user.username = request.form['username']
     user.email = request.form['email']
     db.session.commit()
-    
+
     return '用户更新成功'
 
 # 删除用户
@@ -403,7 +400,7 @@ def delete_user(user_id):
     user = User.query.get_or_404(user_id)
     db.session.delete(user)
     db.session.commit()
-    
+
     return '用户删除成功'
 ```
 
@@ -437,16 +434,16 @@ def login():
 ```html
 <!-- templates/login.html -->
 <form method="POST">
-    {{ form.hidden_tag() }}
-    <p>
-        {{ form.username.label }}<br>
-        {{ form.username() }}
-    </p>
-    <p>
-        {{ form.password.label }}<br>
-        {{ form.password() }}
-    </p>
-    <p>{{ form.submit() }}</p>
+  {{ form.hidden_tag() }}
+  <p>
+    {{ form.username.label }}<br />
+    {{ form.username() }}
+  </p>
+  <p>
+    {{ form.password.label }}<br />
+    {{ form.password() }}
+  </p>
+  <p>{{ form.submit() }}</p>
 </form>
 ```
 
@@ -479,12 +476,12 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        
+
         user = User.query.filter_by(username=username).first()
         if user and check_password_hash(user.password_hash, password):
             login_user(user)
             return redirect(url_for('dashboard'))
-    
+
     return render_template('login.html')
 
 @app.route('/dashboard')
@@ -524,7 +521,7 @@ def create_user():
     )
     db.session.add(user)
     db.session.commit()
-    
+
     return jsonify({
         'id': user.id,
         'username': user.username,
@@ -535,11 +532,11 @@ def create_user():
 def update_user(user_id):
     user = User.query.get_or_404(user_id)
     data = request.get_json()
-    
+
     user.username = data['username']
     user.email = data['email']
     db.session.commit()
-    
+
     return jsonify({
         'id': user.id,
         'username': user.username,
@@ -551,7 +548,7 @@ def delete_user(user_id):
     user = User.query.get_or_404(user_id)
     db.session.delete(user)
     db.session.commit()
-    
+
     return '', 204
 ```
 
@@ -667,10 +664,13 @@ CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
 ## 常见问题
 
 ### Q: Flask 和 Django 有什么区别？
+
 A: Flask 是微框架，更灵活但需要更多配置；Django 是全功能框架，开箱即用但学习曲线较陡。
 
 ### Q: 如何选择 Flask 扩展？
+
 A: 选择官方推荐的扩展，查看文档和社区支持，避免使用过时的扩展。
 
 ### Q: 如何优化 Flask 应用性能？
+
 A: 使用缓存、数据库连接池、异步处理、CDN 等技术来优化性能。

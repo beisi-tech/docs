@@ -1,6 +1,7 @@
 ---
 sidebar_label: "React"
 sidebar_position: 1
+slug: /tutorial/frontend/web/react
 ---
 
 # React 教程
@@ -46,7 +47,7 @@ npm install react react-dom
 ### 第一个组件
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 function Welcome(props) {
   return <h1>Hello, {props.name}!</h1>;
@@ -58,7 +59,7 @@ export default Welcome;
 ### 类组件
 
 ```jsx
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Welcome extends Component {
   render() {
@@ -72,7 +73,7 @@ export default Welcome;
 ### 函数组件（推荐）
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 const Welcome = ({ name }) => {
   return <h1>Hello, {name}!</h1>;
@@ -86,7 +87,7 @@ export default Welcome;
 ### useState Hook
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -94,9 +95,7 @@ function Counter() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -105,7 +104,7 @@ function Counter() {
 ### useEffect Hook
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -117,9 +116,7 @@ function Example() {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }
@@ -131,14 +128,10 @@ function Example() {
 function Button() {
   const handleClick = (e) => {
     e.preventDefault();
-    console.log('Button clicked!');
+    console.log("Button clicked!");
   };
 
-  return (
-    <button onClick={handleClick}>
-      Click me
-    </button>
-  );
+  return <button onClick={handleClick}>Click me</button>;
 }
 ```
 
@@ -159,7 +152,7 @@ function Greeting({ isLoggedIn }) {
 function TodoList({ todos }) {
   return (
     <ul>
-      {todos.map(todo => (
+      {todos.map((todo) => (
         <li key={todo.id}>{todo.text}</li>
       ))}
     </ul>
@@ -170,13 +163,13 @@ function TodoList({ todos }) {
 ## 表单处理
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function NameForm() {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
   const handleSubmit = (event) => {
-    alert('A name was submitted: ' + value);
+    alert("A name was submitted: " + value);
     event.preventDefault();
   };
 
@@ -184,10 +177,10 @@ function NameForm() {
     <form onSubmit={handleSubmit}>
       <label>
         Name:
-        <input 
-          type="text" 
-          value={value} 
-          onChange={(e) => setValue(e.target.value)} 
+        <input
+          type="text"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
         />
       </label>
       <input type="submit" value="Submit" />
@@ -203,7 +196,7 @@ function NameForm() {
 ```jsx
 // 父组件
 function App() {
-  const [message, setMessage] = useState('Hello from parent');
+  const [message, setMessage] = useState("Hello from parent");
 
   return (
     <div>
@@ -221,12 +214,12 @@ function ChildComponent({ message }) {
 ### 兄弟组件通信
 
 ```jsx
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 const ThemeContext = createContext();
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
@@ -238,10 +231,10 @@ function App() {
 
 function Header() {
   const { theme, setTheme } = useContext(ThemeContext);
-  
+
   return (
     <header>
-      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
         Toggle Theme
       </button>
     </header>
@@ -254,22 +247,22 @@ function Header() {
 ### 函数组件生命周期
 
 ```jsx
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 function MyComponent() {
   useEffect(() => {
     // 组件挂载后执行
-    console.log('Component mounted');
-    
+    console.log("Component mounted");
+
     return () => {
       // 组件卸载前执行
-      console.log('Component will unmount');
+      console.log("Component will unmount");
     };
   }, []);
 
   useEffect(() => {
     // 每次渲染后执行
-    console.log('Component updated');
+    console.log("Component updated");
   });
 
   return <div>My Component</div>;
@@ -281,7 +274,7 @@ function MyComponent() {
 ### React.memo
 
 ```jsx
-import React, { memo } from 'react';
+import React, { memo } from "react";
 
 const MyComponent = memo(({ name }) => {
   return <div>{name}</div>;
@@ -291,7 +284,7 @@ const MyComponent = memo(({ name }) => {
 ### useMemo
 
 ```jsx
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
 function ExpensiveComponent({ items }) {
   const expensiveValue = useMemo(() => {
@@ -305,13 +298,13 @@ function ExpensiveComponent({ items }) {
 ### useCallback
 
 ```jsx
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState } from "react";
 
 function ParentComponent() {
   const [count, setCount] = useState(0);
 
   const handleClick = useCallback(() => {
-    setCount(c => c + 1);
+    setCount((c) => c + 1);
   }, []);
 
   return <ChildComponent onClick={handleClick} />;
@@ -327,7 +320,7 @@ npm install react-router-dom
 ```
 
 ```jsx
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -336,7 +329,7 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
       </nav>
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -355,15 +348,15 @@ npm install redux react-redux
 ```
 
 ```jsx
-import { createStore } from 'redux';
-import { Provider, useSelector, useDispatch } from 'react-redux';
+import { createStore } from "redux";
+import { Provider, useSelector, useDispatch } from "react-redux";
 
 // Reducer
 const counterReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
-    case 'INCREMENT':
+    case "INCREMENT":
       return { count: state.count + 1 };
-    case 'DECREMENT':
+    case "DECREMENT":
       return { count: state.count - 1 };
     default:
       return state;
@@ -375,14 +368,14 @@ const store = createStore(counterReducer);
 
 // Component
 function Counter() {
-  const count = useSelector(state => state.count);
+  const count = useSelector((state) => state.count);
   const dispatch = useDispatch();
 
   return (
     <div>
       <p>{count}</p>
-      <button onClick={() => dispatch({ type: 'INCREMENT' })}>+</button>
-      <button onClick={() => dispatch({ type: 'DECREMENT' })}>-</button>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
     </div>
   );
 }
@@ -405,14 +398,14 @@ npm install --save-dev @testing-library/react @testing-library/jest-dom
 ```
 
 ```jsx
-import { render, screen, fireEvent } from '@testing-library/react';
-import Counter from './Counter';
+import { render, screen, fireEvent } from "@testing-library/react";
+import Counter from "./Counter";
 
-test('increments counter on button click', () => {
+test("increments counter on button click", () => {
   render(<Counter />);
-  const button = screen.getByText('+');
+  const button = screen.getByText("+");
   fireEvent.click(button);
-  expect(screen.getByText('1')).toBeInTheDocument();
+  expect(screen.getByText("1")).toBeInTheDocument();
 });
 ```
 
@@ -456,10 +449,13 @@ netlify deploy --prod --dir=build
 ## 常见问题
 
 ### Q: 什么时候使用类组件还是函数组件？
+
 A: 现在推荐使用函数组件和 Hooks，除非你需要使用一些类组件特有的生命周期方法。
 
 ### Q: 如何优化 React 应用性能？
+
 A: 使用 React.memo、useMemo、useCallback，避免不必要的重新渲染，合理使用 key 属性。
 
 ### Q: 如何处理异步操作？
+
 A: 使用 useEffect 处理副作用，结合 async/await 或 Promise 处理异步数据。

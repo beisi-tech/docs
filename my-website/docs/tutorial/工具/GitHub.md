@@ -1,8 +1,11 @@
 ---
 sidebar_label: "GitHub"
 sidebar_position: 2
+slug: /tutorial/tools/github
 ---
+
 # GitHub 教程
+
 ## GitHub 唯一推荐教程
 
 [公司 GitHub 教程仓库](https://github.com/beisi-tech/beisi-github-learning)
@@ -45,7 +48,7 @@ sidebar_position: 2
 ![图片3.8.png](../../../src/image/图片3.8.png)
 
 看到这个页面说明安装完成
-再点击![图片3.9.png]../../../../src/image/图片3.9.png)
+再点击![图片3.9.png]../../../../src/image/图片 3.9.png)
 
 ![图片3.10.png](../../../src/image/图片3.10.png)
 
@@ -134,7 +137,7 @@ sidebar_position: 2
 
    - 在本地编辑器中对代码进行修改。
    - 返回 GitHub Desktop，查看更改详情。
-   - 按照Git 提交规范 填写提交信息，确保描述清晰准确。
+   - 按照 Git 提交规范 填写提交信息，确保描述清晰准确。
    - 点击 `Commit to <branch-name>` 提交更改到本地分支。
 
 5. **推送分支到远程仓库**
