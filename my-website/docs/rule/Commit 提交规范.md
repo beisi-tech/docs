@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Commit 提交规范"
 sidebar_position: 2
-slug: /rule/commit-specification
+slug: commit-specification
 ---
 
 # 项目开发编码规范

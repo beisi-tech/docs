@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Caddy"
 sidebar_position: 2
-slug: /tutorial/devops/caddy
+slug: caddy
 ---
 
 # Caddy 教程

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "GitHub"
 sidebar_position: 2
-slug: /tutorial/tools/github
+slug: github
 ---
 
 # GitHub 教程

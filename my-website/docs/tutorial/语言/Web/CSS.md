@@ -1,7 +1,7 @@
 ---
 sidebar_label: "CSS"
 sidebar_position: 2
-slug: /tutorial/language/web/css
+slug: css
 ---
 
 # CSS 教程

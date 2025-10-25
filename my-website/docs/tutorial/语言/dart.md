@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Dart"
 sidebar_position: 5
-slug: /tutorial/language/dart
+slug: dart
 ---
 
 # Dart 教程

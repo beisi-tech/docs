@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-slug: /project/swift-shoes-store
+slug: swift-shoes-store
 ---
 
 # Swift Shoes Store

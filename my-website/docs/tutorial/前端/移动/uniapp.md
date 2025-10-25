@@ -2,7 +2,7 @@
 sidebar_label: "Uniapp"
 sidebar_position: 3
 title: UniApp 教程
-slug: /tutorial/frontend/mobile/uniapp
+slug: uniapp
 ---
 
 # UniApp 打包操作指南

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /project/intro
+slug: intro
 ---
 
 # Project Intro

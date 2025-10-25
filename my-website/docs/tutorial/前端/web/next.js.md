@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Next.js"
 sidebar_position: 4
-slug: /tutorial/frontend/web/nextjs
+slug: nextjs
 ---
 
 # Next.js 教程

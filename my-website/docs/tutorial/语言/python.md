@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Python"
 sidebar_position: 4
-slug: /tutorial/language/python
+slug: python
 ---
 
 # Python 教程

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "MySQL"
 sidebar_position: 1
-slug: /tutorial/backend/database/mysql
+slug: mysql
 ---
 
 # MySQL 数据库

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Flutter"
 sidebar_position: 1
-slug: /tutorial/frontend/mobile/flutter
+slug: flutter
 ---
 
 # Flutter 学习教程

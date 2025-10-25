@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Vue"
 sidebar_position: 2
-slug: /tutorial/frontend/web/vue
+slug: vue
 ---
 
 # Vue.js 教程

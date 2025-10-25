@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-slug: /rule/chinese-copywriting-guidelines-en
+slug: chinese-copywriting-guidelines-en
 ---
 
 # Chinese Copywriting Guidelines

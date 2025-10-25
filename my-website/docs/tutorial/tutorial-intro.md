@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /tutorial/intro
+slug: intro
 ---
 
 # Tutorial Intro

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "JavaScript"
 sidebar_position: 3
-slug: /tutorial/language/web/javascript
+slug: javascript
 ---
 
 # JavaScript 教程

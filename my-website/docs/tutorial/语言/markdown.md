@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Markdown"
 sidebar_position: 3
-slug: /tutorial/language/markdown
+slug: markdown
 ---
 
 # Markdown 教程

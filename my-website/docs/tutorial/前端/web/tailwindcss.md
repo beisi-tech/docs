@@ -1,7 +1,7 @@
 ---
 sidebar_label: "TailwindCSS"
 sidebar_position: 2
-slug: /tutorial/frontend/web/tailwindcss
+slug: tailwindcss
 ---
 
 # TailwindCSS 教程

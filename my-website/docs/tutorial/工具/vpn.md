@@ -1,7 +1,7 @@
 ---
 sidebar_label: "VPN"
 sidebar_position: 6
-slug: /tutorial/tools/vpn
+slug: vpn
 ---
 
 ## 访问外网教程

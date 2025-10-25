@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Nodejs"
 sidebar_position: 1
-slug: /tutorial/backend/nodejs
+slug: nodejs
 ---
 
 # Node.js 后端开发

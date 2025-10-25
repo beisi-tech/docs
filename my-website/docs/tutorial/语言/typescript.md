@@ -1,7 +1,7 @@
 ---
 sidebar_label: "TypeScript"
 sidebar_position: 1
-slug: /tutorial/language/typescript
+slug: typescript
 ---
 
 # TypeScript 教程

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Docker"
 sidebar_position: 3
-slug: /tutorial/devops/docker
+slug: docker
 ---
 
 # Docker 教程

@@ -1,7 +1,7 @@
 ---
 sidebar_label: "React"
 sidebar_position: 1
-slug: /tutorial/frontend/web/react
+slug: react
 ---
 
 # React 教程

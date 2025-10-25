@@ -1,7 +1,7 @@
 ---
 sidebar_label: "PostgreSQL"
 sidebar_position: 2
-slug: /tutorial/backend/database/postgresql
+slug: postgresql
 ---
 
 # PostgreSQL 数据库

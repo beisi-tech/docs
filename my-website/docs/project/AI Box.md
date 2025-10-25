@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /project/aibox
+slug: aibox
 ---
 
 # AI Box

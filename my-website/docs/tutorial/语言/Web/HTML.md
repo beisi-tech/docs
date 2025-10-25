@@ -1,7 +1,7 @@
 ---
 sidebar_label: "HTML"
 sidebar_position: 1
-slug: /tutorial/language/web/html
+slug: html
 ---
 
 # HTML 教程

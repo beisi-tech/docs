@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Flask"
 sidebar_position: 2
-slug: /tutorial/backend/flask
+slug: flask
 ---
 
 # Flask 框架教程

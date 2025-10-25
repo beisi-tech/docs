@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-slug: /rule/chinese-copywriting-guidelines
+slug: chinese-copywriting-guidelines
 ---
 
 # 中文文案排版指北
