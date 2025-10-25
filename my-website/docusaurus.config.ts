@@ -92,6 +92,17 @@ const config: Config = {
           'https://github.com/beisi-tech/docs/tree/main/my-website/',
       },
     ],
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        indexDocs: true,
+        indexBlog: true,
+        language: ['en', 'zh'],
+        docsRouteBasePath: ['tutorial', 'rule', 'project'],
+        fuzzyMatchingDistance: 0,
+      },
+    ],
   ],
   themeConfig: {
     // Replace with your project's social card
