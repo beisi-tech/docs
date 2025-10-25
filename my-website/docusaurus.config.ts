@@ -154,15 +154,15 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/tutorial/tutorial-intro',
+              to: '/docs/tutorial/intro',
             },
             {
               label: 'Rule',
-              to: '/docs/rule/rule-intro',
+              to: '/docs/rule/intro',
             },
             {
               label: 'Project',
-              to: '/docs/project/project-intro',
+              to: '/docs/project/intro',
             },
           ],
         },
