@@ -16,8 +16,7 @@ Other languages:
 
 <!-- vim-markdown-toc GFM -->
 
-- [Chinese Copywriting Guidelines](#chinese-copywriting-guidelines)
-  - [Table of Contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
   - [Spacing](#spacing)
     - [Place one space before/after English words](#place-one-space-beforeafter-english-words)
     - [Place one space before/after numbers](#place-one-space-beforeafter-numbers)
