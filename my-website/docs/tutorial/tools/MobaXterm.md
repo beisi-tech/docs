@@ -22,15 +22,15 @@ MobaXterm 是一款功能强大的 Windows 终端工具，集成了 SSH、X11、
 
 ### 版本对比
 
-| 功能 | Home Edition (免费) | Professional Edition (付费) |
-|------|---------------------|----------------------------|
-| 基础 SSH/Telnet | ✅ | ✅ |
-| SFTP 浏览器 | ✅ | ✅ |
-| X11 转发 | ✅ | ✅ |
-| 会话数量 | 最多 12 个 | 无限制 |
-| 密码管理 | ✅ | ✅ 增强版 |
-| 宏/脚本 | ✅ | ✅ 高级功能 |
-| 技术支持 | 社区 | 官方支持 |
+| 功能            | Home Edition (免费) | Professional Edition (付费) |
+| --------------- | ------------------- | --------------------------- |
+| 基础 SSH/Telnet | ✅                  | ✅                          |
+| SFTP 浏览器     | ✅                  | ✅                          |
+| X11 转发        | ✅                  | ✅                          |
+| 会话数量        | 最多 12 个          | 无限制                      |
+| 密码管理        | ✅                  | ✅ 增强版                   |
+| 宏/脚本         | ✅                  | ✅ 高级功能                 |
+| 技术支持        | 社区                | 官方支持                    |
 
 ## 下载与安装
 
@@ -71,6 +71,7 @@ Username: root               # 登录用户名
 #### 方法二：快速连接
 
 在主界面顶部工具栏：
+
 1. 点击 "Quick connect"
 2. 选择协议: SSH
 3. 输入服务器地址和用户名
@@ -147,6 +148,7 @@ scp -r user@server:/remote/path/folder /local/path/
 2. 配置端口转发：
 
 **本地端口转发**
+
 ```
 Local port: 3306
 Remote host: 127.0.0.1
@@ -154,6 +156,7 @@ Remote port: 3306
 ```
 
 **远程端口转发**
+
 ```
 Remote port: 8080
 Local host: 127.0.0.1
@@ -161,6 +164,7 @@ Local port: 8080
 ```
 
 **动态端口转发（SOCKS 代理）**
+
 ```
 勾选 "SSH Dynamic Port Forwarding"
 Port: 1080
@@ -245,7 +249,7 @@ Size: 10-12
 
 ```
 复制: 选中文本自动复制
-粘贴: 
+粘贴:
   - 鼠标右键
   - Shift + Insert
   - Ctrl + Shift + V
@@ -256,6 +260,7 @@ Size: 10-12
 #### 自动执行命令
 
 在会话设置中：
+
 1. 点击 "Advanced SSH settings"
 2. 勾选 "Execute command at SSH startup"
 3. 输入命令：
@@ -302,18 +307,18 @@ Advanced SSH settings
 
 ### 快捷键
 
-| 快捷键 | 功能 |
-|--------|------|
-| `Ctrl + Shift + N` | 新建会话 |
+| 快捷键             | 功能         |
+| ------------------ | ------------ |
+| `Ctrl + Shift + N` | 新建会话     |
 | `Ctrl + Shift + T` | 新建本地终端 |
-| `Ctrl + Shift + D` | 水平分屏 |
-| `Ctrl + Shift + E` | 垂直分屏 |
-| `Ctrl + Tab` | 切换标签页 |
+| `Ctrl + Shift + D` | 水平分屏     |
+| `Ctrl + Shift + E` | 垂直分屏     |
+| `Ctrl + Tab`       | 切换标签页   |
 | `Ctrl + Shift + W` | 关闭当前标签 |
-| `Ctrl + Shift + F` | 查找 |
-| `Ctrl + Shift + C` | 复制 |
-| `Ctrl + Shift + V` | 粘贴 |
-| `F11` | 全屏模式 |
+| `Ctrl + Shift + F` | 查找         |
+| `Ctrl + Shift + C` | 复制         |
+| `Ctrl + Shift + V` | 粘贴         |
+| `F11`              | 全屏模式     |
 
 ### 宏录制
 
@@ -417,17 +422,17 @@ Ports: 1-1000
 
 ```yaml
 ✅ 推荐做法:
-- 使用 SSH 密钥认证
-- 启用主密码保护
-- 定期更新软件
-- 不保存敏感服务器密码
-- 使用非标准 SSH 端口
+  - 使用 SSH 密钥认证
+  - 启用主密码保护
+  - 定期更新软件
+  - 不保存敏感服务器密码
+  - 使用非标准 SSH 端口
 
 ❌ 避免做法:
-- 在公共计算机上保存密码
-- 使用弱密码
-- 禁用 SSH keepalive（可能导致连接断开）
-- 不备份会话配置
+  - 在公共计算机上保存密码
+  - 使用弱密码
+  - 禁用 SSH keepalive（可能导致连接断开）
+  - 不备份会话配置
 ```
 
 ### 3. 性能优化
@@ -469,6 +474,7 @@ SSH 密钥: %USERPROFILE%\Documents\MobaXterm\home\.ssh\
 ### 1. 中文乱码
 
 **解决方案**：
+
 ```
 Settings → Configuration → Terminal
 Character encoding: UTF-8
@@ -478,6 +484,7 @@ Character encoding: UTF-8
 ### 2. 连接超时
 
 **解决方案**：
+
 ```
 Settings → Configuration → SSH
 勾选 "SSH keepalive"
@@ -491,11 +498,13 @@ ServerAliveInterval: 30
 ### 3. 密钥权限问题
 
 **错误信息**：
+
 ```
 WARNING: UNPROTECTED PRIVATE KEY FILE!
 ```
 
 **解决方案**：
+
 1. 右键私钥文件 → Properties
 2. Security → Advanced
 3. 禁用继承
@@ -505,6 +514,7 @@ WARNING: UNPROTECTED PRIVATE KEY FILE!
 ### 4. X11 转发失败
 
 **解决方案**：
+
 ```bash
 # 检查服务器 X11 配置
 sudo nano /etc/ssh/sshd_config
@@ -521,11 +531,13 @@ sudo systemctl restart sshd
 ### 5. SFTP 上传失败
 
 **可能原因**：
+
 - 权限不足
 - 磁盘空间满
 - 文件名包含特殊字符
 
 **解决方案**：
+
 ```bash
 # 检查目录权限
 ls -la /path/to/directory
@@ -539,16 +551,16 @@ df -h
 
 ## 与其他工具对比
 
-| 功能 | MobaXterm | PuTTY | Xshell | SecureCRT |
-|------|-----------|-------|--------|-----------|
-| 价格 | 免费/付费 | 免费 | 付费 | 付费 |
-| 界面 | 现代化 | 简洁 | 现代化 | 专业 |
-| SFTP | 内置 | 需额外工具 | 内置 | 内置 |
-| X11 转发 | ✅ | 需 Xming | ✅ | ✅ |
-| 多标签 | ✅ | ❌ | ✅ | ✅ |
-| 会话管理 | ✅ 强大 | 基础 | ✅ 强大 | ✅ 强大 |
-| 便携版 | ✅ | ✅ | ❌ | ❌ |
-| 学习曲线 | 中等 | 简单 | 中等 | 较高 |
+| 功能     | MobaXterm | PuTTY      | Xshell  | SecureCRT |
+| -------- | --------- | ---------- | ------- | --------- |
+| 价格     | 免费/付费 | 免费       | 付费    | 付费      |
+| 界面     | 现代化    | 简洁       | 现代化  | 专业      |
+| SFTP     | 内置      | 需额外工具 | 内置    | 内置      |
+| X11 转发 | ✅        | 需 Xming   | ✅      | ✅        |
+| 多标签   | ✅        | ❌         | ✅      | ✅        |
+| 会话管理 | ✅ 强大   | 基础       | ✅ 强大 | ✅ 强大   |
+| 便携版   | ✅        | ✅         | ❌      | ❌        |
+| 学习曲线 | 中等      | 简单       | 中等    | 较高      |
 
 ## 参考资源
 
@@ -564,8 +576,7 @@ df -h
 
 ```yaml
 需求: 管理 10 台 Web 服务器
-方案:
-  1. 创建会话组织结构
+方案: 1. 创建会话组织结构
   2. 使用 SSH 密钥统一认证
   3. 使用 MultiExec 批量执行命令
   4. 定期备份会话配置
@@ -575,8 +586,7 @@ df -h
 
 ```yaml
 需求: 访问远程开发服务器，运行 GUI 程序
-方案:
-  1. 配置 SSH 会话启用 X11 转发
+方案: 1. 配置 SSH 会话启用 X11 转发
   2. 设置端口转发访问数据库
   3. 使用 SFTP 快速传输代码
   4. 配置宏自动化常用操作
@@ -586,8 +596,7 @@ df -h
 
 ```yaml
 需求: 快速登录服务器排查问题
-方案:
-  1. 使用快速连接功能
+方案: 1. 使用快速连接功能
   2. 多窗格同时查看日志和执行命令
   3. 使用网络工具诊断问题
   4. 记录操作历史便于复盘
