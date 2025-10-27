@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Commit 提交规范"
-sidebar_position: 2
+sidebar_position: 3
 slug: commit-specification
 ---
 
