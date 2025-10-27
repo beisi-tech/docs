@@ -26,22 +26,6 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 
 学习状态管理（如 Provider、Riverpod、Bloc）、网络请求、数据库操作、性能优化等。
 
-### 5. 参与社区
-
-加入 Flutter 社区，参与讨论、阅读开源代码，了解最新的框架更新和最佳实践。
-
-## Bilibili Flutter 教程
-
-以下是一些优质的 Bilibili 视频教程，适合不同水平的开发者：
-
-- **Dart 语言学习**：适合初学者，系统讲解 Dart 语言的基础语法、面向对象编程、异步编程等内容。
-
-- **Flutter 学习**：全面的 Flutter 入门教程，涵盖 Widget 基础、布局、导航、状态管理等核心内容。
-
-- **Flutter 实战项目**：通过实际项目（如电商应用、新闻阅读器）带你学习 Flutter 的开发流程，适合有一定基础的开发者。
-
-- **Flutter 进阶教程**：深入探讨状态管理（Bloc、Provider）、自定义动画、性能优化等高级主题。
-
 ## 官方文档
 
 官方文档是学习 Flutter 的核心资源，内容全面且更新及时：
@@ -55,22 +39,6 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 - [Dart 官方文档](https://dart.dev/guides)：详细介绍 Dart 语言的特性、语法和最佳实践，适合深入学习 Dart。
 
 ## 其他优质学习资源
-
-### 免费在线教程
-
-- **Flutter 官方 YouTube 频道**：提供官方的视频教程，包括 Widget of the Week、Flutter Engage 等，适合快速学习新特性。
-
-- **The Net Ninja - Flutter 教程**：英文教程，内容清晰，覆盖 Flutter 基础到高级主题，适合有英语基础的开发者。
-
-- **Udemy - Flutter & Dart 免费课程**：Udemy 上有许多免费的 Flutter 入门课程，适合快速上手。
-
-### 书籍推荐
-
-- **《Flutter in Action》 by Eric Windmill**：一本全面的 Flutter 入门书籍，涵盖从基础到高级主题，适合系统学习。
-
-- **《Beginning Flutter: A Hands-On Guide to App Development》 by Marco L. Napoli**：注重实践，通过项目驱动的方式帮助读者掌握 Flutter 开发。
-
-- **《Dart Apprentice》 by Ray Wenderlich 团队**：专注于 Dart 语言的学习，适合希望深入理解 Dart 的开发者。
 
 ### 项目实战
 
@@ -136,20 +104,8 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 - 学习单元测试、Widget 测试和集成测试。
 - 使用 flutter_test 包进行测试开发。
 
-## 常见问题解答
+## 实战技巧
 
-### Flutter 和 React Native 哪个更好？
+### Flutter 换源
 
-Flutter 使用 Dart 和自有渲染引擎，性能更高，UI 一致性更好；React Native 使用 JavaScript，生态更成熟，适合快速原型开发。根据项目需求选择。
-
-### 学习 Flutter 需要多长时间？
-
-对于有编程基础的开发者，1-2 周可以掌握基础，1-2 个月可以开发简单应用。深入学习（如状态管理、性能优化）可能需要 3-6 个月。
-
-### 如何发布 Flutter 应用？
-
-Flutter 支持一键生成 Android 和 iOS 应用包，参考官方发布指南。
-
-## 总结
-
-通过以上资源和建议，你可以从零基础逐步成长为熟练的 Flutter 开发者。建议结合官方文档和实战项目，边学边做，快速提升技能！如果需要更具体的学习计划或某部分内容的深入讲解，请随时提出！
+### 使用模拟器进行调试
