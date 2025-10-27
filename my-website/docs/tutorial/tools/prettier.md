@@ -53,3 +53,20 @@ prettier . -w
    ![prettier_image3.png](../../../src/image/prettier_image3.png)
 4. 在页面代码处，右键，选择"Format Document"，然后选择prettier，保存页面，页面代码自动格式化<br/>
    ![prettier_image4.png](../../../src/image/prettier_image4.png)
+
+
+### Prettier 对部分 Dart 代码不生效
+
+Prettier 对 Dart 的支持是**有限的**。默认情况下，Prettier 仅内置了对 Web / JS / TS / CSS / JSON / Markdown 等文件类型的格式化功能，而 **Dart 语言需要单独的工具链**。
+
+1. 现象
+- `.dart` 文件在运行 `prettier . --write` 时被跳过。
+- VSCode 中保存时没有触发格式化，或提示 “no parser could be inferred for file”。
+
+2. 原因
+Prettier 并未内置 Dart 解析器，社区也未正式维护 Dart 插件。Dart 官方提供了独立的格式化工具 `dart format`，与 Prettier 无缝共存但互不影响。
+
+3. 解决方案
+**使用 Dart 自带格式化器**
+   ```bash
+   dart format .
