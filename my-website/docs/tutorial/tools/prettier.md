@@ -26,18 +26,20 @@ pnpm i -g prettier
 prettier -h
 ```
 常用的两个功能： <b>检查</b>和<b>改正</b>。对prettier传入对应的flag就可以使用。
+<br/>
 比如我们要检查当前所在文件夹的全部文件，我们可以直接运行：
 ```
-npx prettier . --check
-# 或更精确的匹配：
-npx prettier "src/**/*.{js,jsx,ts,tsx,css,scss,md,json,yml,yaml}" --check
+prettier . -c
 ```
 
-比如我们要改正当前所在文件夹的文件，我们可以直接运行：
+这个命令的意思是：检查当前所在文件夹的全部文件，然后根据配置文件中的规则，检查出错的地方，然后在控制台输出文件名和检查结果。
+
+如果 WARN 较多，则说明文件存在格式问题，可以直接修正。如果出现 ERROR 则通常意味着文件出现格式错误（比如没有关闭 Tag），需要自行手动修正。
+
+直接修正则需要运行 `-w` 参数：
+
 ```
-npx prettier . --write
-# 或指定范围：
-npx prettier "src/**/*.{js,jsx,ts,tsx,css,scss,md,json,yml,yaml}" --write
+prettier . -w
 ```
 
 <br/>
