@@ -45,14 +45,14 @@ prettier . -w
 <br/>
 
 ### VSCode 集成 Prettier 工具
-1. 在VSCode中的Extension中输入prettier，找到对应的插件并且下载<br/>
-   ![prettier_image1.png](../../../src/image/prettier_image1.png)
-2. 点击设置<br/>
-   ![prettier_image2.png](../../../src/image/prettier_image2.png)
-3. 在设置中，按照下图操作<br/>
-   ![prettier_image3.png](../../../src/image/prettier_image3.png)
-4. 在页面代码处，右键，选择"Format Document"，然后选择prettier，保存页面，页面代码自动格式化<br/>
-   ![prettier_image4.png](../../../src/image/prettier_image4.png)
+1. 在VSCode中的Extension中输入prettier，找到对应的插件并且下载<br/><br/>
+   ![prettier_image1.png](../../../src/image/prettier_image1.png)<br/><br/>
+2. 点击设置<br/><br/>
+   ![prettier_image2.png](../../../src/image/prettier_image2.png)<br/><br/>
+3. 在设置中，按照下图操作<br/><br/>
+   ![prettier_image3.png](../../../src/image/prettier_image3.png)<br/><br/>
+4. 在页面代码处，右键，选择"Format Document"，然后选择prettier，保存页面，页面代码自动格式化<br/><br/>
+   ![prettier_image4.png](../../../src/image/prettier_image4.png)<br/><br/>
 
 
 ### Prettier 对部分 Dart 代码不生效
@@ -70,3 +70,4 @@ Prettier 并未内置 Dart 解析器，社区也未正式维护 Dart 插件。Da
 **使用 Dart 自带格式化器**
    ```bash
    dart format .
+   ```
