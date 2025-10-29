@@ -107,5 +107,6 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 ## 实战技巧
 
 ### Flutter 换源
+如果你在国内开发 Flutter，建议参考以下教程进行换源配置：[参考 CSDN 教程：Flutter 换源配置指南](https://blog.csdn.net/weixin_42272869/article/details/114685993)
 
 ### 使用模拟器进行调试
