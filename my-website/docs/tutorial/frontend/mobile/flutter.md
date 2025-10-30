@@ -136,5 +136,7 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 `flutter pub get`
 
 - 清除本地pub缓存
+  
 `flutter pub cache clean`
+
 `flutter pub get`
