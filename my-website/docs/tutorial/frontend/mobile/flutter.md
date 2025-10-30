@@ -123,3 +123,18 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 
 命令参考：`java -jar apksigner.jar sign --ks aibox.keystore --v3-signing-enabled false --v4-signing-enabled false app.apk`
 
+### 报错排查三板斧
+按照顺序执行以下操作，可以配合重启系统、重启IDE工具、开关梯子等操作来刷新其他应用的缓存
+- 运行自带的检查工具，查看环境有没有问题
+
+`flutter doctor`
+
+- 清除项目构建缓存，重新获取依赖
+
+`flutter clean`
+
+`flutter pub get`
+
+- 清除本地pub缓存
+`flutter pub cache clean`
+`flutter pub get`
