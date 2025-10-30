@@ -117,7 +117,7 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 其他常见模拟器链接教程参考 [参考 CSDN 教程：Android Studio如何连接第三方模拟器](https://blog.csdn.net/Fantasy_Lin_/article/details/105455974)
 
 ### 对安卓加固的 apk 进行重签名
-[参考百度加固的](https://apkprotect.baidu.com/doc#/apk-sign)
+[参考百度加固的使用帮助文档](https://apkprotect.baidu.com/doc#/apk-sign)
 
 [推荐的免费加固平台：OPPO加固](https://open.oppomobile.com/omas/reinforceProcess)
 
