@@ -111,11 +111,15 @@ Flutter 使用 Dart 作为其编程语言，因此在学习 Flutter 之前，建
 
 ### 使用模拟器进行调试
 推荐使用国际版BlueStacks 5模拟器 [国际版BlueStacks 5官网链接](https://www.bluestacks.com/tw/bluestacks-5.html)
+
 连接命令：`adb connect 127.0.0.1:5555`
+
 其他常见模拟器链接教程参考 [参考 CSDN 教程：Android Studio如何连接第三方模拟器](https://blog.csdn.net/Fantasy_Lin_/article/details/105455974)
 
 ### 对安卓加固的 apk 进行重签名
 [参考百度加固的](https://apkprotect.baidu.com/doc#/apk-sign)
+
 [推荐的免费加固平台：OPPO加固](https://open.oppomobile.com/omas/reinforceProcess)
+
 命令参考：`java -jar apksigner.jar sign --ks aibox.keystore --v3-signing-enabled false --v4-signing-enabled false app.apk`
 
