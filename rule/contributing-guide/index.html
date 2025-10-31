@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-rule docs-version-current docs-doc-page docs-doc-id-项目贡献指南" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">项目贡献指南 | Beisi Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://beisi-tech.github.io/docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://beisi-tech.github.io/docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://beisi-tech.github.io/docs/rule/contributing-guide"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-rule-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-rule-current"><meta data-rh="true" property="og:title" content="项目贡献指南 | Beisi Docs"><meta data-rh="true" name="description" content="欢迎为公司项目贡献代码！本指南将帮助你了解如何参与项目开发，从环境准备到提交 Pull Request 的完整流程。"><meta data-rh="true" property="og:description" content="欢迎为公司项目贡献代码！本指南将帮助你了解如何参与项目开发，从环境准备到提交 Pull Request 的完整流程。"><link data-rh="true" rel="icon" href="/docs/img/favicon(1).ico"><link data-rh="true" rel="canonical" href="https://beisi-tech.github.io/docs/rule/contributing-guide"><link data-rh="true" rel="alternate" href="https://beisi-tech.github.io/docs/rule/contributing-guide" hreflang="en"><link data-rh="true" rel="alternate" href="https://beisi-tech.github.io/docs/rule/contributing-guide" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"项目贡献指南","item":"https://beisi-tech.github.io/docs/rule/contributing-guide"}]}</script><link rel="alternate" type="application/rss+xml" href="/docs/blog/rss.xml" title="Beisi Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docs/blog/atom.xml" title="Beisi Docs Atom Feed"><link rel="stylesheet" href="/docs/assets/css/styles.d3da9b3e.css">
+<script src="/docs/assets/js/runtime~main.dab0b885.js" defer="defer"></script>
+<script src="/docs/assets/js/main.38043d4e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docs/"><div class="navbar__logo"><img src="/docs/img/logo.svg" alt="My Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docs/img/logo.svg" alt="My Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Beisi Docs</b></a><a class="navbar__item navbar__link" href="/docs/tutorial/intro">Tutorial</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/rule/intro">Rule</a><a class="navbar__item navbar__link" href="/docs/project/intro">Project</a><a class="navbar__item navbar__link" href="/docs/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/beisi-tech/docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/intro"><span title="开发规范介绍" class="linkLabel_WmDU">开发规范介绍</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/rule/contributing-guide"><span title="项目贡献指南" class="linkLabel_WmDU">项目贡献指南</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/commit-specification"><span title="Commit 提交规范" class="linkLabel_WmDU">Commit 提交规范</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/naming-conventions"><span title="开发命名参考" class="linkLabel_WmDU">开发命名参考</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/project-structure-example"><span title="项目结构示例" class="linkLabel_WmDU">项目结构示例</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/chinese-copywriting-guidelines"><span title="中文文案排版指北" class="linkLabel_WmDU">中文文案排版指北</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/rule/chinese-copywriting-guidelines-en"><span title="Chinese Copywriting Guidelines" class="linkLabel_WmDU">Chinese Copywriting Guidelines</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">项目贡献指南</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>项目贡献指南</h1></header>
+<p>欢迎为公司项目贡献代码！本指南将帮助你了解如何参与项目开发，从环境准备到提交 Pull Request 的完整流程。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="前置准备">前置准备<a href="#前置准备" class="hash-link" aria-label="Direct link to 前置准备" title="Direct link to 前置准备" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-注册-github-账号并加入组织">1. 注册 GitHub 账号并加入组织<a href="#1-注册-github-账号并加入组织" class="hash-link" aria-label="Direct link to 1. 注册 GitHub 账号并加入组织" title="Direct link to 1. 注册 GitHub 账号并加入组织" translate="no">​</a></h3>
+<ol>
+<li>如果你还没有 GitHub 账号，请先访问 <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> 注册一个账号</li>
+<li>将你的 GitHub 用户名提供给管理员</li>
+<li>等待管理员将你添加到 <strong>beisi-tech</strong> 组织</li>
+<li>查收邮件并接受组织邀请，成为组织成员</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-安装-git-工具">2. 安装 Git 工具<a href="#2-安装-git-工具" class="hash-link" aria-label="Direct link to 2. 安装 Git 工具" title="Direct link to 2. 安装 Git 工具" translate="no">​</a></h3>
+<p><strong>推荐使用 GitHub Desktop</strong>（图形化界面，操作更方便）：</p>
+<ol>
+<li>访问 <a href="https://desktop.github.com/" target="_blank" rel="noopener noreferrer">GitHub Desktop 官网</a> 下载安装</li>
+<li>安装后登录你的 GitHub 账号</li>
+<li>GitHub Desktop 会自动配置 Git 环境</li>
+</ol>
+<p><strong>或者使用命令行 Git</strong>：</p>
+<ol>
+<li>访问 <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git 官网</a> 下载安装</li>
+<li>安装后通过以下命令验证：</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git --version</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="开发流程">开发流程<a href="#开发流程" class="hash-link" aria-label="Direct link to 开发流程" title="Direct link to 开发流程" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第一步克隆项目仓库">第一步：克隆项目仓库<a href="#第一步克隆项目仓库" class="hash-link" aria-label="Direct link to 第一步：克隆项目仓库" title="Direct link to 第一步：克隆项目仓库" translate="no">​</a></h3>
+<p>作为 beisi-tech 组织成员，你可以直接克隆组织的仓库：</p>
+<p><strong>使用 GitHub Desktop（推荐）：</strong></p>
+<ol>
+<li>打开 GitHub Desktop</li>
+<li>点击 <strong>File</strong> → <strong>Clone repository</strong></li>
+<li>在 <strong>GitHub.com</strong> 标签下找到 <strong>beisi-tech/仓库名</strong></li>
+<li>选择本地保存路径，点击 <strong>Clone</strong></li>
+</ol>
+<p><strong>使用命令行：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git clone https://github.com/beisi-tech/仓库名.git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">cd 仓库名</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第二步同步最新代码">第二步：同步最新代码<a href="#第二步同步最新代码" class="hash-link" aria-label="Direct link to 第二步：同步最新代码" title="Direct link to 第二步：同步最新代码" translate="no">​</a></h3>
+<p>在开始工作前，务必拉取最新代码：</p>
+<p><strong>使用 GitHub Desktop（推荐）：</strong></p>
+<ol>
+<li>打开项目</li>
+<li>点击顶部的 <strong>Fetch origin</strong> 按钮</li>
+<li>如果有更新，点击 <strong>Pull origin</strong> 拉取最新代码</li>
+</ol>
+<p><strong>使用命令行：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 切换到主分支</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git checkout main</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 拉取最新代码</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git pull origin main</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第三步查看-issue-并开始开发">第三步：查看 Issue 并开始开发<a href="#第三步查看-issue-并开始开发" class="hash-link" aria-label="Direct link to 第三步：查看 Issue 并开始开发" title="Direct link to 第三步：查看 Issue 并开始开发" translate="no">​</a></h3>
+<ol>
+<li>在 GitHub 项目页面查看分配给你的 Issue</li>
+<li>了解需要完成的任务内容</li>
+<li>作为组织成员，你可以<strong>直接在 main 分支上修改代码</strong>，不需要创建新分支</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第四步本地开发">第四步：本地开发<a href="#第四步本地开发" class="hash-link" aria-label="Direct link to 第四步：本地开发" title="Direct link to 第四步：本地开发" translate="no">​</a></h3>
+<ol>
+<li>在你的电脑上修改代码</li>
+<li>开发过程中请遵循项目的规范文档：<!-- -->
+<ul>
+<li><a href="/docs/rule/commit-specification">Commit 提交规范</a></li>
+<li><a href="/docs/rule/naming-conventions">开发命名参考</a></li>
+<li><a href="/docs/rule/chinese-copywriting-guidelines">中文文案排版指北</a></li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第五步提交代码">第五步：提交代码<a href="#第五步提交代码" class="hash-link" aria-label="Direct link to 第五步：提交代码" title="Direct link to 第五步：提交代码" translate="no">​</a></h3>
+<p>完成开发后，提交你的修改：</p>
+<p><strong>使用 GitHub Desktop（推荐）：</strong></p>
+<ol>
+<li>GitHub Desktop 会自动显示你修改的文件</li>
+<li>在左下角的 <strong>Summary</strong> 填写提交说明（遵循 Commit 规范）</li>
+<li>例如：<code>feat: 添加新功能描述</code> 或 <code>fix: 修复某个问题 fix: #123</code></li>
+<li>点击 <strong>Commit to main</strong> 提交</li>
+</ol>
+<p><strong>使用命令行：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 查看修改的文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git status</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 添加修改的文件</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git add .</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 提交代码，遵循 Commit 规范</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git commit -m &quot;feat: 添加新功能描述&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 或</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git commit -m &quot;fix: 修复某个问题 fix: #123&quot;</span><br></span></code></pre></div></div>
+<p><strong>重要提示：</strong> 如果你的提交是为了关闭某个 Issue，在 commit 信息末尾添加 <code>fix: #issue编号</code>，例如：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git commit -m &quot;fix: 修复登录按钮样式问题 fix: #123&quot;</span><br></span></code></pre></div></div>
+<p>这样在 PR 合并后会自动关闭对应的 Issue。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第六步推送到远程仓库">第六步：推送到远程仓库<a href="#第六步推送到远程仓库" class="hash-link" aria-label="Direct link to 第六步：推送到远程仓库" title="Direct link to 第六步：推送到远程仓库" translate="no">​</a></h3>
+<p><strong>使用 GitHub Desktop（推荐）：</strong></p>
+<p>点击顶部的 <strong>Push origin</strong> 按钮，将代码推送到远程仓库。</p>
+<p><strong>使用命令行：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git push origin main</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第七步创建-pull-request">第七步：创建 Pull Request<a href="#第七步创建-pull-request" class="hash-link" aria-label="Direct link to 第七步：创建 Pull Request" title="Direct link to 第七步：创建 Pull Request" translate="no">​</a></h3>
+<p>推送代码后，需要在网页上创建 Pull Request：</p>
+<ol>
+<li>访问项目的 GitHub 页面：<code>https://github.com/beisi-tech/仓库名</code></li>
+<li>GitHub 会提示你创建 Pull Request，点击 <strong>Compare &amp; pull request</strong></li>
+<li>填写 PR 标题和描述：<!-- -->
+<ul>
+<li>标题要简洁明了，说明本次改动的主要内容</li>
+<li>描述中详细说明：<!-- -->
+<ul>
+<li>解决了什么问题</li>
+<li>如何解决的</li>
+<li>相关的 Issue 编号（使用 <code>Closes #issue编号</code> 或 <code>Fix #issue编号</code>）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>点击 <strong>Create pull request</strong> 提交</li>
+</ol>
+<blockquote>
+<p><strong>注意</strong>：GitHub Desktop 不支持直接创建 PR，必须在网页上操作。</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="第八步等待代码审核">第八步：等待代码审核<a href="#第八步等待代码审核" class="hash-link" aria-label="Direct link to 第八步：等待代码审核" title="Direct link to 第八步：等待代码审核" translate="no">​</a></h3>
+<p>管理员会审核你的 PR：</p>
+<ul>
+<li><strong>如果审核通过</strong>：恭喜！你的代码将被合并到主分支</li>
+<li><strong>如果需要修改</strong>：不要关闭 PR，直接在原分支上继续修改并提交</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="pr-修改流程">PR 修改流程<a href="#pr-修改流程" class="hash-link" aria-label="Direct link to PR 修改流程" title="Direct link to PR 修改流程" translate="no">​</a></h2>
+<p>如果第一次提交的 PR 没有被批准，需要修改代码，按以下步骤操作：</p>
+<p><strong>不要创建新的 PR！</strong> 直接在原来的分支上继续修改：</p>
+<p><strong>使用 GitHub Desktop（推荐）：</strong></p>
+<ol>
+<li>根据审核意见修改代码</li>
+<li>在 GitHub Desktop 中提交修改（填写 commit 信息）</li>
+<li>点击 <strong>Push origin</strong> 推送</li>
+<li>原来的 PR 会自动更新</li>
+</ol>
+<p><strong>使用命令行：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 修改代码...</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 提交修改</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git add .</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git commit -m &quot;fix: 根据审核意见修改xxx&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 推送到远程（会自动更新原 PR）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">git push origin main</span><br></span></code></pre></div></div>
+<p>推送后，原来的 Pull Request 会自动更新，管理员会看到你的新提交。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="注意事项">注意事项<a href="#注意事项" class="hash-link" aria-label="Direct link to 注意事项" title="Direct link to 注意事项" translate="no">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-推荐做法">✅ 推荐做法<a href="#-推荐做法" class="hash-link" aria-label="Direct link to ✅ 推荐做法" title="Direct link to ✅ 推荐做法" translate="no">​</a></h3>
+<ul>
+<li>每个 PR 只解决一个问题，保持改动最小化</li>
+<li>提交前先在本地测试，确保代码可以正常运行</li>
+<li>遵循项目的代码规范和 Commit 规范</li>
+<li>及时同步主仓库的最新代码，避免冲突</li>
+<li>PR 描述清晰，说明改动原因和实现方式</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-避免做法">❌ 避免做法<a href="#-避免做法" class="hash-link" aria-label="Direct link to ❌ 避免做法" title="Direct link to ❌ 避免做法" translate="no">​</a></h3>
+<ul>
+<li>不要在一个 PR 中包含多个不相关的改动</li>
+<li>不要提交无意义的 commit 信息（如 &quot;update&quot;、&quot;修改&quot;、&quot;fix&quot; 等）</li>
+<li>不要在 PR 被拒绝后创建新的 PR，应在原 PR 上继续提交</li>
+<li>提交前务必先拉取最新代码，避免冲突</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="关联-issue">关联 Issue<a href="#关联-issue" class="hash-link" aria-label="Direct link to 关联 Issue" title="Direct link to 关联 Issue" translate="no">​</a></h2>
+<p>在提交代码时，可以通过以下关键词自动关闭 Issue：</p>
+<ul>
+<li><code>fix: #123</code> 或 <code>fixes: #123</code> 或 <code>fixed: #123</code></li>
+<li><code>close: #123</code> 或 <code>closes: #123</code> 或 <code>closed: #123</code></li>
+<li><code>resolve: #123</code> 或 <code>resolves: #123</code> 或 <code>resolved: #123</code></li>
+</ul>
+<p><strong>示例：</strong></p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">git commit -m &quot;fix: 修复登录页面样式错误 fix: #456&quot;</span><br></span></code></pre></div></div>
+<p>当这个 commit 所在的 PR 被合并后，Issue #456 会自动关闭。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="获取帮助">获取帮助<a href="#获取帮助" class="hash-link" aria-label="Direct link to 获取帮助" title="Direct link to 获取帮助" translate="no">​</a></h2>
+<p>如果在贡献过程中遇到问题：</p>
+<ol>
+<li>查看项目的 <a href="/docs/rule/intro">规范文档</a></li>
+<li>在对应的 Issue 下留言询问</li>
+<li>联系项目维护人员</li>
+</ol>
+<p>感谢你的贡献！🎉</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/beisi-tech/docs/tree/main/my-website/docs/rule/项目贡献指南.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/rule/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">开发规范介绍</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/rule/commit-specification"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Commit 提交规范</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#前置准备" class="table-of-contents__link toc-highlight">前置准备</a><ul><li><a href="#1-注册-github-账号并加入组织" class="table-of-contents__link toc-highlight">1. 注册 GitHub 账号并加入组织</a></li><li><a href="#2-安装-git-工具" class="table-of-contents__link toc-highlight">2. 安装 Git 工具</a></li></ul></li><li><a href="#开发流程" class="table-of-contents__link toc-highlight">开发流程</a><ul><li><a href="#第一步克隆项目仓库" class="table-of-contents__link toc-highlight">第一步：克隆项目仓库</a></li><li><a href="#第二步同步最新代码" class="table-of-contents__link toc-highlight">第二步：同步最新代码</a></li><li><a href="#第三步查看-issue-并开始开发" class="table-of-contents__link toc-highlight">第三步：查看 Issue 并开始开发</a></li><li><a href="#第四步本地开发" class="table-of-contents__link toc-highlight">第四步：本地开发</a></li><li><a href="#第五步提交代码" class="table-of-contents__link toc-highlight">第五步：提交代码</a></li><li><a href="#第六步推送到远程仓库" class="table-of-contents__link toc-highlight">第六步：推送到远程仓库</a></li><li><a href="#第七步创建-pull-request" class="table-of-contents__link toc-highlight">第七步：创建 Pull Request</a></li><li><a href="#第八步等待代码审核" class="table-of-contents__link toc-highlight">第八步：等待代码审核</a></li></ul></li><li><a href="#pr-修改流程" class="table-of-contents__link toc-highlight">PR 修改流程</a></li><li><a href="#注意事项" class="table-of-contents__link toc-highlight">注意事项</a><ul><li><a href="#-推荐做法" class="table-of-contents__link toc-highlight">✅ 推荐做法</a></li><li><a href="#-避免做法" class="table-of-contents__link toc-highlight">❌ 避免做法</a></li></ul></li><li><a href="#关联-issue" class="table-of-contents__link toc-highlight">关联 Issue</a></li><li><a href="#获取帮助" class="table-of-contents__link toc-highlight">获取帮助</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/tutorial/intro">Tutorial</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/rule/intro">Rule</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/project/intro">Project</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/beisi-tech/docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Fuzhou Beisi Network Technology Co., Ltd.</div></div></div></footer></div>
+</body>
+</html>

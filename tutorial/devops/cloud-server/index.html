@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-devops/云服务器" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">云服务器教程 | Beisi Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://beisi-tech.github.io/docs/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://beisi-tech.github.io/docs/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://beisi-tech.github.io/docs/tutorial/devops/cloud-server"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="云服务器教程 | Beisi Docs"><meta data-rh="true" name="description" content="服务器安装 Docker 教程链接"><meta data-rh="true" property="og:description" content="服务器安装 Docker 教程链接"><link data-rh="true" rel="icon" href="/docs/img/favicon(1).ico"><link data-rh="true" rel="canonical" href="https://beisi-tech.github.io/docs/tutorial/devops/cloud-server"><link data-rh="true" rel="alternate" href="https://beisi-tech.github.io/docs/tutorial/devops/cloud-server" hreflang="en"><link data-rh="true" rel="alternate" href="https://beisi-tech.github.io/docs/tutorial/devops/cloud-server" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"云服务器","item":"https://beisi-tech.github.io/docs/tutorial/devops/cloud-server"}]}</script><link rel="alternate" type="application/rss+xml" href="/docs/blog/rss.xml" title="Beisi Docs RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/docs/blog/atom.xml" title="Beisi Docs Atom Feed"><link rel="stylesheet" href="/docs/assets/css/styles.d3da9b3e.css">
+<script src="/docs/assets/js/runtime~main.dab0b885.js" defer="defer"></script>
+<script src="/docs/assets/js/main.38043d4e.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/docs/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/docs/"><div class="navbar__logo"><img src="/docs/img/logo.svg" alt="My Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/docs/img/logo.svg" alt="My Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Beisi Docs</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/tutorial/intro">Tutorial</a><a class="navbar__item navbar__link" href="/docs/rule/intro">Rule</a><a class="navbar__item navbar__link" href="/docs/project/intro">Project</a><a class="navbar__item navbar__link" href="/docs/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/beisi-tech/docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/intro"><span title="Tutorial Intro" class="linkLabel_WmDU">Tutorial Intro</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial/language/typescript"><span title="语言" class="categoryLinkLabel_W154">语言</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial/frontend/web/react"><span title="前端" class="categoryLinkLabel_W154">前端</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial/backend/nodejs"><span title="后端" class="categoryLinkLabel_W154">后端</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/docs/tutorial/devops/cloud-server"><span title="运维" class="categoryLinkLabel_W154">运维</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/tutorial/devops/cloud-server"><span title="云服务器" class="linkLabel_WmDU">云服务器</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tutorial/devops/caddy"><span title="Caddy" class="linkLabel_WmDU">Caddy</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tutorial/devops/docker"><span title="Docker" class="linkLabel_WmDU">Docker</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tutorial/devops/kubernetes"><span title="Kubernetes" class="linkLabel_WmDU">Kubernetes</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tutorial/devops/github-actions"><span title="GitHub Actions" class="linkLabel_WmDU">GitHub Actions</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tutorial/devops/aliyun-cdn"><span title="阿里云 CDN" class="linkLabel_WmDU">阿里云 CDN</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/docs/tutorial/tools/vscode"><span title="工具" class="categoryLinkLabel_W154">工具</span></a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tutorial/practice/projects"><span title="练习项目" class="linkLabel_WmDU">练习项目</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/docs/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">运维</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">云服务器</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>云服务器教程</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="服务器安装-docker-教程链接">服务器安装 Docker 教程链接<a href="#服务器安装-docker-教程链接" class="hash-link" aria-label="Direct link to 服务器安装 Docker 教程链接" title="Direct link to 服务器安装 Docker 教程链接" translate="no">​</a></h2>
+<p>详细教程链接：<a href="https://cloud.tencent.com/document/product/213/46000#1H-kXbk9zoqvzYMVPVsBO" target="_blank" rel="noopener noreferrer">https://cloud.tencent.com/document/product/213/46000#1H-kXbk9zoqvzYMVPVsBO</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="服务器安装-git-教程">服务器安装 Git 教程<a href="#服务器安装-git-教程" class="hash-link" aria-label="Direct link to 服务器安装 Git 教程" title="Direct link to 服务器安装 Git 教程" translate="no">​</a></h2>
+<ol>
+<li>VS Code ssh 连接远程服务器</li>
+<li>打开终端（快捷键：Ctrl + `）</li>
+<li>运行下面的命令</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install git</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="服务器安装-docker-教程适用-ubuntu-操作系统">服务器安装 Docker 教程（适用 Ubuntu 操作系统）<a href="#服务器安装-docker-教程适用-ubuntu-操作系统" class="hash-link" aria-label="Direct link to 服务器安装 Docker 教程（适用 Ubuntu 操作系统）" title="Direct link to 服务器安装 Docker 教程（适用 Ubuntu 操作系统）" translate="no">​</a></h2>
+<ol>
+<li>执行以下命令，添加 Docker 软件源。<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get update</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install ca-certificates curl -y</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo install -m 0755 -d /etc/apt/keyrings</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo curl -fsSL https://mirrors.cloud.tencent.com/docker-ce/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo chmod a+r /etc/apt/keyrings/docker.asc</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">echo   &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://mirrors.cloud.tencent.com/docker-ce/linux/ubuntu/ \</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">$(. /etc/os-release &amp;&amp; echo &quot;$VERSION_CODENAME&quot;) stable&quot; |   sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get update</span><br></span></code></pre></div></div>
+</li>
+<li>执行以下命令，安装 Docker。<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br></span></code></pre></div></div>
+</li>
+<li>执行以下命令，运行 Docker。<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo systemctl start docker</span><br></span></code></pre></div></div>
+</li>
+<li>执行以下命令，检查安装结果。<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo docker info</span><br></span></code></pre></div></div>
+</li>
+<li>返回如下信息，即表示安装成功。<br>
+<img decoding="async" loading="lazy" alt="安装成功" src="/docs/assets/images/t_image19-2ab15f54e59062d46ab851cf61f0f32d.png" width="872" height="592" class="img_ev3q"></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="云服务器配置-github-ssh-教程">云服务器配置 GitHub SSH 教程<a href="#云服务器配置-github-ssh-教程" class="hash-link" aria-label="Direct link to 云服务器配置 GitHub SSH 教程" title="Direct link to 云服务器配置 GitHub SSH 教程" translate="no">​</a></h2>
+<ol>
+<li>生成 RSA 密钥
+在终端中运行以下命令：<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ssh-keygen -t rsa</span><br></span></code></pre></div></div>
+</li>
+<li>获取 RSA 公钥内容<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cat ~/.ssh/id_rsa.pub</span><br></span></code></pre></div></div>
+</li>
+<li>将公钥配置到 GitHub 上<!-- -->
+<ol>
+<li>登录 GitHub</li>
+<li>点击右上角的头像，选择 Settings</li>
+<li>在左侧菜单中选择 SSH and GPG keys</li>
+<li>点击 New SSH key</li>
+<li>输入 Title 和 Key (粘贴公钥内容)</li>
+<li>点击 Add SSH key</li>
+</ol>
+</li>
+<li>测试 SSH 连接
+在终端中运行以下命令：<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ssh -T git@github.com</span><br></span></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="云服务器部署仓库教程">云服务器部署仓库教程<a href="#云服务器部署仓库教程" class="hash-link" aria-label="Direct link to 云服务器部署仓库教程" title="Direct link to 云服务器部署仓库教程" translate="no">​</a></h2>
+<ol>
+<li>
+<p>fork 仓库并修改相关配置</p>
+<ol>
+<li>fork 仓库</li>
+<li>修改仓库名称为你的项目名称（可选）</li>
+<li>复制打包的文件放到 web 目录下</li>
+<li>修改 yourdomain.com 为你的域名<!-- -->
+<ol>
+<li>在 Caddyfile 中修改 yourdomain.com 为你的域名</li>
+<li>在 docker-compose.yml 中修改 yourdomain.com 为你的域名</li>
+</ol>
+</li>
+<li>配置 Caddyfile 中的路由规则<!-- -->
+<ol>
+<li>把 Caddyfile 中的 path/ 改为你的 URL 路径</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>登录云服务器</p>
+<ol>
+<li>VS Code 下载插件 Remote - SSH</li>
+<li>ssh 连接服务器（请参考 VS Code 教程）</li>
+<li>安装 docker（请参考 Docker 教程）</li>
+<li>配置 docker 镜像加速（请参考本文档“可能遇到的问题”第二点）</li>
+<li>安装 git（请参考 VS Code 教程）</li>
+</ol>
+</li>
+<li>
+<p>拉取远程仓库</p>
+<ol>
+<li>
+<p>git 连接远程仓库</p>
+<ol>
+<li>
+<p>在服务器生成 SSH 秘钥</p>
+<ul>
+<li>单个仓库使用默认密钥:<br>
+<code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot;</code></li>
+<li>多个仓库需要为每个仓库生成独立密钥:<br>
+<code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; -f ~/.ssh/id_ed25519_repo1</code><br>
+<code>ssh-keygen -t ed25519 -C &quot;your_email@example.com&quot; -f ~/.ssh/id_ed25519_repo2</code><br>
+<!-- -->(直接按 3 次 Enter 使用默认设置)</li>
+</ul>
+</li>
+<li>
+<p>查看并复制公钥</p>
+<ul>
+<li>默认公钥: <code>cat ~/.ssh/id_ed25519.pub</code></li>
+<li>特定仓库公钥: <code>cat ~/.ssh/id_ed25519_repo1.pub</code>
+复制输出的全部内容</li>
+</ul>
+</li>
+<li>
+<p>在 GitHub 中为每个仓库添加 Deploy keys</p>
+<ol>
+<li>登录 GitHub</li>
+<li>进入仓库，选择 Settings</li>
+<li>点击 Deploy keys</li>
+<li>点击 Add deploy key</li>
+<li>输入 Title 和 Key (使用对应仓库的公钥)</li>
+<li>点击 Add key</li>
+</ol>
+</li>
+<li>
+<p>配置 SSH 以使用不同的密钥访问不同仓库</p>
+<ol>
+<li>
+<p>创建或编辑 SSH 配置文件: <code>nano ~/.ssh/config</code></p>
+</li>
+<li>
+<p>添加如下配置:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># 默认 GitHub 配置</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host github.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    HostName github.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    User git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    IdentityFile ~/.ssh/id_ed25519</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 第一个仓库的配置</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host github-repo1 # 自定义别名（用于git命令:例如：git@github.com-beisi-tech-main，或者git clone git@github.com-beisi-tech-website:beisi-tech/beisi-tech-website.git）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    HostName github.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    User git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    IdentityFile ~/.ssh/id_ed25519_repo1</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 第二个仓库的配置</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Host github-repo2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    HostName github.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    User git</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    IdentityFile ~/.ssh/id_ed25519_repo2</span><br></span></code></pre></div></div>
+</li>
+<li>
+<p>保存并退出 (Ctrl+O, Enter, Ctrl+X)</p>
+</li>
+</ol>
+</li>
+<li>
+<p>测试各个仓库的连接</p>
+<ul>
+<li>测试默认连接: <code>ssh -T git@github.com</code></li>
+<li>测试特定仓库: <code>ssh -T git@github.com-repo1</code>
+输入 yes 回车
+看到<code>Hi yourusername! You&#x27;ve successfully authenticated</code>表示成功</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>git clone 远程仓库</p>
+<ul>
+<li>使用默认密钥: <code>git clone git@github.com:yourusername/yourrepo.git</code></li>
+<li>使用特定仓库密钥: <code>git clone git@github.com-repo1:yourusername/repo1.git</code></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>运行 docker 脚本</p>
+<ol>
+<li>从终端 cd 到仓库目录</li>
+<li>构建镜像并运行 <code>sudo docker-compose up -d</code></li>
+</ol>
+</li>
+<li>
+<p>访问 URL 地址</p>
+<ol>
+<li>打开浏览器</li>
+<li>输入正确的 URL <code>https://yourdomain.com/path/</code></li>
+<li>应该可以看到你的网页了</li>
+</ol>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="可能遇到的问题">可能遇到的问题<a href="#可能遇到的问题" class="hash-link" aria-label="Direct link to 可能遇到的问题" title="Direct link to 可能遇到的问题" translate="no">​</a></h2>
+<ol>
+<li>端口冲突<br>
+<!-- -->报错：failed to bind host port for 0.0.0.0:80:172.18.0.2:80/tcp: address already in use<!-- -->
+<ol>
+<li>查看端口占用情况 <code>sudo lsof -i :80</code></li>
+<li>如果看到类似这样的输出：<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">nginx    1234    root    6u  IPv4  12345      0t0  TCP *:80 (LISTEN)</span><br></span></code></pre></div></div>
+</li>
+<li>关闭端口 <code>sudo systemctl stop nginx</code></li>
+<li>重新运行 docker 脚本</li>
+</ol>
+</li>
+<li>配置镜像加速错误<!-- -->
+<ol>
+<li>检查配置文件是否正确 <code>sudo cat /etc/docker/daemon.json</code>
+应该显示类似：<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;registry-mirrors&quot;: [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;https://mirror.ccs.tencentyun.com&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+</li>
+<li>如果配置不正确，需要创建或者修改配置文件<!-- -->
+<ol>
+<li>删除配置文件 <code>sudo rm /etc/docker/daemon.json</code></li>
+<li>创建新的配置文件 <code>sudo nano /etc/docker/daemon.json</code></li>
+<li>输入配置内容<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;registry-mirrors&quot;: [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &quot;https://mirror.beisi.tech/&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+</li>
+<li>保存并退出 <code>:wq</code></li>
+<li>检查配置文件是否正确 <code>sudo docker info | grep -A 5 Mirrors</code>
+应该显示类似：<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Registry Mirrors:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">https://mirror.ccs.tencentyun.com/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Live Restore Enabled: false</span><br></span></code></pre></div></div>
+</li>
+<li>重新加载配置 <code>sudo systemctl daemon-reload</code></li>
+<li>重启 docker <code>sudo systemctl restart docker</code></li>
+</ol>
+</li>
+<li>重新运行 docker 脚本</li>
+</ol>
+</li>
+<li>远程仓库更新了如何重启 docker？<!-- -->
+<ol>
+<li>cd 到仓库目录</li>
+<li>git pull 更新代码</li>
+<li>sudo docker-compose down 停止容器</li>
+<li>sudo docker-compose up -d 启动容器</li>
+</ol>
+</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/beisi-tech/docs/tree/main/my-website/docs/tutorial/devops/云服务器.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/tutorial/backend/database/postgresql"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">PostgreSQL</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/tutorial/devops/caddy"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Caddy</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#服务器安装-docker-教程链接" class="table-of-contents__link toc-highlight">服务器安装 Docker 教程链接</a></li><li><a href="#服务器安装-git-教程" class="table-of-contents__link toc-highlight">服务器安装 Git 教程</a></li><li><a href="#服务器安装-docker-教程适用-ubuntu-操作系统" class="table-of-contents__link toc-highlight">服务器安装 Docker 教程（适用 Ubuntu 操作系统）</a></li><li><a href="#云服务器配置-github-ssh-教程" class="table-of-contents__link toc-highlight">云服务器配置 GitHub SSH 教程</a></li><li><a href="#云服务器部署仓库教程" class="table-of-contents__link toc-highlight">云服务器部署仓库教程</a></li><li><a href="#可能遇到的问题" class="table-of-contents__link toc-highlight">可能遇到的问题</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/tutorial/intro">Tutorial</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/rule/intro">Rule</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/project/intro">Project</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/beisi-tech/docs" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 Fuzhou Beisi Network Technology Co., Ltd.</div></div></div></footer></div>
+</body>
+</html>
