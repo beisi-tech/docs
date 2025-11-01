@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>Beisi Docs Blog</title>
-    <updated>2025-10-27T00:00:00.000Z</updated>
+    <updated>2025-11-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>Beisi Docs Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[当年我干后端的那点小心思]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/my-thoughts-on-backend-work-in-the-past</id>
+        <link href="https://beisi-tech.github.io/docs/blog/my-thoughts-on-backend-work-in-the-past"/>
+        <updated>2025-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[- 500: 卧槽，肯定是我后端服务异常了 —— 赶紧看日志、重启服务、开始自我怀疑。]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>500: 卧槽，肯定是我后端服务异常了 —— 赶紧看日志、重启服务、开始自我怀疑。</li>
+<li>502: 完蛋，不是服务器挂了就是内网断了，先把锅甩给运维 —— 群里刷“在吗？生产掉了”。</li>
+<li>404: 都是前端的错 —— 要么路由写错、要么静态文件没部署、要么我点了错误的链接。</li>
+<li>200: 天下大同 —— 一切正常，继续写代码、喝咖啡。</li>
+<li>201: 干得漂亮，资源创建成功 —— 数据进库了，给自己点个赞。</li>
+<li>301: 永久搬家了 —— URL 永久重定向，SEO 和老链接要跟着迁移。</li>
+<li>302: 临时搬家 —— 临时重定向，别把它当成永久改变。</li>
+<li>400: 请求哪壶不开提哪壶 —— 参数不对、JSON 格式错，前端先检验输入。</li>
+<li>401: 你没登录吧？ —— 授权失败，先拿 token 或去登录。</li>
+<li>403: 不许动！ —— 没权限，别想越权访问。</li>
+<li>408: 等到花儿都谢了 —— 请求超时，网络或服务太慢，重试策略上线。</li>
+<li>429: 你别刷了！ —— 请求过多被限流，降频或加速器请上线。</li>
+<li>503: 服务器请假中 —— 服务暂时不可用，可能在维护或被流量压垮。</li>
+<li>504: 网关也累了 —— 下游没响应，检查慢查询或依赖服务。</li>
+</ul>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="后端" term="后端"/>
+        <category label="工作经验" term="工作经验"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[软件工程师的价值：在AI的时代,我们何以为继？]]></title>
         <id>https://beisi-tech.github.io/docs/blog/software-engineer-value-in-ai-era</id>
