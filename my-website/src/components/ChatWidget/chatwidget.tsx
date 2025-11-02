@@ -10,7 +10,7 @@ const CHAT_ID = 'default';
 export default function ChatWidget() {
   const {siteConfig} = useDocusaurusContext();
   const API_BASE =
-    (siteConfig as any)?.customFields?.CHAT_API_BASE ?? 'http://localhost:8000';
+    (siteConfig as any)?.customFields?.CHAT_API_BASE ?? 'http://115.190.200.222:8000';
 
   const [open, setOpen] = useState(false);
   const [msgs, setMsgs] = useState<Msg[]>([
@@ -50,14 +50,14 @@ export default function ChatWidget() {
             model: 'qwen-plus',
             temperature: 0.3,
           }),
-          credentials: 'include',
+          // credentials: 'include',
         });
         if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
         const data = await res.json();
         const answer = data?.answer ?? data?.data?.answer ?? '';
         setMsgs((m) => [...m, {role: 'assistant', text: String(answer)}]);
       } else {
-        // --- 流式（SSE over fetch） ---
+        // 流式
         const res = await fetch(streamUrl, {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
@@ -67,7 +67,7 @@ export default function ChatWidget() {
             model: 'qwen-plus',
             temperature: 0.3,
           }),
-          credentials: 'include',
+          // credentials: 'include',
         });
         if (!res.ok || !res.body) throw new Error('SSE 不可用');
 
