@@ -10,7 +10,7 @@ from langchain_community.embeddings import DashScopeEmbeddings
 
 load_dotenv()
 
-DATA_DIR = Path(__file__).parent / "data"
+DATA_DIR = Path(__file__).parent.parent / "my-website" / "docs"
 INDEX_DIR = Path(__file__).parent / "vectordb"
 INDEX_DIR.mkdir(exist_ok=True)
 
