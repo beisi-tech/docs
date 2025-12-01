@@ -8,6 +8,30 @@
     <subtitle>Beisi Docs Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
     <entry>
+        <title type="html"><![CDATA[我目前在维护的所有项目]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining</id>
+        <link href="https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining"/>
+        <updated>2025-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[1. 知心家教 网址//zhixin.beisi.tech/]]></summary>
+        <content type="html"><![CDATA[<ol>
+<li>知心家教 网址: <a href="https://zhixin.beisi.tech/" target="_blank" rel="noopener noreferrer">https://zhixin.beisi.tech/</a></li>
+<li>应用仓库 网址: <a href="https://yyck.beisi.tech/" target="_blank" rel="noopener noreferrer">https://yyck.beisi.tech/</a></li>
+<li>AI Box 网址: <a href="https://aibox.beisi.tech/" target="_blank" rel="noopener noreferrer">https://aibox.beisi.tech/</a></li>
+<li>小程序商城: <a href="https://hioshop.beisi.tech/" target="_blank" rel="noopener noreferrer">https://hioshop.beisi.tech/</a></li>
+<li>外贸站: <a href="https://shoesworker.com/" target="_blank" rel="noopener noreferrer">https://shoesworker.com/</a></li>
+<li>visionflow: <a href="https://visionflow.beisi.tech/" target="_blank" rel="noopener noreferrer">https://visionflow.beisi.tech/</a></li>
+<li>企业文档: <a href="https://beisi-tech.github.io/docs" target="_blank" rel="noopener noreferrer">https://beisi-tech.github.io/docs</a></li>
+<li>海外站搭建: <a href="https://wp.beisi.tech/" target="_blank" rel="noopener noreferrer">https://wp.beisi.tech/</a></li>
+</ol>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="项目" term="项目"/>
+        <category label="开源" term="开源"/>
+        <category label="个人作品" term="个人作品"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[中国开发者的科学上网指南]]></title>
         <id>https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers</id>
         <link href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers"/>

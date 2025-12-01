@@ -9,6 +9,26 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[我目前在维护的所有项目]]></title>
+            <link>https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining</link>
+            <guid>https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining</guid>
+            <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[1. 知心家教 网址//zhixin.beisi.tech/]]></description>
+            <content:encoded><![CDATA[<ol>
+<li>知心家教 网址: <a href="https://zhixin.beisi.tech/" target="_blank" rel="noopener noreferrer">https://zhixin.beisi.tech/</a></li>
+<li>应用仓库 网址: <a href="https://yyck.beisi.tech/" target="_blank" rel="noopener noreferrer">https://yyck.beisi.tech/</a></li>
+<li>AI Box 网址: <a href="https://aibox.beisi.tech/" target="_blank" rel="noopener noreferrer">https://aibox.beisi.tech/</a></li>
+<li>小程序商城: <a href="https://hioshop.beisi.tech/" target="_blank" rel="noopener noreferrer">https://hioshop.beisi.tech/</a></li>
+<li>外贸站: <a href="https://shoesworker.com/" target="_blank" rel="noopener noreferrer">https://shoesworker.com/</a></li>
+<li>visionflow: <a href="https://visionflow.beisi.tech/" target="_blank" rel="noopener noreferrer">https://visionflow.beisi.tech/</a></li>
+<li>企业文档: <a href="https://beisi-tech.github.io/docs" target="_blank" rel="noopener noreferrer">https://beisi-tech.github.io/docs</a></li>
+<li>海外站搭建: <a href="https://wp.beisi.tech/" target="_blank" rel="noopener noreferrer">https://wp.beisi.tech/</a></li>
+</ol>]]></content:encoded>
+            <category>项目</category>
+            <category>开源</category>
+            <category>个人作品</category>
+        </item>
+        <item>
             <title><![CDATA[中国开发者的科学上网指南]]></title>
             <link>https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers</link>
             <guid>https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers</guid>
