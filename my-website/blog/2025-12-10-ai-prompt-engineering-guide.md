@@ -1,7 +1,7 @@
 ---
 slug: ai-prompt-engineering-guide
 title: AI 提示工程指南
-authors: [bes]
+authors: [xiaolinbenben]
 tags: [AI, 提示工程, LLM, Prompt Engineering]
 ---
 
