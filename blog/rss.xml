@@ -4,10 +4,59 @@
         <title>Beisi Docs Blog</title>
         <link>https://beisi-tech.github.io/docs/blog</link>
         <description>Beisi Docs Blog</description>
-        <lastBuildDate>Wed, 10 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 28 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[用 Cloudflare Tunnel 把电脑变成服务器]]></title>
+            <link>https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev</link>
+            <guid>https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev</guid>
+            <pubDate>Sun, 28 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[前两天调支付回调，被折腾得够呛。]]></description>
+            <content:encoded><![CDATA[<p>前两天调支付回调，被折腾得够呛。</p>
+<p>支付公司要求一个公网能访问的 notify_url，但我的代码在本地电脑上跑。每改一行代码，就得打包、上传、部署、等一分钟……循环往复，效率极低。</p>
+<p>我心想：<strong>有没有办法让支付公司直接把请求打到我本地？</strong></p>
+<p>折腾了一圈，发现 Cloudflare Tunnel 是目前最优解。免费、稳定、还能用自己的域名。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最终效果">最终效果<a href="https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev#%E6%9C%80%E7%BB%88%E6%95%88%E6%9E%9C" class="hash-link" aria-label="Direct link to 最终效果" title="Direct link to 最终效果" translate="no">​</a></h2>
+<p>配置完成后，访问 <code>https://pay-dev.xiaolinbenben.com</code>，请求会直接打到我本地的 <code>localhost:8000</code>。</p>
+<p>全程 HTTPS，不需要公网 IP，不需要端口映射。支付公司那边看起来就是一个正常的线上服务。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="怎么配置">怎么配置<a href="https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev#%E6%80%8E%E4%B9%88%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="Direct link to 怎么配置" title="Direct link to 怎么配置" translate="no">​</a></h2>
+<p>先装 cloudflared：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install cloudflare/cloudflare/cloudflared</span><br></span></code></pre></div></div>
+<p>登录授权：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cloudflared tunnel login</span><br></span></code></pre></div></div>
+<p>浏览器会弹出来让你选域名，选完就行。</p>
+<p>创建一个 tunnel：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cloudflared tunnel create pay-dev</span><br></span></code></pre></div></div>
+<p>绑定子域名：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cloudflared tunnel route dns pay-dev pay-dev.xiaolinbenben.com</span><br></span></code></pre></div></div>
+<p>然后创建配置文件 <code>~/.cloudflared/config.yml</code>：</p>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">tunnel</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> pay</span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain">dev</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">credentials-file</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> /Users/你的用户名/.cloudflared/xxxx.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">protocol</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> http2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">ingress</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">hostname</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> pay</span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain">dev.xiaolinbenben.com</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token key atrule" style="color:#00a4db">service</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> http</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain">//localhost</span><span class="token punctuation" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">8000</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">-</span><span class="token plain"> </span><span class="token key atrule" style="color:#00a4db">service</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> http_status</span><span class="token punctuation" style="color:#393A34">:</span><span class="token number" style="color:#36acaa">404</span><br></span></code></pre></div></div>
+<p>启动：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">cloudflared tunnel run pay-dev</span><br></span></code></pre></div></div>
+<p>看到 <code>Connected to Cloudflare</code> 就成功了。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我踩过的坑">我踩过的坑<a href="https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev#%E6%88%91%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91" class="hash-link" aria-label="Direct link to 我踩过的坑" title="Direct link to 我踩过的坑" translate="no">​</a></h2>
+<p><strong>坑一：QUIC 连接超时</strong></p>
+<p>一开始老是报 <code>timeout: no recent network activity</code>，查了半天发现是网络不支持 UDP/QUIC。</p>
+<p>解决方法：配置文件里加上 <code>protocol: http2</code>，强制用 HTTP/2。</p>
+<p><strong>坑二：本地服务没启动</strong></p>
+<p>Tunnel 连上了，但访问 502。原因很简单——本地服务忘了启动。先跑个 <code>curl http://localhost:8000</code> 确认一下。</p>
+<p><strong>坑三：电脑睡眠了</strong></p>
+<p>Tunnel 依赖本地进程。电脑一睡眠，Tunnel 就断了。调试的时候记得关掉自动睡眠。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="支付调试的正确姿势">支付调试的正确姿势<a href="https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev#%E6%94%AF%E4%BB%98%E8%B0%83%E8%AF%95%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF" class="hash-link" aria-label="Direct link to 支付调试的正确姿势" title="Direct link to 支付调试的正确姿势" translate="no">​</a></h2>
+<p>配置好之后，把 notify_url 改成你的 tunnel 地址：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">notify_url = https://pay-dev.xiaolinbenben.com/api/notify</span><br></span></code></pre></div></div>
+<p>支付公司会把它当成一个正常的线上服务，回调请求直接打到你本地。</p>
+<p>改代码、保存、刷新，回调立刻就能测。再也不用反复部署了。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最后">最后<a href="https://beisi-tech.github.io/docs/blog/cloudflare-tunnel-local-dev#%E6%9C%80%E5%90%8E" class="hash-link" aria-label="Direct link to 最后" title="Direct link to 最后" translate="no">​</a></h2>
+<p>以前调支付，改一行代码要等好几分钟才能看到效果。现在本地改完就能测，效率提升了好几倍。</p>
+<p><strong>当本地服务能接住真实世界的请求时，开发体验会发生质变。</strong></p>
+<p>如果你也在做支付、Webhook 这类需要公网回调的功能，强烈推荐试试 Cloudflare Tunnel。</p>]]></content:encoded>
+            <category>内网穿透</category>
+            <category>Cloudflare</category>
+            <category>开发调试</category>
+        </item>
         <item>
             <title><![CDATA[AI 提示工程指南]]></title>
             <link>https://beisi-tech.github.io/docs/blog/ai-prompt-engineering-guide</link>
