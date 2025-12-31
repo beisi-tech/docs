@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '倍司文档',
-  tagline: '整理知识，赋能团队。',
+  title: '倍司企业文档',
+  tagline: '沉淀流程与经验，统一规范与标准',
   favicon: 'img/favicon(1).ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
