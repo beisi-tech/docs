@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
-    <title>倍司文档 Blog</title>
+    <title>倍司企业文档 Blog</title>
     <updated>2025-12-28T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
-    <subtitle>倍司文档 Blog</subtitle>
+    <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
     <entry>
         <title type="html"><![CDATA[用 Cloudflare Tunnel 把电脑变成服务器]]></title>
