@@ -11,33 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Developer Learning Resources',
+    title: '开发者学习资源',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        We provide comprehensive learning materials for Developers, 
-        covering front-end development, back-end architecture, cloud computing, 
-        and other in-demand technical fields.
+        提供覆盖前端、后端架构、云计算等热门技术方向的系统化学习资料，
+        让开发者快速上手并持续进阶。
       </>
     ),
   },
   {
-    title: 'Our Core Projects',
+    title: '核心项目矩阵',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Explore our innovative projects ranging from enterprise-level applications to open-source tools, 
-        and discover how technology drives business growth.
+        了解我们的创新项目，从企业级应用到开源工具，
+        发现技术如何驱动业务增长与产品迭代。
       </>
     ),
   },
   {
-    title: 'Technical Community Support',
+    title: '技术社区支持',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Join our developer community to access technical guidance, 
-        participate in code reviews, and grow together with industry experts.
+        加入开发者社区，获取技术指导、参与代码评审，
+        与行业专家共同成长。
       </>
     ),
   },

@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Beisi Docs',
+  title: '倍司文档',
   tagline: '整理知识，赋能团队。',
   favicon: 'img/favicon(1).ico',
 
