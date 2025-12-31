@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Beisi Docs',
-  tagline: 'Organize Knowledge, Empower Teams.',
+  tagline: '整理知识，赋能团队。',
   favicon: 'img/favicon(1).ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -31,8 +31,8 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -65,6 +65,11 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.7,
+          filename: 'sitemap.xml',
         },
       } satisfies Preset.Options,
     ],
@@ -107,6 +112,13 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    metadata: [
+      {
+        name: 'keywords',
+        content:
+          'Beisi Docs, 技术教程, 全栈开发, 开发规范, 项目介绍, 博客, 云服务, AI, Cloudflare, Docusaurus, GitHub',
+      },
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },

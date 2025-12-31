@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /docs/
+Disallow: /docs/search
+Disallow: /*?*
+
+User-agent: Baiduspider
+Allow: /docs/
+Disallow: /docs/search
+Disallow: /*?*
+
+Sitemap: https://beisi-tech.github.io/docs/sitemap.xml
