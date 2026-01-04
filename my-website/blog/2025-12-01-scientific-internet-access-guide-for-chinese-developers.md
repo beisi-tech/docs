@@ -61,7 +61,7 @@ tags: [科学上网, 开发工具, VPN]
 
 最后就有了纯洁的IP，请注意你的IP地址，一定要跟你购买的静态ip地址一致。
 
-教程参考：[Twitter 教程](https://x.com/Eddy_Gudong/status/1993250981728174339)(https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035)
+教程参考：[Twitter 教程](https://x.com/Eddy_Gudong/status/1993250981728174339)、[Notion 教程](https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035)
 
 
 
