@@ -59,7 +59,7 @@ tags: [科学上网, 开发工具, VPN]
 
 第六步：点击Clash Verge左侧菜单【设置】栏，打开【虚拟网卡】模式，如果无法打开，点击旁边的扳手🔧小图标安装，虚拟网络设置中选择【System】，点击保存
 
-最后就有了纯洁的IP，请注意你的IP地址，一定是跟你购买的静态ip地址一致。
+最后就有了纯洁的IP，请注意你的IP地址，一定要跟你购买的静态ip地址一致。
 
 教程参考：[Twitter 教程](https://x.com/Eddy_Gudong/status/1993250981728174339)(https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035)
 
