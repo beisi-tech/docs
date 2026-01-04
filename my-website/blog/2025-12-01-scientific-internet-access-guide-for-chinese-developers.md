@@ -40,8 +40,7 @@ tags: [科学上网, 开发工具, VPN]
 
 以下以 Clash Verge 工具说明具体流程
 
-第一步：购买 ClipProxy 的【长效静态IP】。价格约28元/月，你可以像我一样先买一个月试用，支持支付宝付款。
-![图片3.28](../src/image/图片3.28.png)
+第一步：购买CliProxy的【长效静态IP】。价格约28元/月，你可以像我一样先买一个月试用，支持支付宝付款。
 自行购买：https://cliproxy.com/zh/
 
 第二步：购买成功后打开 ClipProxy 的【长效静态IP】后台。重点关注IP地址、端口（IP地址后三位数字）、用户名、密码。
@@ -69,19 +68,13 @@ tags: [科学上网, 开发工具, VPN]
 
 最后再按下方【添加前置代理组】，看到添加成功后最后点击右下角【保存】，你会看到界面右上角出现绿色模块提示【保存成功】
 
-第五步：点击 Clash Verge 左侧菜单【代理】，选择【全局】，点击选择你刚添加的代理组。
-![图片3.32](../src/image/图片3.32.png)
+第五步：点击Clash Verge左侧菜单【代理】，选择【全局】，点击选择你刚添加的代理组。
 
-第六步：点击 Clash Verge 左侧菜单【设置】栏，打开【虚拟网卡】模式，如果无法打开，点击旁边的扳手🔧小图标安装，虚拟网络设置中选择【System】，点击保存
+第六步：点击Clash Verge左侧菜单【设置】栏，打开【虚拟网卡】模式，如果无法打开，点击旁边的扳手🔧小图标安装，虚拟网络设置中选择【System】，点击保存
 
-最后就有了纯洁的 IP，请注意你的 IP 地址，一定要跟你购买的静态IP地址一致。
+最后就有了纯洁的IP，请注意你的IP地址，一定要跟你购买的静态ip地址一致。
 
-
-教程参考：
-
-[Twitter 教程](https://x.com/Eddy_Gudong/status/1993250981728174339)
-
-[Notion 教程](https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035)
+教程参考：[Twitter 教程](https://x.com/Eddy_Gudong/status/1993250981728174339)(https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035)
 
 
 
