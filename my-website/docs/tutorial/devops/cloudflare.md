@@ -23,15 +23,15 @@ Cloudflare 是全球领先的网络安全和性能优化平台，提供免费的
 
 ### 为什么选择 Cloudflare
 
-| 特性 | 免费版 | 付费版 |
-|-----|-------|-------|
-| CDN 加速 | ✅ | ✅ |
-| SSL 证书 | ✅ | ✅ |
-| DDoS 防护 | ✅ | ✅ |
-| 页面规则 | 3 条 | 更多 |
-| Workers 请求 | 10 万/天 | 更多 |
-| Pages 项目 | 无限 | 无限 |
-| 邮件路由 | ✅ | ✅ |
+| 特性         | 免费版   | 付费版 |
+| ------------ | -------- | ------ |
+| CDN 加速     | ✅       | ✅     |
+| SSL 证书     | ✅       | ✅     |
+| DDoS 防护    | ✅       | ✅     |
+| 页面规则     | 3 条     | 更多   |
+| Workers 请求 | 10 万/天 | 更多   |
+| Pages 项目   | 无限     | 无限   |
+| 邮件路由     | ✅       | ✅     |
 
 ## 账号注册与域名托管
 
@@ -61,18 +61,21 @@ tim.ns.cloudflare.com
 #### 常见域名注册商操作
 
 **阿里云/万网**:
+
 1. 登录阿里云控制台
 2. 进入域名管理
 3. 选择域名 → DNS 修改
 4. 替换为 Cloudflare 的 NS 服务器
 
 **Namesilo**:
+
 1. 登录 Namesilo
 2. Domain Manager → 选择域名
 3. NameServers → Change
 4. 填入 Cloudflare NS 服务器
 
 **GoDaddy**:
+
 1. 登录 GoDaddy
 2. 我的产品 → 域名 → DNS
 3. 更改名称服务器
@@ -90,13 +93,13 @@ DNS 更换可能需要 24-48 小时生效，通常几分钟到几小时内即可
 
 #### 常用记录类型
 
-| 类型 | 用途 | 示例 |
-|-----|-----|-----|
-| A | 指向 IPv4 地址 | `@ → 1.2.3.4` |
-| AAAA | 指向 IPv6 地址 | `@ → 2001:db8::1` |
-| CNAME | 别名记录 | `www → example.com` |
-| MX | 邮件服务器 | `@ → mail.example.com` |
-| TXT | 文本记录 | SPF、DKIM、验证等 |
+| 类型  | 用途           | 示例                   |
+| ----- | -------------- | ---------------------- |
+| A     | 指向 IPv4 地址 | `@ → 1.2.3.4`          |
+| AAAA  | 指向 IPv6 地址 | `@ → 2001:db8::1`      |
+| CNAME | 别名记录       | `www → example.com`    |
+| MX    | 邮件服务器     | `@ → mail.example.com` |
+| TXT   | 文本记录       | SPF、DKIM、验证等      |
 
 #### 配置示例
 
@@ -182,13 +185,13 @@ Cloudflare 提供免费的源站证书：
 server {
     listen 443 ssl http2;
     server_name example.com;
-    
+
     ssl_certificate /etc/nginx/ssl/cloudflare-origin.pem;
     ssl_certificate_key /etc/nginx/ssl/cloudflare-origin.key;
-    
+
     # 仅允许 Cloudflare IP 访问
     # 参考: https://www.cloudflare.com/ips/
-    
+
     location / {
         root /var/www/html;
         index index.html;
@@ -406,14 +409,17 @@ my-project/
 ```javascript
 // functions/api/hello.js
 export async function onRequest(context) {
-  return new Response(JSON.stringify({
-    message: "Hello from Cloudflare Pages Functions!",
-    timestamp: new Date().toISOString()
-  }), {
-    headers: {
-      "Content-Type": "application/json"
+  return new Response(
+    JSON.stringify({
+      message: "Hello from Cloudflare Pages Functions!",
+      timestamp: new Date().toISOString(),
+    }),
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
     }
-  });
+  );
 }
 ```
 
@@ -474,7 +480,7 @@ export default {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    
+
     switch (url.pathname) {
       case "/":
         return new Response("Home Page");
@@ -495,10 +501,10 @@ export default {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    
+
     // 修改目标地址
     url.hostname = "api.example.com";
-    
+
     // 转发请求
     return fetch(url.toString(), {
       method: request.method,
@@ -540,7 +546,7 @@ export default {
 
     const newResponse = new Response(response.body, response);
     newResponse.headers.set("Access-Control-Allow-Origin", "*");
-    
+
     return newResponse;
   },
 };
@@ -552,10 +558,10 @@ export default {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    
+
     // 记录访问（使用 KV 存储）
     const key = `visits:${url.pathname}`;
-    const visits = parseInt(await env.STATS.get(key) || "0") + 1;
+    const visits = parseInt((await env.STATS.get(key)) || "0") + 1;
     ctx.waitUntil(env.STATS.put(key, visits.toString()));
 
     // 返回原始响应
@@ -584,16 +590,16 @@ export default {
   async fetch(request, env, ctx) {
     // 写入
     await env.MY_KV.put("key", "value");
-    
+
     // 读取
     const value = await env.MY_KV.get("key");
-    
+
     // 删除
     await env.MY_KV.delete("key");
-    
+
     // 列出所有键
     const keys = await env.MY_KV.list();
-    
+
     return Response.json({ value, keys });
   },
 };
@@ -623,12 +629,12 @@ Cloudflare Email Routing 允许你免费创建和转发域名邮箱。
 目标地址: your-personal@gmail.com
 
 # 通配符转发
-源地址: *@example.com  
+源地址: *@example.com
 目标地址: catch-all@gmail.com
 
 # 多个地址
 源地址: support@example.com
-目标地址: 
+目标地址:
   - support1@gmail.com
   - support2@gmail.com
 ```
@@ -679,7 +685,7 @@ export default {
     const from = message.from;
     const to = message.to;
     const subject = message.headers.get("subject");
-    
+
     // 根据条件转发
     if (to === "support@example.com") {
       await message.forward("support-team@company.com");
@@ -793,15 +799,15 @@ ingress:
   # 网站
   - hostname: app.example.com
     service: http://localhost:3000
-  
+
   # API
   - hostname: api.example.com
     service: http://localhost:8080
-  
+
   # SSH
   - hostname: ssh.example.com
     service: ssh://localhost:22
-  
+
   # 默认规则（必须）
   - service: http_status:404
 ```
@@ -857,18 +863,18 @@ export default {
       case "PUT":
         await env.MY_BUCKET.put(key, request.body);
         return new Response(`Put ${key} successfully!`);
-      
+
       case "GET":
         const object = await env.MY_BUCKET.get(key);
         if (object === null) {
           return new Response("Object Not Found", { status: 404 });
         }
         return new Response(object.body);
-      
+
       case "DELETE":
         await env.MY_BUCKET.delete(key);
         return new Response("Deleted!");
-      
+
       default:
         return new Response("Method Not Allowed", { status: 405 });
     }
@@ -960,6 +966,7 @@ deny all;
 **原因**: SSL 模式设置为 Flexible，但源站强制 HTTPS
 
 **解决**:
+
 ```yaml
 SSL 模式改为: Full 或 Full (Strict)
 ```
@@ -967,6 +974,7 @@ SSL 模式改为: Full 或 Full (Strict)
 ### 2. 源站 IP 泄露
 
 **预防措施**:
+
 1. 更换源站 IP
 2. 仅允许 Cloudflare IP 访问
 3. 使用 Cloudflare Tunnel
@@ -975,6 +983,7 @@ SSL 模式改为: Full 或 Full (Strict)
 ### 3. 缓存不更新
 
 **解决**:
+
 1. 清除 Cloudflare 缓存
 2. 检查 Browser Cache TTL
 3. 开启开发模式调试
@@ -983,10 +992,12 @@ SSL 模式改为: Full 或 Full (Strict)
 ### 4. Workers 超时
 
 **免费版限制**:
+
 - CPU 时间: 10ms
 - 执行时间: 30s
 
 **解决**:
+
 - 优化代码逻辑
 - 升级到付费版
 - 使用 Durable Objects
@@ -994,6 +1005,7 @@ SSL 模式改为: Full 或 Full (Strict)
 ### 5. 邮件无法接收
 
 **检查项**:
+
 1. MX 记录是否正确
 2. 目标邮箱是否已验证
 3. 是否被垃圾邮件过滤
