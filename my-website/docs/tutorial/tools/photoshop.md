@@ -1,6 +1,6 @@
 ---
 sidebar_label: "Photoshop"
-sidebar_position: 5
+sidebar_position: 7
 slug: photoshop
 ---
 
