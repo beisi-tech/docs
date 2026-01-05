@@ -41,8 +41,8 @@ tags: [科学上网, 开发工具, VPN]
 以下以 Clash Verge 工具说明具体流程
 
 第一步：购买CliProxy的【长效静态IP】。价格约28元/月，你可以像我一样先买一个月试用，支持支付宝付款。
-自行购买：https://cliproxy.com/zh/
-
+自行购买：[https://cliproxy.com/zh/
+](https://share.cliproxy.com/share/jtut5tzcd)
 第二步：购买成功后打开 ClipProxy 的【长效静态IP】后台。重点关注IP地址、端口（IP地址后三位数字）、用户名、密码。
 ![图片3.27](../src/image/图片3.27.png)
 
