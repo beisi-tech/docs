@@ -10,7 +10,7 @@ tags: [浪漫, 日常, 个人项目]
 不是不想说，是经常忙到忘。  
 我就想，**有没有一种办法，让这句早安永远不会缺席。**  
 于是我做了一个小东西，每天准时发一封早安邮件。  
-项目放在 GitHub：<https://github.com/xiaolintuanzi/love-scheduler>
+项目放在 GitHub：https://github.com/xiaolintuanzi/love-scheduler
 
 <!-- truncate -->
 
