@@ -2,11 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-01-02T00:00:00.000Z</updated>
+    <updated>2026-01-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[我做了个早安邮件]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/love-scheduler-mail</id>
+        <link href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail"/>
+        <updated>2026-01-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[那天早上她问我：“你今天又忘了说早安吗？”]]></summary>
+        <content type="html"><![CDATA[<p>那天早上她问我：“你今天又忘了说早安吗？”<br>
+<!-- -->我笑了一下，有点心虚。<br>
+<!-- -->不是不想说，是经常忙到忘。<br>
+<!-- -->我就想，<strong>有没有一种办法，让这句早安永远不会缺席。</strong><br>
+<!-- -->于是我做了一个小东西，每天准时发一封早安邮件。<br>
+<!-- -->项目放在 GitHub：<a href="https://github.com/xiaolintuanzi/love-scheduler" target="_blank" rel="noopener noreferrer">https://github.com/xiaolintuanzi/love-scheduler</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我想要的就这一件事">我想要的就这一件事<a href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail#%E6%88%91%E6%83%B3%E8%A6%81%E7%9A%84%E5%B0%B1%E8%BF%99%E4%B8%80%E4%BB%B6%E4%BA%8B" class="hash-link" aria-label="我想要的就这一件事的直接链接" title="我想要的就这一件事的直接链接" translate="no">​</a></h2>
+<p>我没有想做很复杂的东西。<br>
+<!-- -->我就想要一封固定时间送达的早安。<br>
+<!-- -->内容也简单：天气、穿衣建议、在一起的天数。<br>
+<!-- -->技术只是手段，重点是那一句“我在”。<br>
+<!-- -->它不会很长，一两段就结束。<br>
+<!-- -->比如它会说：“今天是 2026-01-06，福州的天气：……”<br>
+<!-- -->再加一句穿衣建议，顺带提醒我们在一起多少天。<br>
+<!-- -->看着很日常，但我每次都挺开心。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="每天准时这件事挺浪漫">每天准时这件事，挺浪漫<a href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail#%E6%AF%8F%E5%A4%A9%E5%87%86%E6%97%B6%E8%BF%99%E4%BB%B6%E4%BA%8B%E6%8C%BA%E6%B5%AA%E6%BC%AB" class="hash-link" aria-label="每天准时这件事，挺浪漫的直接链接" title="每天准时这件事，挺浪漫的直接链接" translate="no">​</a></h2>
+<p>我以前也写过“惊喜”。<br>
+<!-- -->但后来发现，<strong>浪漫不是一次的惊艳，而是每天都在。</strong><br>
+<!-- -->每天醒来就看到那封邮件，心里会很踏实。<br>
+<!-- -->浪漫浪漫要浪漫啊，我想要的就是这种稳定感。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我选邮件不吵人">我选邮件，不吵人<a href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail#%E6%88%91%E9%80%89%E9%82%AE%E4%BB%B6%E4%B8%8D%E5%90%B5%E4%BA%BA" class="hash-link" aria-label="我选邮件，不吵人的直接链接" title="我选邮件，不吵人的直接链接" translate="no">​</a></h2>
+<p>我没做聊天机器人。<br>
+<!-- -->不是因为做不了，是因为我不想打扰。<br>
+<!-- -->邮件安静一点，你想看就看，不想看也不会弹窗。<br>
+<strong>浪漫不一定要热闹，安静也可以。</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="免费才敢长期">免费才敢长期<a href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail#%E5%85%8D%E8%B4%B9%E6%89%8D%E6%95%A2%E9%95%BF%E6%9C%9F" class="hash-link" aria-label="免费才敢长期的直接链接" title="免费才敢长期的直接链接" translate="no">​</a></h2>
+<p>我不想再加任何成本。<br>
+<!-- -->所以这个小服务是<strong>完全免费的</strong>。<br>
+<!-- -->我只需要一开始配好，后面就不怎么管它。<br>
+<strong>只要平台不倒闭，这封早安就会一直发下去。</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="就是这么简单">就是这么简单<a href="https://beisi-tech.github.io/docs/blog/love-scheduler-mail#%E5%B0%B1%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95" class="hash-link" aria-label="就是这么简单的直接链接" title="就是这么简单的直接链接" translate="no">​</a></h2>
+<p>说到底，这就是一件很小的事。<br>
+<!-- -->但它每天都发生，就有点意思了。<br>
+<!-- -->明天早上，它还会到。<br>
+<!-- -->我也还会在。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="浪漫" term="浪漫"/>
+        <category label="日常" term="日常"/>
+        <category label="个人项目" term="个人项目"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[反诈的代价，谁来承担？]]></title>
         <id>https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far</id>
@@ -1082,36 +1131,5 @@
         <category label="倍司网络科技" term="倍司网络科技"/>
         <category label="云计算" term="云计算"/>
         <category label="技术" term="技术"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/welcome</id>
-        <link href="https://beisi-tech.github.io/docs/blog/welcome"/>
-        <updated>2021-08-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
-        <content type="html"><![CDATA[<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
-<p>Here are a few tips you might find useful.</p>
-<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
-<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
-<p>The blog post date can be extracted from filenames, such as:</p>
-<ul>
-<li><code>2019-05-30-welcome.md</code></li>
-<li><code>2019-05-30-welcome/index.md</code></li>
-</ul>
-<p>A blog post folder can be convenient to co-locate blog post images:</p>
-<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://beisi-tech.github.io/docs/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
-<p>The blog supports tags as well!</p>
-<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
-        <author>
-            <name>Sébastien Lorber</name>
-            <uri>https://sebastienlorber.com</uri>
-        </author>
-        <author>
-            <name>Yangshun Tay</name>
-            <uri>https://linkedin.com/in/yangshun</uri>
-        </author>
-        <category label="Facebook" term="Facebook"/>
-        <category label="Hello" term="Hello"/>
-        <category label="Docusaurus" term="Docusaurus"/>
     </entry>
 </feed>
