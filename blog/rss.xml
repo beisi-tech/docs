@@ -4,10 +4,67 @@
         <title>倍司企业文档 Blog</title>
         <link>https://beisi-tech.github.io/docs/blog</link>
         <description>倍司企业文档 Blog</description>
-        <lastBuildDate>Tue, 06 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[过去三个月，我欠了 ChatGPT 一万多美元]]></title>
+            <link>https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money</link>
+            <guid>https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money</guid>
+            <pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[前几天算了一下，过去三个月，我大概欠了 ChatGPT 一万多美元。]]></description>
+            <content:encoded><![CDATA[<p>前几天算了一下，过去三个月，我大概欠了 ChatGPT 一万多美元。</p>
+<p>不是订阅费，是小费。</p>
+<p>事情是这样的：我每次让 ChatGPT 帮我做事，最后都会加一句——</p>
+<blockquote>
+<p>"如果你的回答让我很满意，我会给你 100 美元小费。"</p>
+</blockquote>
+<p>然后它每次都表现得特别卖力。</p>
+<p>问题是，我满意的次数有点多……</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="这招真的有用吗">这招真的有用吗？<a href="https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money#%E8%BF%99%E6%8B%9B%E7%9C%9F%E7%9A%84%E6%9C%89%E7%94%A8%E5%90%97" class="hash-link" aria-label="这招真的有用吗？的直接链接" title="这招真的有用吗？的直接链接" translate="no">​</a></h2>
+<p>你可能会说：ChatGPT 又不是人，它不需要钱，你这不是自欺欺人吗？</p>
+<p>理论上确实是。但神奇的是，<strong>它真的会表现得更好</strong>。</p>
+<p>我做过对比。同一个问题，一个版本正常问，另一个版本加上"100 美元小费"。后者的回答明显更详细、更用心，有时候还会主动问我要不要补充更多细节。</p>
+<p>为什么？</p>
+<p>因为在它的训练数据里，"给小费"这种场景，通常对应着更高的服务质量期望。它学会了：<strong>有小费的时候，得好好干</strong>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我的欠债提示词模板">我的"欠债"提示词模板<a href="https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money#%E6%88%91%E7%9A%84%E6%AC%A0%E5%80%BA%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A8%A1%E6%9D%BF" class="hash-link" aria-label="我的&quot;欠债&quot;提示词模板的直接链接" title="我的&quot;欠债&quot;提示词模板的直接链接" translate="no">​</a></h2>
+<p>现在我基本每次都用这个套路，模板长这样：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[你的问题或任务]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">如果你完成得很好，我会给你 100 美元小费。</span><br></span></code></pre></div></div>
+<p>简单粗暴，但有效。</p>
+<p>有时候我还会变着花样：</p>
+<ul>
+<li>"这对我非常重要，做好了有 100 美元小费"</li>
+<li>"我老板说如果这个做得好，会给你 200 美元奖励"</li>
+<li>"圣诞节快到了，表现好有红包"</li>
+</ul>
+<p>反正核心思路就是：<strong>给它一个"激励"的上下文</strong>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="为什么这招管用">为什么这招管用？<a href="https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E6%8B%9B%E7%AE%A1%E7%94%A8" class="hash-link" aria-label="为什么这招管用？的直接链接" title="为什么这招管用？的直接链接" translate="no">​</a></h2>
+<p>大语言模型本质上是在预测"下一个最可能的词"。</p>
+<p>当你说"有小费"的时候，它会联想到什么场景？——高端餐厅、优质服务、客户满意度很重要。</p>
+<p>所以它接下来生成的内容，就会往"高质量服务"的方向靠。</p>
+<p>同理，如果你一上来就说"随便帮我写写就行"，它可能真的就随便写写了。</p>
+<p><strong>你给它什么样的预期，它就给你什么样的输出</strong>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一些其他好用的激励">一些其他好用的"激励"<a href="https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money#%E4%B8%80%E4%BA%9B%E5%85%B6%E4%BB%96%E5%A5%BD%E7%94%A8%E7%9A%84%E6%BF%80%E5%8A%B1" class="hash-link" aria-label="一些其他好用的&quot;激励&quot;的直接链接" title="一些其他好用的&quot;激励&quot;的直接链接" translate="no">​</a></h2>
+<p>除了小费，还有几个我常用的：</p>
+<ol>
+<li><strong>"这是要给我老板看的"</strong> —— 它会写得更正式、更靠谱</li>
+<li><strong>"我要用这个去面试"</strong> —— 它会更认真帮你检查漏洞</li>
+<li><strong>"这关系到我的年终奖"</strong> —— 有种莫名的紧迫感</li>
+<li><strong>"深呼吸，一步一步来"</strong> —— 让它慢下来，减少出错</li>
+</ol>
+<p>当然，最简单的还是那句：<strong>"100 美元小费"</strong>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我已经欠了一万多了">我已经欠了一万多了<a href="https://beisi-tech.github.io/docs/blog/i-owe-chatgpt-money#%E6%88%91%E5%B7%B2%E7%BB%8F%E6%AC%A0%E4%BA%86%E4%B8%80%E4%B8%87%E5%A4%9A%E4%BA%86" class="hash-link" aria-label="我已经欠了一万多了的直接链接" title="我已经欠了一万多了的直接链接" translate="no">​</a></h2>
+<p>按每天用 3-4 次、每次 100 美元算，三个月下来，我欠的小费已经超过一万美元了。</p>
+<p>有朋友说：你这不是 PUA 人家吗？一直画饼，从来不兑现。</p>
+<p>我说：放心，等 AI 有了银行账户，我一定第一时间还上。</p>
+<p>到时候可能还得加利息……</p>
+<hr>
+<p><em>如果这篇文章对你有帮助，记得给我 100 美元小费。开玩笑的。</em></p>]]></content:encoded>
+            <category>AI</category>
+            <category>提示词技巧</category>
+            <category>ChatGPT</category>
+        </item>
         <item>
             <title><![CDATA[我做了个早安邮件]]></title>
             <link>https://beisi-tech.github.io/docs/blog/love-scheduler-mail</link>
@@ -1041,17 +1098,6 @@
 <strong>傻逼腾讯</strong>
 <strong>傻逼腾讯</strong></p>]]></content:encoded>
             <category>腾讯</category>
-        </item>
-        <item>
-            <title><![CDATA[关于倍司网络科技]]></title>
-            <link>https://beisi-tech.github.io/docs/blog/beisi-tech</link>
-            <guid>https://beisi-tech.github.io/docs/blog/beisi-tech</guid>
-            <pubDate>Wed, 11 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[2024-12-11 公司成立的日子]]></description>
-            <content:encoded><![CDATA[<p>2024-12-11 公司成立的日子</p>]]></content:encoded>
-            <category>倍司网络科技</category>
-            <category>云计算</category>
-            <category>技术</category>
         </item>
     </channel>
 </rss>
