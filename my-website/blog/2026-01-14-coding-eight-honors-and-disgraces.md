@@ -1,11 +1,11 @@
 ---
 slug: coding-eight-honors-and-disgraces
-title: 写代码八荣八耻
+title: AI 编程八荣八耻
 authors: xiaolinbenben
 tags: [Vibe Coding, 编程规范, AI]
 ---
 
-在 Vibe Coding（即兴/氛围编程）和 AI 辅助编程日益普及的今天，我们写代码的速度越来越快，但随之而来的风险也越来越大。为了保持代码的健壮性和团队协作的顺畅，总结了每一位开发者（和 AI 助手）都应该铭记的“写代码八荣八耻”。
+在 Vibe Coding（即兴/氛围编程）和 AI 辅助编程日益普及的今天，我们写代码的速度越来越快，但随之而来的风险也越来越大。为了保持代码的健壮性和团队协作的顺畅，总结了每一位开发者（和 AI 助手）都应该铭记的“AI 编程八荣八耻”。
 
 <!--truncate-->
 
