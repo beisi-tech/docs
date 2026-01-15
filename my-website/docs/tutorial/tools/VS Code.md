@@ -6,6 +6,24 @@ slug: vscode
 
 # VS Code 教程
 
+# 基础配置
+
+## Git
+
+### 更改生成 commit 提交信息的提示词
+
+1. 快捷键 `Ctrl + Shift + P` 打开命令面板
+2. 输入 `Preferences: Open User Settings (JSON)` 并回车
+3. 在配置中添加下面的提示词内容
+   ```json
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "请始终使用简体中文生成 Git 提交信息，格式采用约定式提交（feat/fix/docs/refactor/chore），不要输出英文。"
+    },
+   ```
+
+## 推荐插件
+
 ## VS Code 连接远程服务器教程
 
 1. 下载 SSH 远程连接插件

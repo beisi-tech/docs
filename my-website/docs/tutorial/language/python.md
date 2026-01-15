@@ -37,29 +37,20 @@ brew install python
 # 访问 https://www.python.org/downloads/macos/
 ```
 
-#### Linux
-
-```bash
-# Ubuntu/Debian
-sudo apt update
-sudo apt install python3 python3-pip
-
-# CentOS/RHEL
-sudo yum install python3 python3-pip
-```
-
 ### 虚拟环境
+
+虚拟环境用于隔离项目的 Python 解释器和依赖，避免不同项目的版本冲突。uv 可以直接创建并管理虚拟环境。
 
 ```bash
 # 创建虚拟环境
-python -m venv myenv
+uv venv .venv
 
 # 激活虚拟环境
 # Windows
-myenv\Scripts\activate
+.venv\Scripts\activate
 
 # macOS/Linux
-source myenv/bin/activate
+source .venv/bin/activate
 
 # 退出虚拟环境
 deactivate
@@ -67,18 +58,17 @@ deactivate
 
 ### 包管理
 
+包管理负责安装、升级和记录依赖版本，保证开发和部署环境一致。uv 通过 `pyproject.toml` 声明依赖、用 `uv.lock` 锁定版本，再用 `uv sync` 保持环境一致。
+
 ```bash
-# 安装包
-pip install package_name
+# 添加依赖
+uv add package_name
 
-# 安装特定版本
-pip install package_name==1.0.0
+# 指定版本
+uv add package_name==1.0.0
 
-# 从 requirements.txt 安装
-pip install -r requirements.txt
-
-# 生成 requirements.txt
-pip freeze > requirements.txt
+# 同步依赖（按 uv.lock 安装）
+uv sync
 ```
 
 ## 基础语法
