@@ -19,7 +19,7 @@ slug: vscode
     "github.copilot.chat.commitMessageGeneration.instructions": [
     {
       "text": "请始终使用简体中文生成 Git 提交信息，格式采用约定式提交（feat/fix/docs/refactor/chore），不要输出英文。"
-    },
+    }],
    ```
 
 ## 推荐插件
