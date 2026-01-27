@@ -2,11 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-01-16T00:00:00.000Z</updated>
+    <updated>2026-01-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[AI时代，为何还在考八股文？]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay</id>
+        <link href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay"/>
+        <updated>2026-01-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[最近福州中考一检的作文题火了，题目是关于“玫瑰的热烈”与“蒲公英的自由”。]]></summary>
+        <content type="html"><![CDATA[<p>最近福州中考一检的作文题火了，题目是关于“玫瑰的热烈”与“蒲公英的自由”。</p>
+<p>家长群炸锅的理由很简单：<strong>同一道题，AI 生成满分回答只要 10 秒，初三学生却要苦思冥想 40 分钟。</strong></p>
+<p>这就很有意思了。我们费劲巴拉考核的，究竟是孩子的思维能力，还是他们对套路的熟练度？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="评分标准的皇帝新衣">评分标准的“皇帝新衣”<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86%E7%9A%84%E7%9A%87%E5%B8%9D%E6%96%B0%E8%A1%A3" class="hash-link" aria-label="评分标准的“皇帝新衣”的直接链接" title="评分标准的“皇帝新衣”的直接链接" translate="no">​</a></h2>
+<p>这道题最荒诞的地方，不在题目本身，而在它背后的那套标准。</p>
+<p>现在的作文早就成了流水线产品：培训机构整理模板，老师教你怎么套，学生背几篇范文就上考场。</p>
+<p>一个初三学生根本不需要理解什么“差异使世界精彩”。只要掌握“对比-分析-升华”的三段式结构，再硬塞几个名人名言，分数就不会低。</p>
+<p><strong>这哪是考语文，这是考填空。</strong></p>
+<p>更讽刺的是，福州这次考试还出了个乌龙：答题卡设计错误，把作文格印错了。这简直是绝妙的隐喻——连形式都出错的系统，还指望它能通过形式考核出什么有价值的内容？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-扯下了遮羞布">AI 扯下了遮羞布<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#ai-%E6%89%AF%E4%B8%8B%E4%BA%86%E9%81%AE%E7%BE%9E%E5%B8%83" class="hash-link" aria-label="AI 扯下了遮羞布的直接链接" title="AI 扯下了遮羞布的直接链接" translate="no">​</a></h2>
+<p>当 ChatGPT 几秒钟就能生成十几篇“玫瑰与蒲公英”的高分作文时，这层窗户纸算是彻底捅破了。</p>
+<p>AI 写的东西完美符合标准：结构完整、论点清晰、立意积极。混在学生卷子里，阅卷老师估计都分不出来。</p>
+<p>我不是在吹 AI 牛逼，我是在问：<strong>当机器能完美完成甚至碾压人类时，为什么还要把这东西作为核心考核标准？</strong></p>
+<p>这就像在人手一个智能手机的时代，非要逼着孩子练算盘，还把算盘打得快不快作为数学能力的唯一标准。</p>
+<p>到底是在考思考能力，还是在考谁更像机器？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="真实世界不按套路出牌">真实世界不按套路出牌<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E4%B8%8D%E6%8C%89%E5%A5%97%E8%B7%AF%E5%87%BA%E7%89%8C" class="hash-link" aria-label="真实世界不按套路出牌的直接链接" title="真实世界不按套路出牌的直接链接" translate="no">​</a></h2>
+<p>最让我难受的是，等些孩子走出考场，面对的真实世界根本不是那么回事。</p>
+<p>生活里的难题，哪有什么“玫瑰与蒲公英”的二元对立？</p>
+<ul>
+<li>工作中遇到同事甩锅，怎么处理？</li>
+<li>项目进度延期，怎么向老板解释？</li>
+<li>面对两个都很烂的选择，怎么权衡利益？</li>
+</ul>
+<p>这些才是决定一个人未来的核心能力：情境理解、价值判断、人际沟通。而这些，恰恰是那套“八股文”怎么考也考不出来的。</p>
+<p>未来的评估，哪怕像个项目展示都比现在强：让学生去解决一个真问题，去说服别人，去设计方案。这才是 AI 还没法完全替代的人类价值。</p>
+<p>最后就想说一句大白话：<strong>去你大爷的八股文，真实世界的挑战从来不会按“玫瑰与蒲公英”出题。</strong></p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="AI" term="AI"/>
+        <category label="教育" term="教育"/>
+        <category label="思考" term="思考"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[纯小白 AI 编程必备知识详解]]></title>
         <id>https://beisi-tech.github.io/docs/blog/ai-programming-essentials-for-beginners</id>
@@ -1291,23 +1331,5 @@
         <category label="独立博客" term="独立博客"/>
         <category label="技术分享" term="技术分享"/>
         <category label="个人成长" term="个人成长"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[倍司科技贡献者]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/beisi-tech-contributors</id>
-        <link href="https://beisi-tech.github.io/docs/blog/beisi-tech-contributors"/>
-        <updated>2025-10-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[1. 林智清]]></summary>
-        <content type="html"><![CDATA[<ol>
-<li>林智清</li>
-<li>林鸿毅</li>
-<li>薛嘉伟</li>
-<li>刘玲玲</li>
-</ol>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="倍司科技" term="倍司科技"/>
     </entry>
 </feed>
