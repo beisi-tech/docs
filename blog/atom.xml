@@ -2,11 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-01-27T00:00:00.000Z</updated>
+    <updated>2026-02-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[虚拟摄像头怎么选]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows</id>
+        <link href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows"/>
+        <updated>2026-02-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[上周开会前，同事盯着我的画面问：你是不是换了新摄像头？我说没有，就是虚拟摄像头。]]></summary>
+        <content type="html"><![CDATA[<p>上周开会前，同事盯着我的画面问：你是不是换了新摄像头？我说没有，就是虚拟摄像头。</p>
+<p>我其实踩过坑，装了几次才顺。画面卡、CPU 飙、会议软件找不到设备，都是常见问题。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="先想清楚你要干什么">先想清楚你要干什么<a href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows#%E5%85%88%E6%83%B3%E6%B8%85%E6%A5%9A%E4%BD%A0%E8%A6%81%E5%B9%B2%E4%BB%80%E4%B9%88" class="hash-link" aria-label="先想清楚你要干什么的直接链接" title="先想清楚你要干什么的直接链接" translate="no">​</a></h2>
+<p>如果只是视频会议，目标很简单：画面稳定、声音正常、占用别太高。这个场景不需要复杂功能，轻量工具就够用。</p>
+<p>如果你要直播或录课，情况就变了。多场景切换、字幕、画中画这些功能会很依赖。<strong>需求越复杂，软件越重</strong>，这点要先接受。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="兼容性比花活重要">兼容性比花活重要<a href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows#%E5%85%BC%E5%AE%B9%E6%80%A7%E6%AF%94%E8%8A%B1%E6%B4%BB%E9%87%8D%E8%A6%81" class="hash-link" aria-label="兼容性比花活重要的直接链接" title="兼容性比花活重要的直接链接" translate="no">​</a></h2>
+<p>虚拟摄像头本质是一个系统级设备，会议软件能不能识别它，比滤镜好不好看更关键。<strong>优先选能注册标准摄像头驱动的工具</strong>，这样大部分软件都能看到。</p>
+<p>我通常会先在目标软件里试一次，再决定要不要深度配置。别等到正式开会才发现选不到设备。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="几个常见选择">几个常见选择<a href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows#%E5%87%A0%E4%B8%AA%E5%B8%B8%E8%A7%81%E9%80%89%E6%8B%A9" class="hash-link" aria-label="几个常见选择的直接链接" title="几个常见选择的直接链接" translate="no">​</a></h2>
+<p>OBS Studio：免费开源，功能最全，场景和素材管理很强。缺点也明显，上手门槛高，配置复杂，电脑性能一般时会有点吃力。</p>
+<p>ManyCam：操作简单，适合会议和教学。免费版有水印和分辨率限制，但上手速度确实快。</p>
+<p>Webcamoid：开源跨平台，滤镜和扩展多。Windows 上偶尔需要折腾驱动，适合愿意花点时间的人。</p>
+<p>e2eSoft VCam：国内老牌收费软件，兼容性和稳定性不错，中文支持也方便，图省事可以考虑。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="使用边界别踩线">使用边界别踩线<a href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows#%E4%BD%BF%E7%94%A8%E8%BE%B9%E7%95%8C%E5%88%AB%E8%B8%A9%E7%BA%BF" class="hash-link" aria-label="使用边界别踩线的直接链接" title="使用边界别踩线的直接链接" translate="no">​</a></h2>
+<p>虚拟摄像头是个好工具，但它<strong>不该用在身份验证、考试监考等明确禁止的场景</strong>。平台要求真实摄像头，就按要求来，别把工具用成风险。</p>
+<p>真遇到设备不方便，最稳妥的做法是联系平台客服，看看有没有合规的替代流程。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="我的简单结论">我的简单结论<a href="https://beisi-tech.github.io/docs/blog/choose-virtual-camera-on-windows#%E6%88%91%E7%9A%84%E7%AE%80%E5%8D%95%E7%BB%93%E8%AE%BA" class="hash-link" aria-label="我的简单结论的直接链接" title="我的简单结论的直接链接" translate="no">​</a></h2>
+<p>只开会：选轻量、好用的就行。要做直播和多场景：OBS 的能力最强。想少折腾：付费软件更省心。</p>
+<p>我自己大部分时间用 OBS，临时会议就用轻量工具，省脑子。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="Windows" term="Windows"/>
+        <category label="工具" term="工具"/>
+        <category label="视频会议" term="视频会议"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI时代，为何还在考八股文？]]></title>
         <id>https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay</id>
@@ -1145,191 +1178,5 @@
         <category label="人工智能" term="人工智能"/>
         <category label="技术趋势" term="技术趋势"/>
         <category label="职业发展" term="职业发展"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[自媒体时代的脆弱性：我为什么要建立自己的博客]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era</id>
-        <link href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era"/>
-        <updated>2025-10-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[写在前面]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="写在前面">写在前面<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2" class="hash-link" aria-label="写在前面的直接链接" title="写在前面的直接链接" translate="no">​</a></h2>
-<p>作为一名技术人，我一直在思考一个问题：在这个自媒体平台遍地开花的时代，为什么还要花时间和精力去搭建一个独立博客？</p>
-<p>微信公众号、知乎、CSDN、掘金、B 站……这些平台不是已经很成熟了吗？直接在上面发文章、分享技术不是更方便吗？</p>
-<p>直到我真正经历过<strong>自媒体时代的种种脆弱性</strong>后，我才明白：<strong>拥有一个完全属于自己的空间，是多么重要。</strong></p>
-<p>这篇文章，我想聊聊我所感受到的自媒体时代的脆弱性，以及这些经历如何促使我建立这个博客。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="自媒体时代的脆弱性">自媒体时代的脆弱性<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#%E8%87%AA%E5%AA%92%E4%BD%93%E6%97%B6%E4%BB%A3%E7%9A%84%E8%84%86%E5%BC%B1%E6%80%A7" class="hash-link" aria-label="自媒体时代的脆弱性的直接链接" title="自媒体时代的脆弱性的直接链接" translate="no">​</a></h2>
-<p>这些年在各个平台上创作，我深刻感受到了这个时代的不确定性和脆弱。具体体现在：</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-平台规则说变就变">1. 平台规则说变就变<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#1-%E5%B9%B3%E5%8F%B0%E8%A7%84%E5%88%99%E8%AF%B4%E5%8F%98%E5%B0%B1%E5%8F%98" class="hash-link" aria-label="1. 平台规则说变就变的直接链接" title="1. 平台规则说变就变的直接链接" translate="no">​</a></h3>
-<p>在使用各种平台的过程中，我深刻体会到了这种无力感：</p>
-<ul>
-<li><strong>算法调整</strong>：今天推荐你，明天可能就把你的内容沉入海底</li>
-<li><strong>规则变更</strong>：平台政策说变就变，你辛苦积累的运营经验可能一夜清零</li>
-<li><strong>审核标准</strong>：模糊的审核机制，你永远不知道哪句话会触碰红线</li>
-<li><strong>功能调整</strong>：平台可能随时下线某个你依赖的功能</li>
-</ul>
-<p><strong>真实案例</strong>：</p>
-<ul>
-<li>某公众号因为一篇文章被封号，十年心血付之东流</li>
-<li>某 UP 主因算法调整，播放量从百万跌至千位</li>
-<li>某知乎大 V 因为不明原因被限流，粉丝互动骤降 90%</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-内容所有权的模糊地带">2. 内容所有权的模糊地带<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#2-%E5%86%85%E5%AE%B9%E6%89%80%E6%9C%89%E6%9D%83%E7%9A%84%E6%A8%A1%E7%B3%8A%E5%9C%B0%E5%B8%A6" class="hash-link" aria-label="2. 内容所有权的模糊地带的直接链接" title="2. 内容所有权的模糊地带的直接链接" translate="no">​</a></h3>
-<p>我的内容，真的属于我吗？</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">大多数平台的用户协议中都有类似条款：</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">"您授予平台非排他性、全球范围内的、免费的、可转授权的使用权..."</span><br></span></code></pre></div></div>
-<p>这意味着：</p>
-<ul>
-<li>❌ <strong>无法完全控制</strong>：平台可以使用、修改、分发你的内容</li>
-<li>❌ <strong>删除风险</strong>：内容可能因为各种原因被删除，且无法恢复</li>
-<li>❌ <strong>迁移困难</strong>：想把内容搬到其他平台？格式、图片、评论都会丢失</li>
-<li>❌ <strong>数据垄断</strong>：你的粉丝数据、互动数据都掌握在平台手中</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-平台不会永远存在">3. 平台不会永远存在<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#3-%E5%B9%B3%E5%8F%B0%E4%B8%8D%E4%BC%9A%E6%B0%B8%E8%BF%9C%E5%AD%98%E5%9C%A8" class="hash-link" aria-label="3. 平台不会永远存在的直接链接" title="3. 平台不会永远存在的直接链接" translate="no">​</a></h3>
-<p>回顾互联网的历史，我看到了太多平台的兴衰：</p>
-<p><strong>已经消失或衰落的平台</strong>：</p>
-<ul>
-<li>博客时代：网易博客、搜狐博客、百度空间</li>
-<li>社交时代：人人网、开心网、Google+</li>
-<li>视频时代：土豆网、56 网、酷 6 网</li>
-<li>微博时代：腾讯微博、网易微博</li>
-</ul>
-<p>每一个平台的倒下，都意味着：</p>
-<ul>
-<li>💔 内容彻底消失</li>
-<li>💔 粉丝关系断裂</li>
-<li>💔 多年积累归零</li>
-<li>💔 数字资产蒸发</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-流量焦虑与内容异化">4. 流量焦虑与内容异化<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#4-%E6%B5%81%E9%87%8F%E7%84%A6%E8%99%91%E4%B8%8E%E5%86%85%E5%AE%B9%E5%BC%82%E5%8C%96" class="hash-link" aria-label="4. 流量焦虑与内容异化的直接链接" title="4. 流量焦虑与内容异化的直接链接" translate="no">​</a></h3>
-<p>在平台上写了一段时间后，我发现自己陷入了一个怪圈：</p>
-<p><strong>标题党盛行</strong>：</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">"震惊！90% 的人都不知道的秘密！"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">"不看后悔系列！这个方法绝了！"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">"月入十万的副业，只需要..."</span><br></span></code></pre></div></div>
-<p><strong>内容同质化</strong>：</p>
-<ul>
-<li>追热点、蹭流量成为常态</li>
-<li>深度内容无人问津</li>
-<li>快餐式消费主导一切</li>
-<li>原创精神逐渐消亡</li>
-</ul>
-<p><strong>我的困境</strong>：</p>
-<ul>
-<li>想深入研究一个技术点，但担心内容太长没人看</li>
-<li>有些技术细节想记录，但又觉得太基础会被嘲笑</li>
-<li>真正想分享的干货，反而不如标题党吸引眼球</li>
-<li>写作从乐趣变成了压力，从表达变成了表演</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-我在为平台打工">5. 我在为平台打工<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#5-%E6%88%91%E5%9C%A8%E4%B8%BA%E5%B9%B3%E5%8F%B0%E6%89%93%E5%B7%A5" class="hash-link" aria-label="5. 我在为平台打工的直接链接" title="5. 我在为平台打工的直接链接" translate="no">​</a></h3>
-<p>慢慢地，我意识到一个现实：</p>
-<ul>
-<li><strong>账号非你所有</strong>：平台有权随时封禁你的账号</li>
-<li><strong>粉丝不属于你</strong>：无法导出粉丝联系方式，无法建立直接连接</li>
-<li><strong>收益被分成</strong>：平台抽成、广告分成，你永远是规则的接受者</li>
-<li><strong>话语权缺失</strong>：任何争议，平台说了算</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="所以我决定建立自己的博客">所以，我决定建立自己的博客<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#%E6%89%80%E4%BB%A5%E6%88%91%E5%86%B3%E5%AE%9A%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="所以，我决定建立自己的博客的直接链接" title="所以，我决定建立自己的博客的直接链接" translate="no">​</a></h2>
-<p>认识到这些问题后，我决定建立自己的博客，打造一个真正属于自己的空间。</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-完全的控制权">1. 完全的控制权<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#1-%E5%AE%8C%E5%85%A8%E7%9A%84%E6%8E%A7%E5%88%B6%E6%9D%83" class="hash-link" aria-label="1. 完全的控制权的直接链接" title="1. 完全的控制权的直接链接" translate="no">​</a></h3>
-<p>建立这个博客后，我终于拥有了：</p>
-<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token key atrule" style="color:#00a4db">域名</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> 我的品牌，我的地址</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">服务器</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> 我的空间，我的规则</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">内容</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> 完全属于我，永久保存</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">数据</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> 100% 掌控，随时导出</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token key atrule" style="color:#00a4db">设计</span><span class="token punctuation" style="color:#393A34">:</span><span class="token plain"> 完全自定义，体现个性</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-我可以按照自己的方式写作">2. 我可以按照自己的方式写作<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#2-%E6%88%91%E5%8F%AF%E4%BB%A5%E6%8C%89%E7%85%A7%E8%87%AA%E5%B7%B1%E7%9A%84%E6%96%B9%E5%BC%8F%E5%86%99%E4%BD%9C" class="hash-link" aria-label="2. 我可以按照自己的方式写作的直接链接" title="2. 我可以按照自己的方式写作的直接链接" translate="no">​</a></h3>
-<p>在这里：</p>
-<ul>
-<li>✅ 想写多长就写多长，不受字数限制</li>
-<li>✅ 想写什么就写什么，不用担心违规</li>
-<li>✅ 想怎么排版就怎么排版，不受模板束缚</li>
-<li>✅ 想什么时候更新就什么时候更新，没有压力</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-我在构建自己的知识库">3. 我在构建自己的知识库<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#3-%E6%88%91%E5%9C%A8%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%9F%A5%E8%AF%86%E5%BA%93" class="hash-link" aria-label="3. 我在构建自己的知识库的直接链接" title="3. 我在构建自己的知识库的直接链接" translate="no">​</a></h3>
-<p>这个博客对我来说，是：</p>
-<p><strong>知识管理</strong>：</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">持续积累 → 不断优化 → 形成体系</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">建立个人知识库，不断迭代升级</span><br></span></code></pre></div></div>
-<p><strong>时间价值</strong>：</p>
-<ul>
-<li>长尾效应：优质内容可以持续带来流量</li>
-<li>复利增长：内容积累越多，价值越大</li>
-<li>历史见证：记录我的成长轨迹</li>
-<li>永久存在：只要服务器在，内容就在</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-我想展示真实的自己">4. 我想展示真实的自己<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#4-%E6%88%91%E6%83%B3%E5%B1%95%E7%A4%BA%E7%9C%9F%E5%AE%9E%E7%9A%84%E8%87%AA%E5%B7%B1" class="hash-link" aria-label="4. 我想展示真实的自己的直接链接" title="4. 我想展示真实的自己的直接链接" translate="no">​</a></h3>
-<p>这个博客是我的数字名片：</p>
-<p><strong>作为技术人</strong>：</p>
-<ul>
-<li>记录我的项目经验</li>
-<li>分享我踩过的坑</li>
-<li>展示我的技术栈</li>
-<li>记录我的成长轨迹</li>
-</ul>
-<p><strong>作为思考者</strong>：</p>
-<ul>
-<li>整理我的想法</li>
-<li>表达我的观点</li>
-<li>与志同道合的人交流</li>
-<li>建立长期的影响力</li>
-</ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-我不再依赖平台算法">5. 我不再依赖平台算法<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#5-%E6%88%91%E4%B8%8D%E5%86%8D%E4%BE%9D%E8%B5%96%E5%B9%B3%E5%8F%B0%E7%AE%97%E6%B3%95" class="hash-link" aria-label="5. 我不再依赖平台算法的直接链接" title="5. 我不再依赖平台算法的直接链接" translate="no">​</a></h3>
-<p>有了自己的博客：</p>
-<p><strong>SEO 优势</strong>：</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">搜索引擎优化 → 自然流量持续增长</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">高质量内容 → Google/百度收录</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">长尾关键词 → 精准流量获取</span><br></span></code></pre></div></div>
-<p><strong>多渠道分发</strong>：</p>
-<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">博客原创 → 发布到各平台</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">各平台引流 → 回流到博客</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">形成流量闭环 → 建立私域流量</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-顺便提升了我的技术能力">6. 顺便提升了我的技术能力<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#6-%E9%A1%BA%E4%BE%BF%E6%8F%90%E5%8D%87%E4%BA%86%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E8%83%BD%E5%8A%9B" class="hash-link" aria-label="6. 顺便提升了我的技术能力的直接链接" title="6. 顺便提升了我的技术能力的直接链接" translate="no">​</a></h3>
-<p>搭建和维护这个博客，让我学到了很多：</p>
-<ul>
-<li><strong>前端开发</strong>：HTML、CSS、JavaScript</li>
-<li><strong>后端知识</strong>：服务器、数据库、部署</li>
-<li><strong>运维能力</strong>：域名、SSL、CDN、监控</li>
-<li><strong>设计审美</strong>：排版、配色、用户体验</li>
-<li><strong>内容运营</strong>：SEO、数据分析、用户增长</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="这个博客对我的意义">这个博客对我的意义<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#%E8%BF%99%E4%B8%AA%E5%8D%9A%E5%AE%A2%E5%AF%B9%E6%88%91%E7%9A%84%E6%84%8F%E4%B9%89" class="hash-link" aria-label="这个博客对我的意义的直接链接" title="这个博客对我的意义的直接链接" translate="no">​</a></h2>
-<p>建立这个博客，对我来说不仅仅是搭建一个网站，更是：</p>
-<p><strong>我的数字空间</strong>：</p>
-<ul>
-<li>💎 完全属于我的内容仓库</li>
-<li>📈 随时间积累的技术资产</li>
-<li>🎯 展示自己能力的窗口</li>
-<li>🔒 不用担心被删除或关闭</li>
-<li>🚀 持续学习的动力</li>
-<li>✨ 自由表达的平台</li>
-</ul>
-<p><strong>我的期望</strong>：</p>
-<ul>
-<li>记录我的技术成长轨迹</li>
-<li>帮助遇到类似问题的人</li>
-<li>结识更多技术同行</li>
-<li>建立自己的技术影响力</li>
-<li>享受创作的乐趣</li>
-<li>留下一些有价值的东西</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="写在最后">写在最后<a href="https://beisi-tech.github.io/docs/blog/fragility-of-social-media-era#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E" class="hash-link" aria-label="写在最后的直接链接" title="写在最后的直接链接" translate="no">​</a></h2>
-<p>建立这个博客，是我 2025 年做的一个重要决定。</p>
-<p>在这个充满不确定性的自媒体时代，我选择建立自己的博客，是因为：</p>
-<ul>
-<li><strong>对抗不确定性</strong>：建立真正稳固、持久的数字资产</li>
-<li><strong>回归初心</strong>：为了记录和分享，而不是为了流量和算法</li>
-<li><strong>掌握主动</strong>：我的内容我做主，不被平台左右</li>
-<li><strong>长期主义</strong>：这是属于我的空间，会一直存在</li>
-<li><strong>独立思考</strong>：在这里，我可以深度思考和自由表达</li>
-</ul>
-<p><strong>平台的繁荣可能只是表象，真正持久的是我们自己创造的东西。</strong></p>
-<p><strong>这个博客刚刚起步</strong>，内容还不多，功能也在不断完善中。但我相信，<strong>持续的积累会带来质变</strong>。</p>
-<p>如果你也感受到了平台的种种限制，如果你也想拥有一个真正属于自己的空间，欢迎和我交流。</p>
-<p><strong>现在开始，永远不晚。</strong></p>
-<hr>
-<p><strong>相关资源</strong>：</p>
-<ul>
-<li>本站使用的技术栈：<a href="https://docusaurus.io/" target="_blank" rel="noopener noreferrer">Docusaurus</a></li>
-<li>免费托管平台：<a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></li>
-<li>域名注册：<a href="https://wanwang.aliyun.com/" target="_blank" rel="noopener noreferrer">阿里云</a></li>
-<li>CDN 加速：参考本站<a href="https://beisi-tech.github.io/docs/tutorial/devops/aliyun-cdn">阿里云 CDN 教程</a></li>
-</ul>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="博客" term="博客"/>
-        <category label="自媒体" term="自媒体"/>
-        <category label="独立博客" term="独立博客"/>
-        <category label="技术分享" term="技术分享"/>
-        <category label="个人成长" term="个人成长"/>
     </entry>
 </feed>
