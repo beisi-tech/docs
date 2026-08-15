@@ -4,10 +4,43 @@
         <title>倍司企业文档 Blog</title>
         <link>https://beisi-tech.github.io/docs/blog</link>
         <description>倍司企业文档 Blog</description>
-        <lastBuildDate>Fri, 14 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 15 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[一条命令开启 BBR 加速]]></title>
+            <link>https://beisi-tech.github.io/docs/blog/enable-bbr-one-command</link>
+            <guid>https://beisi-tech.github.io/docs/blog/enable-bbr-one-command</guid>
+            <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[VPS 速度慢，多半是没开 BBR。BBR 是 Google 出的拥塞控制算法，对高延迟、丢包的线路提升很明显，国内访问国外服务器尤其值得开。]]></description>
+            <content:encoded><![CDATA[<p>VPS 速度慢，多半是没开 BBR。BBR 是 Google 出的拥塞控制算法，对高延迟、丢包的线路提升很明显，国内访问国外服务器尤其值得开。</p>
+<p>开 BBR 不用换机器、不用加钱，一条命令就行。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一键脚本">一键脚本<a href="https://beisi-tech.github.io/docs/blog/enable-bbr-one-command#%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC" class="hash-link" aria-label="一键脚本的直接链接" title="一键脚本的直接链接" translate="no">​</a></h2>
+<p><a href="https://github.com/adsorgcn/bbr-script" target="_blank" rel="noopener noreferrer">adsorgcn/bbr-script</a> 是一个 BBR 一键加速脚本，支持 CentOS / Ubuntu / Debian，自动检测依赖、自动修复 CentOS 停服源，国内 VPS 自动切阿里云镜像。在服务器上执行：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">bash &lt;(curl -sL https://raw.githubusercontent.com/adsorgcn/bbr-script/main/newbbr.sh)</span><br></span></code></pre></div></div>
+<p>或者用 wget：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wget -O newbbr.sh https://raw.githubusercontent.com/adsorgcn/bbr-script/main/newbbr.sh &amp;&amp; bash newbbr.sh</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="跑起来很简单">跑起来很简单<a href="https://beisi-tech.github.io/docs/blog/enable-bbr-one-command#%E8%B7%91%E8%B5%B7%E6%9D%A5%E5%BE%88%E7%AE%80%E5%8D%95" class="hash-link" aria-label="跑起来很简单的直接链接" title="跑起来很简单的直接链接" translate="no">​</a></h2>
+<p>脚本会先检查系统、内核、虚拟化类型，然后弹出菜单。新手直接选 <code>1</code> 安装/启用 BBR。</p>
+<ul>
+<li>内核支持 BBR（4.9+）：<strong>30 秒搞定</strong></li>
+<li>内核太老：选 <code>2</code>（Ubuntu/Debian）或 <code>3</code>（CentOS）升级内核，重启后再跑一次选 <code>1</code></li>
+<li><code>4</code> 清理旧内核，<code>5</code> 查看状态</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="怎么确认生效了">怎么确认生效了<a href="https://beisi-tech.github.io/docs/blog/enable-bbr-one-command#%E6%80%8E%E4%B9%88%E7%A1%AE%E8%AE%A4%E7%94%9F%E6%95%88%E4%BA%86" class="hash-link" aria-label="怎么确认生效了的直接链接" title="怎么确认生效了的直接链接" translate="no">​</a></h2>
+<p>验证两行：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">lsmod | grep bbr</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sysctl net.ipv4.tcp_congestion_control</span><br></span></code></pre></div></div>
+<p>能看到 <code>tcp_bbr</code> 和 <code>bbr</code>，就成了。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="注意openvz-不行">注意：OpenVZ 不行<a href="https://beisi-tech.github.io/docs/blog/enable-bbr-one-command#%E6%B3%A8%E6%84%8Fopenvz-%E4%B8%8D%E8%A1%8C" class="hash-link" aria-label="注意：OpenVZ 不行的直接链接" title="注意：OpenVZ 不行的直接链接" translate="no">​</a></h2>
+<p>BBR 要换内核，OpenVZ 换不了。先检查：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">systemd-detect-virt</span><br></span></code></pre></div></div>
+<p>输出 <code>openvz</code> 就没辙，换台 KVM 的机器吧。</p>
+<p>脚本会保留旧内核，出问题可以回退，但建议还是先备份再操作。跑完能快多少，就看你的线路了。</p>]]></content:encoded>
+            <category>BBR</category>
+            <category>VPS</category>
+            <category>网络优化</category>
+        </item>
         <item>
             <title><![CDATA[DeepSeek Harness 一文入门，附小白安装教程]]></title>
             <link>https://beisi-tech.github.io/docs/blog/deepseek-harness-guide</link>
@@ -1071,50 +1104,6 @@
             <category>项目</category>
             <category>开源</category>
             <category>个人作品</category>
-        </item>
-        <item>
-            <title><![CDATA[中国开发者的科学上网指南]]></title>
-            <link>https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers</link>
-            <guid>https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers</guid>
-            <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[快速上手指南]]></description>
-            <content:encoded><![CDATA[<p>快速上手指南</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="推荐机场">推荐机场<a href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers#%E6%8E%A8%E8%8D%90%E6%9C%BA%E5%9C%BA" class="hash-link" aria-label="推荐机场的直接链接" title="推荐机场的直接链接" translate="no">​</a></h2>
-<table><thead><tr><th style="text-align:center">序号</th><th style="text-align:center">机场名称</th><th style="text-align:center">机场网址</th><th style="text-align:center">邀请链接</th></tr></thead><tbody><tr><td style="text-align:center">1</td><td style="text-align:center">CuteCloud</td><td style="text-align:center"><a href="https://ure.best/" target="_blank" rel="noopener noreferrer">ure.best</a></td><td style="text-align:center"><a href="https://ure.best/#/register?code=hyoLOeHC" target="_blank" rel="noopener noreferrer">点击注册</a></td></tr><tr><td style="text-align:center">2</td><td style="text-align:center">一分机场</td><td style="text-align:center"><a href="https://xn--4gqx1hgtfdmt.com/" target="_blank" rel="noopener noreferrer">一分机场.com</a></td><td style="text-align:center"><a href="https://xn--4gqx1hgtfdmt.com/#/register?code=1mCc22Ay" target="_blank" rel="noopener noreferrer">点击注册</a></td></tr><tr><td style="text-align:center">3</td><td style="text-align:center">泡泡狗</td><td style="text-align:center"><a href="https://paopao.dog/" target="_blank" rel="noopener noreferrer">paopao.dog</a></td><td style="text-align:center"><a href="https://access.paopao.dog/#/register?code=Xk6dGKa4" target="_blank" rel="noopener noreferrer">点击注册</a></td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">奶昔机场</td><td style="text-align:center"><a href="https://nexitallysafe.com/" target="_blank" rel="noopener noreferrer">nexitallysafe.com</a></td><td style="text-align:center">无</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="推荐静态-ip">推荐静态 IP<a href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers#%E6%8E%A8%E8%8D%90%E9%9D%99%E6%80%81-ip" class="hash-link" aria-label="推荐静态 IP的直接链接" title="推荐静态 IP的直接链接" translate="no">​</a></h2>
-<table><thead><tr><th style="text-align:center">服务商</th><th style="text-align:center">网址</th><th style="text-align:center">邀请链接</th></tr></thead><tbody><tr><td style="text-align:center">ClipProxy</td><td style="text-align:center"><a href="https://cliproxy.com/" target="_blank" rel="noopener noreferrer">cliproxy.com</a></td><td style="text-align:center"><a href="https://share.cliproxy.com/share/jtut5tzcd" target="_blank" rel="noopener noreferrer">点击注册</a></td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="推荐代理工具">推荐代理工具<a href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers#%E6%8E%A8%E8%8D%90%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7" class="hash-link" aria-label="推荐代理工具的直接链接" title="推荐代理工具的直接链接" translate="no">​</a></h2>
-<table><thead><tr><th style="text-align:center">平台</th><th style="text-align:center">推荐工具</th></tr></thead><tbody><tr><td style="text-align:center">Windows</td><td style="text-align:center">Clash Verge</td></tr><tr><td style="text-align:center">macOS</td><td style="text-align:center">Clash Verge</td></tr><tr><td style="text-align:center">Android</td><td style="text-align:center">Clash Meta</td></tr><tr><td style="text-align:center">iOS</td><td style="text-align:center">Shadowrocket</td></tr></tbody></table>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="机场使用教程">机场使用教程<a href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers#%E6%9C%BA%E5%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B" class="hash-link" aria-label="机场使用教程的直接链接" title="机场使用教程的直接链接" translate="no">​</a></h2>
-<p>参考各机场网址内部教程即可。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="链式代理教程">链式代理教程<a href="https://beisi-tech.github.io/docs/blog/scientific-internet-access-guide-for-chinese-developers#%E9%93%BE%E5%BC%8F%E4%BB%A3%E7%90%86%E6%95%99%E7%A8%8B" class="hash-link" aria-label="链式代理教程的直接链接" title="链式代理教程的直接链接" translate="no">​</a></h2>
-<p>首先确保你已经有可以使用的节点，然后再开始配置链式代理。</p>
-<p>以下以 Clash Verge 工具说明具体流程</p>
-<p>第一步：购买CliProxy的【长效静态IP】。价格约28元/月，你可以像我一样先买一个月试用，支持支付宝付款。
-自行购买：<a href="https://share.cliproxy.com/share/jtut5tzcd" target="_blank" rel="noopener noreferrer">https://cliproxy.com/zh/
-</a>
-第二步：购买成功后打开 ClipProxy 的【长效静态IP】后台。重点关注IP地址、端口（IP地址后三位数字）、用户名、密码。
-<img decoding="async" loading="lazy" alt="图片3.27" src="https://beisi-tech.github.io/docs/assets/images/%E5%9B%BE%E7%89%873.27-dff006d3ae9fb57c1c54549d6a4755d3.png" width="1548" height="579" class="img_ev3q"></p>
-<p>第三步：回到 Clash Verge 界面，在【订阅】栏找到你的自用节点模块，右键选择【编辑节点】。
-<img decoding="async" loading="lazy" alt="图片3.29" src="https://beisi-tech.github.io/docs/assets/images/%E5%9B%BE%E7%89%873.29-ef5734f7e9425202b48191015dbe09e0.png" width="1868" height="1380" class="img_ev3q"></p>
-<p>在弹出界面左侧，输入你购买的静态IP内容，格式为：
-<img decoding="async" loading="lazy" alt="图片3.30" src="https://beisi-tech.github.io/docs/assets/images/%E5%9B%BE%E7%89%873.30-4ed95dd6d59961519b6e74e72aafc2d0.png" width="1410" height="1050" class="img_ev3q"></p>
-<p><code>socks5://用户名:密码@主机:端口#备注名称</code></p>
-<p>填好后，在点击界面下方的【添加前置代理节点】，此时你会看到右边出现你刚添加的节点，最后点击右下方的【保存】，然后你会看到界面会弹出绿色方块提示保存成功。</p>
-<p>第四步：回到 Clash Verge 【订阅】栏，对你的自用节点右键选择【编辑代理组】
-弹出界面设置如下：
-<img decoding="async" loading="lazy" alt="图片3.31" src="https://beisi-tech.github.io/docs/assets/images/%E5%9B%BE%E7%89%873.31-67c423ed9bfcb4c7b98b8f255286e65e.png" width="1410" height="1050" class="img_ev3q">
-第一行【代理组类型】选最后一栏【根据定义的代理链传递】（relay）。</p>
-<p>第二行【代理组组名】填你代理组的名字，填你喜欢的。</p>
-<p>第四行【引入代理】栏，先选择你自用代理的其中一个节点，然后再选择你在第三步保存的前置代理节点。</p>
-<p>最后再按下方【添加前置代理组】，看到添加成功后最后点击右下角【保存】，你会看到界面右上角出现绿色模块提示【保存成功】</p>
-<p>第五步：点击Clash Verge左侧菜单【代理】，选择【全局】，点击选择你刚添加的代理组。</p>
-<p>第六步：点击Clash Verge左侧菜单【设置】栏，打开【虚拟网卡】模式，如果无法打开，点击旁边的扳手🔧小图标安装，虚拟网络设置中选择【System】，点击保存</p>
-<p>最后就有了纯洁的IP，请注意你的IP地址，一定要跟你购买的静态ip地址一致。</p>
-<p>教程参考：<a href="https://x.com/Eddy_Gudong/status/1993250981728174339" target="_blank" rel="noopener noreferrer">Twitter 教程</a>(<a href="https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035" target="_blank" rel="noopener noreferrer">https://future-resolution-3a0.notion.site/IP-2b63c8961cf380c6a18bd1cbb508c035</a>)</p>]]></content:encoded>
-            <category>科学上网</category>
-            <category>开发工具</category>
-            <category>VPN</category>
         </item>
     </channel>
 </rss>
