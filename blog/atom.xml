@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-08-15T00:00:00.000Z</updated>
+    <updated>2026-08-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[别再只拿 Token 单价比较模型了]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/model-pricing-cost-per-task</id>
+        <link href="https://beisi-tech.github.io/docs/blog/model-pricing-cost-per-task"/>
+        <updated>2026-08-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我们过去比较模型价格，可能一直都算错了。大家习惯拿每百万 Token 的价格横向对比，但问题是，不同模型输出的 Token 根本不是同一种“计量单位”：完成同样一段文本，GPT-5.6 Sol 可能只需要 766 Tokens，Claude Opus 5 却需要 1170 Tokens，前者比后者少了约 34.5%。这意味着，Token 单价看起来更便宜的模型，完成同一个任务时未必真的更省钱。真正值得比较的，不是“一百万 Token 卖多少钱”，而是完成同一个任务究竟要花多少钱。到了 Agent 时代，模型还要连续调用工具、反复推理和自我纠错，单看 Token 价格就更容易失真，最终真正有意义的指标可能只剩一个：Cost per successful task，也就是每个成功任务的成本。所以下次再讨论谁家的模型更贵，不妨先问一句：你这一百万 Token，到底能做多少事？模型价格不能只看单价，也得算效率了，家人们。]]></summary>
+        <content type="html"><![CDATA[<p>我们过去比较模型价格，可能一直都算错了。大家习惯拿每百万 Token 的价格横向对比，但问题是，不同模型输出的 Token 根本不是同一种“计量单位”：完成同样一段文本，GPT-5.6 Sol 可能只需要 766 Tokens，Claude Opus 5 却需要 1170 Tokens，前者比后者少了约 34.5%。这意味着，Token 单价看起来更便宜的模型，完成同一个任务时未必真的更省钱。真正值得比较的，不是“一百万 Token 卖多少钱”，而是完成同一个任务究竟要花多少钱。到了 Agent 时代，模型还要连续调用工具、反复推理和自我纠错，单看 Token 价格就更容易失真，最终真正有意义的指标可能只剩一个：<strong>Cost per successful task，也就是每个成功任务的成本</strong>。所以下次再讨论谁家的模型更贵，不妨先问一句：你这一百万 Token，到底能做多少事？模型价格不能只看单价，也得算效率了，家人们。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="AI" term="AI"/>
+        <category label="大模型" term="大模型"/>
+        <category label="Agent" term="Agent"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我做抖音的三个心得]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/douyin-sharing-tips</id>
+        <link href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips"/>
+        <updated>2026-08-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[经常有人问我："你们产品在抖音上是怎么推广的？"]]></summary>
+        <content type="html"><![CDATA[<p>经常有人问我："你们产品在抖音上是怎么推广的？"</p>
+<p>其实没什么套路，就三条，都是自己踩出来的。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="视频要短还要有内容">视频要短，还要有内容<a href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips#%E8%A7%86%E9%A2%91%E8%A6%81%E7%9F%AD%E8%BF%98%E8%A6%81%E6%9C%89%E5%86%85%E5%AE%B9" class="hash-link" aria-label="视频要短，还要有内容的直接链接" title="视频要短，还要有内容的直接链接" translate="no">​</a></h2>
+<p><strong>抖音上没人有耐心。</strong> 划走一条视频只要一秒钟，开头三秒没抓住人，后面内容再好也白搭。</p>
+<p>所以我们的视频都很短，一条就讲一件事，讲完就停。</p>
+<p>短是形式，有内容是底线。光短没内容，就是浪费别人时间。</p>
+<p>我发之前会问自己一句：这条视频删掉哪句话，意思还在？还在，就删。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主动露怯流量自然来">主动露怯，流量自然来<a href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips#%E4%B8%BB%E5%8A%A8%E9%9C%B2%E6%80%AF%E6%B5%81%E9%87%8F%E8%87%AA%E7%84%B6%E6%9D%A5" class="hash-link" aria-label="主动露怯，流量自然来的直接链接" title="主动露怯，流量自然来的直接链接" translate="no">​</a></h2>
+<p>一开始我也只想展示好的一面，怕露怯丢人。后来发现，<strong>偶尔露出自己的薄弱点，反而更有效。</strong></p>
+<p>比如某一步没搞定、某个地方不太会，发出去以后，评论区就会冒出一堆人"装逼"指点你。</p>
+<p>看着像抬杠，其实是白送的流量。有人评论，系统就多推一次。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="以分享为主别引导站外">以分享为主，别引导站外<a href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips#%E4%BB%A5%E5%88%86%E4%BA%AB%E4%B8%BA%E4%B8%BB%E5%88%AB%E5%BC%95%E5%AF%BC%E7%AB%99%E5%A4%96" class="hash-link" aria-label="以分享为主，别引导站外的直接链接" title="以分享为主，别引导站外的直接链接" translate="no">​</a></h2>
+<p>做产品的人容易把抖音当成广告位，视频里喊"点链接""加微信"，结果没人看。</p>
+<p><strong>抖音是分享的地方，不是引流的地方。</strong> 你发的是内容，不是广告。</p>
+<p>觉得有用的人，自己会去搜。强推反而招人烦。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="其实就一句话">其实就一句话<a href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips#%E5%85%B6%E5%AE%9E%E5%B0%B1%E4%B8%80%E5%8F%A5%E8%AF%9D" class="hash-link" aria-label="其实就一句话的直接链接" title="其实就一句话的直接链接" translate="no">​</a></h2>
+<p>做抖音和做产品是一个道理：<strong>先分享真实的东西，别总想着套路。</strong></p>
+<p>你用过、你觉得好，就讲出来。剩下的，交给算法。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="抖音" term="抖音"/>
+        <category label="推广" term="推广"/>
+        <category label="个人成长" term="个人成长"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一条命令开启 BBR 加速]]></title>
         <id>https://beisi-tech.github.io/docs/blog/enable-bbr-one-command</id>
@@ -43,6 +90,50 @@
         <category label="BBR" term="BBR"/>
         <category label="VPS" term="VPS"/>
         <category label="网络优化" term="网络优化"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[做产品，先做给自己用]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/make-product-for-yourself</id>
+        <link href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself"/>
+        <updated>2026-08-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前几天一个朋友跟我说："我想到一个特别好的点子，肯定能火。"]]></summary>
+        <content type="html"><![CDATA[<p>前几天一个朋友跟我说："我想到一个特别好的点子，肯定能火。"</p>
+<p>我问他："你自己会用吗？"</p>
+<p>他愣了半天，说："……不会。"</p>
+<p>我大概能猜到结局了。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="点子好不等于有人用">点子好，不等于有人用<a href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself#%E7%82%B9%E5%AD%90%E5%A5%BD%E4%B8%8D%E7%AD%89%E4%BA%8E%E6%9C%89%E4%BA%BA%E7%94%A8" class="hash-link" aria-label="点子好，不等于有人用的直接链接" title="点子好，不等于有人用的直接链接" translate="no">​</a></h2>
+<p>很多人做产品：先想一个点子，觉得需求很刚，花几个月做出来，最后没人用。</p>
+<p>问题出在哪？</p>
+<p><strong>需求是想象的，不是真实的。</strong></p>
+<p>想出来的需求，和每天遇到的需求，完全是两回事。前者是猜测，后者是事实。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="三个产品都是先做给自己用的">三个产品，都是先做给自己用的<a href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself#%E4%B8%89%E4%B8%AA%E4%BA%A7%E5%93%81%E9%83%BD%E6%98%AF%E5%85%88%E5%81%9A%E7%BB%99%E8%87%AA%E5%B7%B1%E7%94%A8%E7%9A%84" class="hash-link" aria-label="三个产品，都是先做给自己用的的直接链接" title="三个产品，都是先做给自己用的的直接链接" translate="no">​</a></h2>
+<p>terln.cn 上有三个产品：图灵 API、Terln AI、ChatGPT 助手。</p>
+<p>这三个都不是先想出来的点子，而是我们自己先用，用着用着才推广出去的。</p>
+<p>图灵 API，是因为我们自己调用各种 AI 模型很烦，就做了个统一的接入服务；Terln AI，是因为自己批量做图做视频太慢，就做了个批量平台；ChatGPT 助手，是因为自己管理 AI 环境太乱，就做了个桌面工具。</p>
+<p>现在这三个产品都在盈利。</p>
+<p>我们不是先想"别人需要什么"，而是先解决"我自己正在烦什么"。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="自己用好处是天然的">自己用，好处是天然的<a href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself#%E8%87%AA%E5%B7%B1%E7%94%A8%E5%A5%BD%E5%A4%84%E6%98%AF%E5%A4%A9%E7%84%B6%E7%9A%84" class="hash-link" aria-label="自己用，好处是天然的的直接链接" title="自己用，好处是天然的的直接链接" translate="no">​</a></h2>
+<p>做自己用的产品，有几个别人给不了的优势。</p>
+<p>第一，<strong>需求是真的</strong>。不是猜的，是你每天真实面对的。</p>
+<p>第二，<strong>你永远有第一个用户</strong>。产品还没推广，你就是用户，用着用着就发现问题、改掉它。</p>
+<p>第三，<strong>推广是顺便的</strong>。你自己就在用，别人问起来直接讲使用场景就行，比任何广告都真实。具体怎么推广，我写过一篇<a href="https://beisi-tech.github.io/docs/blog/douyin-sharing-tips">《我做抖音的三个心得》</a>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最怕的是我觉得">最怕的是"我觉得"<a href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself#%E6%9C%80%E6%80%95%E7%9A%84%E6%98%AF%E6%88%91%E8%A7%89%E5%BE%97" class="hash-link" aria-label="最怕的是&quot;我觉得&quot;的直接链接" title="最怕的是&quot;我觉得&quot;的直接链接" translate="no">​</a></h2>
+<p>做产品最怕的一句话就是："我觉得这个点子很好。"</p>
+<p><strong>"我觉得"是最不靠谱的需求来源。</strong> 你觉得好，不代表别人觉得好；你觉得需要，不代表别人需要。</p>
+<p>那怎么判断一个需求真不真？</p>
+<p>最简单的办法：你自己是不是天天在用？自己都不用，凭什么指望别人用？</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="捕捉需求才是核心能力">捕捉需求，才是核心能力<a href="https://beisi-tech.github.io/docs/blog/make-product-for-yourself#%E6%8D%95%E6%8D%89%E9%9C%80%E6%B1%82%E6%89%8D%E6%98%AF%E6%A0%B8%E5%BF%83%E8%83%BD%E5%8A%9B" class="hash-link" aria-label="捕捉需求，才是核心能力的直接链接" title="捕捉需求，才是核心能力的直接链接" translate="no">​</a></h2>
+<p>说了这么多，核心就一句话：<strong>学会捕捉需求，永远是最重要的。</strong></p>
+<p>需求不是想出来的，是碰出来的。你用得多了、烦得多了，自然就知道哪里该被优化。</p>
+<p>自己做自己的产品，就是在免费获得一个最真实的需求来源——你自己。</p>
+<p>先做给自己用，用着用着，说不定就成了。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="产品" term="产品"/>
+        <category label="创业" term="创业"/>
+        <category label="个人成长" term="个人成长"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[DeepSeek Harness 一文入门，附小白安装教程]]></title>
@@ -1024,160 +1115,5 @@
         <category label="职场感悟" term="职场感悟"/>
         <category label="思维方式" term="思维方式"/>
         <category label="个人成长" term="个人成长"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[创业感悟：不要拿自己的钱创业]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business</id>
-        <link href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business"/>
-        <updated>2025-12-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[这些年见过不少创业者，也经历过一些项目，我越来越坚信一个观点：创业不要拿自己的钱。]]></summary>
-        <content type="html"><![CDATA[<p>这些年见过不少创业者，也经历过一些项目，我越来越坚信一个观点：<strong>创业不要拿自己的钱</strong>。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一个简单的逻辑">一个简单的逻辑<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E9%80%BB%E8%BE%91" class="hash-link" aria-label="一个简单的逻辑的直接链接" title="一个简单的逻辑的直接链接" translate="no">​</a></h2>
-<p>很多人创业的第一反应是：我先掏点钱，把项目做起来。</p>
-<p>但我认为，正确的思路应该是：<strong>如果你有一个项目，首先应该去找投资，而不是自己垫钱。</strong></p>
-<p>为什么？因为能否拿到投资，本身就是对项目的一次检验。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="投资人就是你的第一道市场验证">投资人就是你的第一道"市场验证"<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E6%8A%95%E8%B5%84%E4%BA%BA%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E5%B8%82%E5%9C%BA%E9%AA%8C%E8%AF%81" class="hash-link" aria-label="投资人就是你的第一道&quot;市场验证&quot;的直接链接" title="投资人就是你的第一道&quot;市场验证&quot;的直接链接" translate="no">​</a></h2>
-<p>想一想，投资人每天要看无数个项目，他们的眼光是经过市场锤炼的。如果你的项目足够好，商业逻辑清晰，市场前景明确，<strong>一定会有人愿意投资</strong>。</p>
-<p>反过来说：</p>
-<blockquote>
-<p>如果你的项目没有人愿意投资，那很可能说明这个项目本身就有问题。</p>
-</blockquote>
-<p>这不是打击，这是现实。与其自己砸钱进去，最后血本无归，不如在早期就通过融资这一关来验证项目的可行性。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="说服投资人是创业的基本功">说服投资人，是创业的基本功<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E8%AF%B4%E6%9C%8D%E6%8A%95%E8%B5%84%E4%BA%BA%E6%98%AF%E5%88%9B%E4%B8%9A%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F" class="hash-link" aria-label="说服投资人，是创业的基本功的直接链接" title="说服投资人，是创业的基本功的直接链接" translate="no">​</a></h2>
-<p>有人可能会说："我的项目很好，只是我不会说服投资人。"</p>
-<p>那我想说：<strong>如果你连投资人都说服不了，创业这条路可能真的不太适合你。</strong></p>
-<p>为什么这么说？</p>
-<p>创业路上，你要说服的人太多了：</p>
-<ul>
-<li>要说服合伙人跟你一起干</li>
-<li>要说服员工加入你的团队</li>
-<li>要说服客户买你的产品</li>
-<li>要说服供应商给你账期</li>
-<li>要说服媒体报道你的故事</li>
-</ul>
-<p>说服投资人，只是其中最基础的一环。如果这一关都过不了，后面更难的关卡怎么过？</p>
-<p><strong>创业的难度，比说服投资人大得多。</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="用别人的钱验证自己的想法">用别人的钱，验证自己的想法<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E7%94%A8%E5%88%AB%E4%BA%BA%E7%9A%84%E9%92%B1%E9%AA%8C%E8%AF%81%E8%87%AA%E5%B7%B1%E7%9A%84%E6%83%B3%E6%B3%95" class="hash-link" aria-label="用别人的钱，验证自己的想法的直接链接" title="用别人的钱，验证自己的想法的直接链接" translate="no">​</a></h2>
-<p>拿投资的好处不仅仅是"省自己的钱"，更重要的是：</p>
-<ol>
-<li><strong>风险共担</strong>：投资人和你一起承担风险，而不是你一个人扛</li>
-<li><strong>资源加持</strong>：好的投资人会带来人脉、资源、经验，不只是钱</li>
-<li><strong>倒逼思考</strong>：为了拿到投资，你必须把商业计划想清楚、讲明白</li>
-<li><strong>市场校准</strong>：投资人的反馈能帮你及时调整方向</li>
-</ol>
-<p>自己掏钱创业，很容易陷入"自嗨"——觉得自己的想法很好，但其实市场并不买账。等钱烧光了才发现问题，为时已晚。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="什么时候可以用自己的钱">什么时候可以用自己的钱？<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%8F%AF%E4%BB%A5%E7%94%A8%E8%87%AA%E5%B7%B1%E7%9A%84%E9%92%B1" class="hash-link" aria-label="什么时候可以用自己的钱？的直接链接" title="什么时候可以用自己的钱？的直接链接" translate="no">​</a></h2>
-<p>当然，这个观点不是绝对的。有些情况下，用自己的钱启动是可以的：</p>
-<ul>
-<li>小成本验证：比如花几百块钱测试一个想法</li>
-<li>已经有稳定收入的副业</li>
-<li>不需要融资也能跑通的小生意</li>
-</ul>
-<p>但如果是需要大量资金投入、周期较长的项目，<strong>一定要先想办法融资</strong>。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总结">总结<a href="https://beisi-tech.github.io/docs/blog/dont-use-your-own-money-to-start-business#%E6%80%BB%E7%BB%93" class="hash-link" aria-label="总结的直接链接" title="总结的直接链接" translate="no">​</a></h2>
-<p>创业是一场长跑，资金只是其中一个要素。但如何获取资金，反映的是你对项目的信心、你的说服能力、以及市场对你的认可。</p>
-<p><strong>如果你的项目足够好，会有人给你投资。</strong></p>
-<p><strong>如果没有人投资，要么项目有问题，要么你还没准备好。</strong></p>
-<p>无论是哪种情况，都不应该盲目地拿自己的钱去填坑。</p>
-<hr>
-<p><em>这是我这些年的一点创业感悟，不一定对，但希望能给正在创业路上的朋友一些参考。</em></p>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="创业感悟" term="创业感悟"/>
-        <category label="投资" term="投资"/>
-        <category label="商业思维" term="商业思维"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大学卖路由器：从校园网限制中发现商机]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/campus-network-business</id>
-        <link href="https://beisi-tech.github.io/docs/blog/campus-network-business"/>
-        <updated>2025-12-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[大学时期，一个看似普通的校园网限制，让我赚到了人生中一笔难忘的"第一桶金"。]]></summary>
-        <content type="html"><![CDATA[<p>大学时期，一个看似普通的校园网限制，让我赚到了人生中一笔难忘的"第一桶金"。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="发现痛点">发现痛点<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E5%8F%91%E7%8E%B0%E7%97%9B%E7%82%B9" class="hash-link" aria-label="发现痛点的直接链接" title="发现痛点的直接链接" translate="no">​</a></h2>
-<p>大学校园网有一个让所有学生都头疼的限制——<strong>一个账号只能同时连接两台设备</strong>。</p>
-<p>在那个智能设备逐渐普及的年代，一个宿舍四个人，每个人手里至少有一部手机，可能还有平板、笔记本电脑。两台设备的限制，意味着要么轮流上网，要么多买账号，这无疑增加了大家的开销和不便。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="主动寻找解决方案">主动寻找解决方案<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E4%B8%BB%E5%8A%A8%E5%AF%BB%E6%89%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" class="hash-link" aria-label="主动寻找解决方案的直接链接" title="主动寻找解决方案的直接链接" translate="no">​</a></h2>
-<p>这个痛点困扰了我很久，我就想：一定有办法解决这个问题。</p>
-<p>于是我开始在网上搜索、研究，看看有没有什么技术手段可以绕过这个限制。功夫不负有心人，我在淘宝上发现了一种"破解路由器"，据说可以突破校园网的设备限制。</p>
-<p>我没有犹豫，先买了两台回来测试。路由器到手后，我迫不及待地在宿舍里进行验证。结果让我兴奋不已——<strong>这个路由器真的可以突破两台设备的限制！</strong> 一个账号通过这个路由器，可以让整个宿舍的设备都连上网。</p>
-<p>验证成功的那一刻，我立刻意识到：<strong>这东西一定有市场！</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="商业嗅觉的觉醒">商业嗅觉的觉醒<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E5%95%86%E4%B8%9A%E5%97%85%E8%A7%89%E7%9A%84%E8%A7%89%E9%86%92" class="hash-link" aria-label="商业嗅觉的觉醒的直接链接" title="商业嗅觉的觉醒的直接链接" translate="no">​</a></h2>
-<p>我开始快速计算：</p>
-<ul>
-<li>路由器进货价：<strong>80 元/台</strong></li>
-<li>一个宿舍 4 个人，一个月的网费：<strong>236 元</strong></li>
-<li>如果用这个路由器，4 个人只需要买一个账号，一个月就能省下不少钱</li>
-</ul>
-<p>也就是说，只要路由器的价格低于一个学期省下的网费，学生们就有动力购买。而 236 元这个定价，基本等于一个宿舍一个月的网费，学生用一个多月就能回本，之后都是"省钱"。</p>
-<p><strong>这是一个双赢的生意。</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="说干就干">说干就干<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E8%AF%B4%E5%B9%B2%E5%B0%B1%E5%B9%B2" class="hash-link" aria-label="说干就干的直接链接" title="说干就干的直接链接" translate="no">​</a></h2>
-<p>确定了这个想法可行后，我没有犹豫，直接在淘宝上进了 <strong>20 台路由器</strong>。</p>
-<p>进货成本：20 × 80 = <strong>1600 元</strong></p>
-<p>这对于当时还是学生的我来说，是一笔不小的投入。但我相信自己的判断。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一个宿舍一个宿舍地推广">一个宿舍一个宿舍地推广<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E4%B8%80%E4%B8%AA%E5%AE%BF%E8%88%8D%E4%B8%80%E4%B8%AA%E5%AE%BF%E8%88%8D%E5%9C%B0%E6%8E%A8%E5%B9%BF" class="hash-link" aria-label="一个宿舍一个宿舍地推广的直接链接" title="一个宿舍一个宿舍地推广的直接链接" translate="no">​</a></h2>
-<p>有了货，接下来就是销售。我没有坐等客户上门，而是主动出击。</p>
-<p>每天晚上，我就带着路由器，<strong>一个宿舍一个宿舍地敲门推广</strong>。</p>
-<p>我的话术很简单直接：</p>
-<blockquote>
-<p>"同学你好，我这有个路由器，可以让你们整个宿舍只用一个网络账号，所有设备都能上网，不用再受两台设备的限制了。"</p>
-</blockquote>
-<p>然后我会现场演示，让他们亲眼看到效果。当大家看到一个账号可以让七八台设备同时上网时，眼睛都亮了。</p>
-<p>236 元，一个宿舍四个人平摊下来，每人不到 60 块钱，用一个多月就回本了。这笔账，大家一算就明白。</p>
-<p>就这样，我一栋楼一栋楼地跑，一个宿舍一个宿舍地推。虽然辛苦，但效果很好。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="收获">收获<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E6%94%B6%E8%8E%B7" class="hash-link" aria-label="收获的直接链接" title="收获的直接链接" translate="no">​</a></h2>
-<p><strong>仅仅一周时间，20 台路由器全部售罄。</strong></p>
-<p>让我们来算一笔账：</p>
-<ul>
-<li>销售额：20 × 236 = <strong>4720 元</strong></li>
-<li>成本：20 × 80 = <strong>1600 元</strong></li>
-<li>利润：4720 - 1600 = <strong>3120 元</strong></li>
-</ul>
-<p>一周时间，净赚将近 <strong>3000 元</strong>！</p>
-<p>这在当时对我来说是一笔巨款，更重要的是，这次经历给了我巨大的信心和启发。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="复盘与感悟">复盘与感悟<a href="https://beisi-tech.github.io/docs/blog/campus-network-business#%E5%A4%8D%E7%9B%98%E4%B8%8E%E6%84%9F%E6%82%9F" class="hash-link" aria-label="复盘与感悟的直接链接" title="复盘与感悟的直接链接" translate="no">​</a></h2>
-<p>回顾这次小小的创业经历，我总结出几点：</p>
-<ol>
-<li><strong>善于发现身边的痛点</strong>：商机往往就藏在日常生活的不便中</li>
-<li><strong>小成本验证</strong>：先买两台路由器测试，确认可行后再大量进货</li>
-<li><strong>快速行动</strong>：想到就去做，不要犹豫太久</li>
-<li><strong>口碑营销的力量</strong>：好的产品会自己说话，用户会主动帮你传播</li>
-</ol>
-<p>这次经历虽然规模不大，但它让我第一次体会到了做生意的乐趣。它让我明白：<strong>只要善于观察、敢于行动，机会无处不在。</strong></p>
-<hr>
-<p><em>虽然只是大学生的小打小闹，但这次经历教会了我很多课本上学不到的东西。感谢那段青涩却充满冲劲的岁月。</em></p>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="创业故事" term="创业故事"/>
-        <category label="大学生活" term="大学生活"/>
-        <category label="商业思维" term="商业思维"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[我目前在维护的所有项目]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining</id>
-        <link href="https://beisi-tech.github.io/docs/blog/all-projects-i-am-maintaining"/>
-        <updated>2025-12-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[1. 知心家教 网址//zhixin.beisi.tech/]]></summary>
-        <content type="html"><![CDATA[<ol>
-<li>知心家教 网址: <a href="https://zhixin.beisi.tech/" target="_blank" rel="noopener noreferrer">https://zhixin.beisi.tech/</a></li>
-<li>应用仓库 网址: <a href="https://yyck.beisi.tech/" target="_blank" rel="noopener noreferrer">https://yyck.beisi.tech/</a></li>
-<li>AI Box 网址: <a href="https://aibox.beisi.tech/" target="_blank" rel="noopener noreferrer">https://aibox.beisi.tech/</a></li>
-<li>小程序商城: <a href="https://hioshop.beisi.tech/" target="_blank" rel="noopener noreferrer">https://hioshop.beisi.tech/</a></li>
-<li>外贸站: <a href="https://shoesworker.com/" target="_blank" rel="noopener noreferrer">https://shoesworker.com/</a></li>
-<li>visionflow: <a href="https://visionflow.beisi.tech/" target="_blank" rel="noopener noreferrer">https://visionflow.beisi.tech/</a></li>
-<li>企业文档: <a href="https://beisi-tech.github.io/docs" target="_blank" rel="noopener noreferrer">https://beisi-tech.github.io/docs</a></li>
-<li>海外站搭建: <a href="https://wp.beisi.tech/" target="_blank" rel="noopener noreferrer">https://wp.beisi.tech/</a></li>
-</ol>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="项目" term="项目"/>
-        <category label="开源" term="开源"/>
-        <category label="个人作品" term="个人作品"/>
     </entry>
 </feed>
