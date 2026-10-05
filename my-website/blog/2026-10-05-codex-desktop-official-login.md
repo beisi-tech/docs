@@ -1,14 +1,15 @@
 ---
-sidebar_label: "Codex Desktop 切换回官方登录模式教程"
-sidebar_position: 1
-slug: codex-desktop-login
+slug: codex-desktop-official-login
+title: Codex Desktop 切换回官方登录模式教程
+authors: [xiaolinbenben]
+tags: [Codex, ChatGPT, 登录]
 ---
-
-# Codex Desktop 切换回官方登录模式教程
 
 如果 Codex Desktop 使用 API Key 模式后无法退出登录，可以通过删除本地认证文件，并恢复默认 Provider 配置来解决。
 
 本教程不会要求你删除整个 `~/.codex` 目录，只处理登录文件和 Provider 配置，避免影响已有的 MCP、Skills、插件等配置。
+
+<!-- truncate -->
 
 ## 第一步：删除本地认证文件
 
