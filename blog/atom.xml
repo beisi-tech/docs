@@ -2,11 +2,94 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-10-04T00:00:00.000Z</updated>
+    <updated>2026-10-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/favicon(1).ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Codex Desktop 切换回官方登录模式教程]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/codex-desktop-official-login</id>
+        <link href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login"/>
+        <updated>2026-10-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[如果 Codex Desktop 使用 API Key 模式后无法退出登录，可以通过删除本地认证文件，并恢复默认 Provider 配置来解决。]]></summary>
+        <content type="html"><![CDATA[<p>如果 Codex Desktop 使用 API Key 模式后无法退出登录，可以通过删除本地认证文件，并恢复默认 Provider 配置来解决。</p>
+<p>本教程不会要求你删除整个 <code>~/.codex</code> 目录，只处理登录文件和 Provider 配置，避免影响已有的 MCP、Skills、插件等配置。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第一步删除本地认证文件">第一步：删除本地认证文件<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E7%AC%AC%E4%B8%80%E6%AD%A5%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E8%AE%A4%E8%AF%81%E6%96%87%E4%BB%B6" class="hash-link" aria-label="第一步：删除本地认证文件的直接链接" title="第一步：删除本地认证文件的直接链接" translate="no">​</a></h2>
+<p>先打开 PowerShell。</p>
+<p>在 Windows 上可以这样打开：</p>
+<ol>
+<li>按 <code>Win</code> 键</li>
+<li>输入 <code>PowerShell</code></li>
+<li>点击打开 <code>Windows PowerShell</code></li>
+</ol>
+<p>打开后，复制并执行下面的命令：</p>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Remove-Item "$env:USERPROFILE\.codex\auth.json" -Force -ErrorAction SilentlyContinue</span><br></span></code></pre></div></div>
+<p>执行后，终端大概率不会显示任何内容，看到新的命令行提示符就可以继续下一步。</p>
+<p><img decoding="async" loading="lazy" alt="删除本地认证文件" src="https://beisi-tech.github.io/docs/assets/images/codex-auth-delete-ee9acfda95e1d9e90ec45805aab4373d.png" width="1180" height="570" class="img_ev3q"></p>
+<p>该命令会删除 Codex 保存的认证信息。</p>
+<p>如果执行后没有任何输出，或者提示没有找到文件，说明本地不存在该认证文件，可以直接跳过，不影响后续操作。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第二步修改-codex-配置文件">第二步：修改 Codex 配置文件<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E4%BF%AE%E6%94%B9-codex-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="hash-link" aria-label="第二步：修改 Codex 配置文件的直接链接" title="第二步：修改 Codex 配置文件的直接链接" translate="no">​</a></h2>
+<p>继续在 PowerShell 中执行下面的命令，用记事本打开 Codex 配置文件：</p>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">notepad "$env:USERPROFILE\.codex\config.toml"</span><br></span></code></pre></div></div>
+<p>打开后，你会看到类似下面的配置文件界面。接下来要找的是 <code>model_provider</code> 这一行。</p>
+<p><img decoding="async" loading="lazy" alt="打开 Codex 配置文件" src="https://beisi-tech.github.io/docs/assets/images/codex-config-open-5ef71456c98d48632367d0b51647d15d.png" width="1180" height="720" class="img_ev3q"></p>
+<p>如果记事本提示文件不存在，可以选择新建文件。重点是检查里面有没有下面的 Provider 配置。</p>
+<p>找到：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">model_provider = "custom"</span><br></span></code></pre></div></div>
+<p>修改为：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">model_provider = "openai"</span><br></span></code></pre></div></div>
+<p>修改完成后，屏幕上应该能看到 <code>model_provider = "openai"</code>。</p>
+<p><img decoding="async" loading="lazy" alt="恢复官方 Provider" src="https://beisi-tech.github.io/docs/assets/images/codex-provider-openai-48775b13a175307e56915b33672d5211.png" width="1180" height="720" class="img_ev3q"></p>
+<p>这一步的作用是告诉 Codex Desktop：下次启动时使用官方 OpenAI 登录方式，而不是自定义 API Key Provider。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第三步删除自定义-api-provider-配置">第三步：删除自定义 API Provider 配置<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E7%AC%AC%E4%B8%89%E6%AD%A5%E5%88%A0%E9%99%A4%E8%87%AA%E5%AE%9A%E4%B9%89-api-provider-%E9%85%8D%E7%BD%AE" class="hash-link" aria-label="第三步：删除自定义 API Provider 配置的直接链接" title="第三步：删除自定义 API Provider 配置的直接链接" translate="no">​</a></h2>
+<p>在 <code>config.toml</code> 中找到下面这一段：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[model_providers.custom]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name = "custom"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wire_api = "responses"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">base_url = "https://api.terln.com/v1"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">experimental_bearer_token = "sk-terln-xxxxxxx"</span><br></span></code></pre></div></div>
+<p>如果你的配置文件里出现类似下面这一整段，就需要删除。</p>
+<p><img decoding="async" loading="lazy" alt="删除自定义 API Provider 配置" src="https://beisi-tech.github.io/docs/assets/images/codex-provider-remove-custom-0caeb05f44091fe35c78fe476eec3a5a.png" width="1180" height="720" class="img_ev3q"></p>
+<p>将这一整段内容删除，从 <code>[model_providers.custom]</code> 这一行开始，一直删到 <code>experimental_bearer_token = "..."</code> 这一行。</p>
+<p>这部分是 Codex 的自定义 API Key 配置。如果保留该配置，Codex 启动时会继续使用自定义 API Provider，不会进入正常的官方账号登录流程。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第四步保存并退出配置文件">第四步：保存并退出配置文件<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E7%AC%AC%E5%9B%9B%E6%AD%A5%E4%BF%9D%E5%AD%98%E5%B9%B6%E9%80%80%E5%87%BA%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6" class="hash-link" aria-label="第四步：保存并退出配置文件的直接链接" title="第四步：保存并退出配置文件的直接链接" translate="no">​</a></h2>
+<p>如果使用的是记事本，按下面的顺序操作：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">保存：Ctrl + S</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">关闭窗口：点击右上角 X</span><br></span></code></pre></div></div>
+<p>保存后再关闭记事本，确保刚才的修改已经写入 <code>config.toml</code>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="第五步重启-codex-desktop">第五步：重启 Codex Desktop<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E7%AC%AC%E4%BA%94%E6%AD%A5%E9%87%8D%E5%90%AF-codex-desktop" class="hash-link" aria-label="第五步：重启 Codex Desktop的直接链接" title="第五步：重启 Codex Desktop的直接链接" translate="no">​</a></h2>
+<p>保存配置后，需要完全退出 Codex Desktop。</p>
+<p>在 PowerShell 中执行：</p>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Stop-Process -Name Codex -Force -ErrorAction SilentlyContinue</span><br></span></code></pre></div></div>
+<p>执行后，PowerShell 大概率不会显示任何内容。然后重新打开 Codex Desktop。</p>
+<p><img decoding="async" loading="lazy" alt="重启 Codex Desktop" src="https://beisi-tech.github.io/docs/assets/images/codex-restart-command-4201c0f4526b15f55dcc6edd96e5ae94.png" width="1180" height="570" class="img_ev3q"></p>
+<p>重新打开 Codex Desktop 后，如果看到官方账号登录按钮，就说明已经切换回官方登录模式。</p>
+<p><img decoding="async" loading="lazy" alt="重启 Codex Desktop" src="https://beisi-tech.github.io/docs/assets/images/codex-restart-login-f26edbcbe4563d058c1e1ea5d9005b96.png" width="1180" height="720" class="img_ev3q"></p>
+<p>此时 Codex 会重新进入登录流程，可以使用官方账号登录。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="注意事项">注意事项<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="hash-link" aria-label="注意事项的直接链接" title="注意事项的直接链接" translate="no">​</a></h2>
+<p>如果之前配置过以下内容：</p>
+<ul>
+<li>MCP 服务</li>
+<li>Skills</li>
+<li>Computer Use</li>
+<li>项目权限配置</li>
+<li>自定义插件</li>
+</ul>
+<p>不要直接删除整个：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">C:\Users\你的用户名\.codex\</span><br></span></code></pre></div></div>
+<p>只需要处理：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">C:\Users\你的用户名\.codex\auth.json</span><br></span></code></pre></div></div>
+<p>以及 <code>config.toml</code> 中的 Provider 配置即可。</p>
+<p>如果你使用的是 macOS 或 Linux，对应路径通常是 <code>~/.codex/auth.json</code> 和 <code>~/.codex/config.toml</code>。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="如果以后需要重新使用-api-key-模式">如果以后需要重新使用 API Key 模式<a href="https://beisi-tech.github.io/docs/blog/codex-desktop-official-login#%E5%A6%82%E6%9E%9C%E4%BB%A5%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E4%BD%BF%E7%94%A8-api-key-%E6%A8%A1%E5%BC%8F" class="hash-link" aria-label="如果以后需要重新使用 API Key 模式的直接链接" title="如果以后需要重新使用 API Key 模式的直接链接" translate="no">​</a></h2>
+<p>恢复：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">model_provider = "custom"</span><br></span></code></pre></div></div>
+<p>并重新添加：</p>
+<div class="language-toml codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-toml codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[model_providers.custom]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">name = "custom"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">wire_api = "responses"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">base_url = "你的API地址"</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">experimental_bearer_token = "你的API Key"</span><br></span></code></pre></div></div>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="Codex" term="Codex"/>
+        <category label="ChatGPT" term="ChatGPT"/>
+        <category label="登录" term="登录"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[AI 颠覆了传统的学习方式]]></title>
         <id>https://beisi-tech.github.io/docs/blog/ai-flipped-learning</id>
@@ -1011,73 +1094,5 @@
         <category label="浪漫" term="浪漫"/>
         <category label="日常" term="日常"/>
         <category label="个人项目" term="个人项目"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[反诈的代价，谁来承担？]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far</id>
-        <link href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far"/>
-        <updated>2026-01-02T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[今天我的银行卡又被冻了。]]></summary>
-        <content type="html"><![CDATA[<p>今天我的银行卡又被冻了。</p>
-<p>注意，是"又"。</p>
-<p>今年已经是第二次了。两次都莫名其妙，两次都跟我没关系，两次都得我自己跑派出所解决。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="加个好友全卡被冻">加个好友，全卡被冻<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E5%8A%A0%E4%B8%AA%E5%A5%BD%E5%8F%8B%E5%85%A8%E5%8D%A1%E8%A2%AB%E5%86%BB" class="hash-link" aria-label="加个好友，全卡被冻的直接链接" title="加个好友，全卡被冻的直接链接" translate="no">​</a></h2>
-<p>事情很简单：我在企业微信上加了一个卖 API 接口的用户，想咨询点技术问题。</p>
-<p>加完好友，聊了几句，没转账，没交易。</p>
-<p>几个小时后，银行短信来了：您的账户因风险管控已被冻结。</p>
-<p>不是一张卡。是<strong>我名下所有银行卡</strong>。</p>
-<p>原因？那个用户可能被系统标记为"高危"。我加了他，就被连带处理了。</p>
-<p>我就想问：<strong>我加个好友而已，犯了什么法？</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="反诈系统越来越智能">反诈系统越来越"智能"<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E5%8F%8D%E8%AF%88%E7%B3%BB%E7%BB%9F%E8%B6%8A%E6%9D%A5%E8%B6%8A%E6%99%BA%E8%83%BD" class="hash-link" aria-label="反诈系统越来越&quot;智能&quot;的直接链接" title="反诈系统越来越&quot;智能&quot;的直接链接" translate="no">​</a></h2>
-<p>这几年，反诈系统确实拦截了不少诈骗。这是好事，我承认。</p>
-<p>但问题是，这个系统越来越"智能"了——智能到开始误伤普通人。</p>
-<p>你的通话记录、你的转账记录、你加的好友、你聊的内容……全都在跑风控模型。一旦系统觉得你"可疑"，直接冻卡，先冻了再说。</p>
-<p>至于你是不是真的有问题？不重要。先把你按住，有问题你自己去证明清白。</p>
-<p><strong>无罪推定？不存在的。系统推定你可疑，你就得去证明自己不可疑。</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="证明自己清白有多累">证明自己清白有多累？<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E6%B8%85%E7%99%BD%E6%9C%89%E5%A4%9A%E7%B4%AF" class="hash-link" aria-label="证明自己清白有多累？的直接链接" title="证明自己清白有多累？的直接链接" translate="no">​</a></h2>
-<p>来，我给你讲讲我上次解冻的经历。</p>
-<p>第一步：去银行，排队一小时，被告知"我们解不了，去派出所"。</p>
-<p>第二步：去派出所，跟民警解释半天，民警说"我们得去你公司核查"。</p>
-<p>第三步：民警跟我回公司，拍照、问话、记录。</p>
-<p>第四步：再去派出所签字确认。</p>
-<p>第五步：拿着材料再去银行，再排队，再等。</p>
-<p>前后折腾一周，请了好几次假，终于解冻。</p>
-<p><strong>我就问：这个时间成本、精力成本，谁来赔？</strong></p>
-<p>没人赔。系统又不会道歉。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="公权力的手越伸越长">公权力的手，越伸越长<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E5%85%AC%E6%9D%83%E5%8A%9B%E7%9A%84%E6%89%8B%E8%B6%8A%E4%BC%B8%E8%B6%8A%E9%95%BF" class="hash-link" aria-label="公权力的手，越伸越长的直接链接" title="公权力的手，越伸越长的直接链接" translate="no">​</a></h2>
-<p>我理解反诈的初衷是好的。但这几年明显感觉到，公权力的手越伸越长了。</p>
-<p>以前是你诈骗了，警察来抓你。</p>
-<p>现在是系统觉得你"可能"诈骗，先把你冻了。</p>
-<p>以前是有证据才处理。</p>
-<p>现在是算法说你可疑就处理。</p>
-<p>公民的隐私空间越来越小。你在网上聊什么、买什么、转给谁多少钱，都在某个系统里被分析着。</p>
-<p>我知道有人会说："你没干坏事怕什么？"</p>
-<p>这话听起来很对，但逻辑是错的。</p>
-<p><strong>正因为我没干坏事，所以我不应该被当成犯人对待。</strong></p>
-<p>我加个好友，凭什么冻我的卡？</p>
-<p>我做个开发者认证，凭什么冻我的公户？</p>
-<p>我没干坏事，凭什么要我一次次跑派出所证明自己清白？</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="真正的骗子抓到了吗">真正的骗子抓到了吗？<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E7%9C%9F%E6%AD%A3%E7%9A%84%E9%AA%97%E5%AD%90%E6%8A%93%E5%88%B0%E4%BA%86%E5%90%97" class="hash-link" aria-label="真正的骗子抓到了吗？的直接链接" title="真正的骗子抓到了吗？的直接链接" translate="no">​</a></h2>
-<p>最讽刺的是：真正的骗子，该骗的还是在骗。</p>
-<p>你以为骗子不知道怎么规避风控吗？他们比你我更懂这套系统。</p>
-<p>反诈系统拦住的，很多是像我这样的普通人。骗子早就换了赛道，用更隐蔽的方式继续作案。</p>
-<p><strong>系统越严，正常人越不方便；骗子该干啥还干啥。</strong></p>
-<p>这不是反诈，这是反正常人。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="最后想说的">最后想说的<a href="https://beisi-tech.github.io/docs/blog/anti-fraud-gone-too-far#%E6%9C%80%E5%90%8E%E6%83%B3%E8%AF%B4%E7%9A%84" class="hash-link" aria-label="最后想说的的直接链接" title="最后想说的的直接链接" translate="no">​</a></h2>
-<p>我不是反对反诈。诈骗确实害了很多家庭，该打击。</p>
-<p>但我希望这个系统能更精准一点，别误伤太多无辜的人。</p>
-<p>也希望被误伤之后，能有个简单的申诉渠道，而不是让普通人跑断腿。</p>
-<p>更希望，每个人的隐私能被尊重一点，不要什么都监控、什么都分析。</p>
-<p>说真的，这几年的环境，让人越来越没安全感了。不是怕骗子，是怕系统。</p>
-<p>好了，不说了，明天还得去派出所解冻。</p>
-<hr>
-<p><em>写于银行卡被冻的第二天，满肚子火。</em></p>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="社会观察" term="社会观察"/>
-        <category label="吐槽" term="吐槽"/>
-        <category label="反诈" term="反诈"/>
     </entry>
 </feed>
