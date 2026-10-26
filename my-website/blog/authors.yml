@@ -2,7 +2,7 @@ xiaolinbenben:
   name: ZhiQing Lin
   title: CEO | Fuzhou Beisi Network Technology Co., Ltd.
   url: https://xiaolinbenben.github.io
-  image_url: /img/bes.png
+  image_url: /img/site/author-bes.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: "/all-xiaolinbenben-articles"

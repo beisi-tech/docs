@@ -29,7 +29,7 @@ Remove-Item "$env:USERPROFILE\.codex\auth.json" -Force -ErrorAction SilentlyCont
 
 执行后，终端大概率不会显示任何内容，看到新的命令行提示符就可以继续下一步。
 
-![删除本地认证文件](/img/tutorial/codex/codex-auth-delete.png)
+![删除本地认证文件](/img/blog/codex-desktop-official-login/01-auth-delete.png)
 
 该命令会删除 Codex 保存的认证信息。
 
@@ -45,7 +45,7 @@ notepad "$env:USERPROFILE\.codex\config.toml"
 
 打开后，你会看到类似下面的配置文件界面。接下来要找的是 `model_provider` 这一行。
 
-![打开 Codex 配置文件](/img/tutorial/codex/codex-config-open.png)
+![打开 Codex 配置文件](/img/blog/codex-desktop-official-login/02-config-open.png)
 
 如果记事本提示文件不存在，可以选择新建文件。重点是检查里面有没有下面的 Provider 配置。
 
@@ -63,7 +63,7 @@ model_provider = "openai"
 
 修改完成后，屏幕上应该能看到 `model_provider = "openai"`。
 
-![恢复官方 Provider](/img/tutorial/codex/codex-provider-openai.png)
+![恢复官方 Provider](/img/blog/codex-desktop-official-login/03-provider-openai.png)
 
 这一步的作用是告诉 Codex Desktop：下次启动时使用官方 OpenAI 登录方式，而不是自定义 API Key Provider。
 
@@ -81,7 +81,7 @@ experimental_bearer_token = "sk-terln-xxxxxxx"
 
 如果你的配置文件里出现类似下面这一整段，就需要删除。
 
-![删除自定义 API Provider 配置](/img/tutorial/codex/codex-provider-remove-custom.png)
+![删除自定义 API Provider 配置](/img/blog/codex-desktop-official-login/04-provider-remove-custom.png)
 
 将这一整段内容删除，从 `[model_providers.custom]` 这一行开始，一直删到 `experimental_bearer_token = "..."` 这一行。
 
@@ -110,11 +110,11 @@ Stop-Process -Name Codex -Force -ErrorAction SilentlyContinue
 
 执行后，PowerShell 大概率不会显示任何内容。然后重新打开 Codex Desktop。
 
-![重启 Codex Desktop](/img/tutorial/codex/codex-restart-command.png)
+![重启 Codex Desktop](/img/blog/codex-desktop-official-login/05-restart-command.png)
 
 重新打开 Codex Desktop 后，如果看到官方账号登录按钮，就说明已经切换回官方登录模式。
 
-![重启 Codex Desktop](/img/tutorial/codex/codex-restart-login.png)
+![重启 Codex Desktop](/img/blog/codex-desktop-official-login/06-restart-login.png)
 
 此时 Codex 会重新进入登录流程，可以使用官方账号登录。
 

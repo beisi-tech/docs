@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '倍司企业文档',
   tagline: '沉淀流程与经验，统一规范与标准',
-  favicon: 'img/favicon(1).ico',
+  favicon: 'img/site/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -111,7 +111,7 @@ const config: Config = {
   ],
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/site/social-card.jpg',
     metadata: [
       {
         name: 'keywords',
@@ -126,7 +126,7 @@ const config: Config = {
       title: 'Beisi Docs',
       logo: {
         alt: 'My Logo',
-        src: 'img/logo.svg',
+        src: 'img/site/logo.svg',
       },
       items: [
         {

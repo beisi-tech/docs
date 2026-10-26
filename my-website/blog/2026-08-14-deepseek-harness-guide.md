@@ -7,7 +7,7 @@ tags: [AI, Agent, DeepSeek, 工具]
 
 8月13日，DeepSeek 官方 GitHub 上多了一个仓库，名字叫 DeepSeek Harness。
 
-![DeepSeek Harness 开发者预览版：一切皆插件](/img/blog/deepseek-harness/01-hero.png)
+![DeepSeek Harness 开发者预览版：一切皆插件](/img/blog/deepseek-harness-guide/01-hero.png)
 
 <!-- truncate -->
 
@@ -39,11 +39,11 @@ tags: [AI, Agent, DeepSeek, 工具]
 
 装好以后，浏览器打开一个本地地址，界面像你熟悉的聊天框，但背后的智能体能读写你选中的文件夹、运行命令、把大任务拆给子智能体，权限不够的时候停下来问你。
 
-![DeepSeek Harness Web UI](/img/blog/deepseek-harness/02-home.png)
+![DeepSeek Harness Web UI](/img/blog/deepseek-harness-guide/02-home.png)
 
 官方预置了几套 agent 配置，**标准模式带全套工具，极简模式只留 Shell 和文件编辑；还有一套创造模式，专门用来创建自定义 agent 配置，允许在运行时检查、实验插件。** 它内置的工具有执行 Bash、PowerShell、运行代码、待办清单，还能调用技能、在拿不准时向你提问。每一步操作都会写进一份仅追加的日志，干到一半可以回放，也可以从某个点分叉重来。
 
-![DeepSeek Harness 模式选择](/img/blog/deepseek-harness/03-modes.png)
+![DeepSeek Harness 模式选择](/img/blog/deepseek-harness-guide/03-modes.png)
 
 **第二种叫无头模式。** 网页版适合你坐在电脑前看它干活，无头模式适合把任务丢给它让它自己跑完。一条命令传一个任务，它新建会话，干完，把最终结果打印出来，退出。适合接进自动化流程。
 
@@ -69,13 +69,13 @@ npx 是 Node.js 自带的小工具，作用就是运行一个还没安装的包�
 
 在界面里打开设置，进模型那一页，DeepSeek 卡片上有一个 API 密钥输入框，把你从 DeepSeek 开放平台申请的 API 密钥填进去，保存。填好密钥，模型路由立即可用，不用重启，默认接 DeepSeek 自家的 V4 Flash 和 V4 Pro 两个模型。密钥存在 $DSH_HOME/.credentials.yaml 这个文件里，网页上永远只显示脱敏后的形式，不会把明文回显出来。除了 DeepSeek 官方，它也支持 Anthropic、OpenAI，或者任何兼容 OpenAI 接口的自建服务，都在同一个模型设置页里加。
 
-![添加 API Key 开始使用](/img/blog/deepseek-harness/05-api-key.png)
+![添加 API Key 开始使用](/img/blog/deepseek-harness-guide/04-api-key.png)
 
 然后是选工作区。
 
 点击选择工作区，把你想让智能体干活的项目文件夹加进来，选中它。没选中之前，会话输入框是灰的，选完才能打字。
 
-![选择工作区](/img/blog/deepseek-harness/06-workspace.png)
+![选择工作区](/img/blog/deepseek-harness-guide/05-workspace.png)
 
 最后是发任务。
 
@@ -97,7 +97,7 @@ Python SDK 的流程，官方文档写的是克隆仓库、创建虚拟环境、
 
 **第一句，这项目还在开发者预览阶段。** README 自己就写明了，正在快速迭代，未来会出现破坏兼容性的变更。今天配好的配置，过一阵可能要跟着改。想立刻拿它当生产工具的人，先别把身家押上去。
 
-![内测声明](/img/blog/deepseek-harness/08-statement.png)
+![内测声明](/img/blog/deepseek-harness-guide/06-statement.png)
 
 **第二句，热度高和成熟是两回事。** 仓库里确实塞了很重的东西，事故复盘文档、一整套自动化测试门禁、详细到词条的术语表，看得出团队自己很认真。但认真不等于久经考验。上线当天就破了两万星的数字，说明的是市场的期待，离稳定运行还有距离。
 

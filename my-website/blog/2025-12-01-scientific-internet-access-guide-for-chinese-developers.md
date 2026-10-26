@@ -44,13 +44,13 @@ tags: [科学上网, 开发工具, VPN]
 自行购买：[https://cliproxy.com/zh/
 ](https://share.cliproxy.com/share/jtut5tzcd)
 第二步：购买成功后打开 ClipProxy 的【长效静态IP】后台。重点关注IP地址、端口（IP地址后三位数字）、用户名、密码。
-![图片3.27](../src/image/图片3.27.png)
+![图片3.27](/img/blog/scientific-internet-access-guide-for-chinese-developers/01-cliproxy-panel.png)
 
 第三步：回到 Clash Verge 界面，在【订阅】栏找到你的自用节点模块，右键选择【编辑节点】。
-![图片3.29](../src/image/图片3.29.png)
+![图片3.29](/img/blog/scientific-internet-access-guide-for-chinese-developers/02-clash-edit-node.png)
 
 在弹出界面左侧，输入你购买的静态IP内容，格式为： 
-![图片3.30](../src/image/图片3.30.png)
+![图片3.30](/img/blog/scientific-internet-access-guide-for-chinese-developers/03-socks5-format.png)
 
 `socks5://用户名:密码@主机:端口#备注名称`
 
@@ -59,7 +59,7 @@ tags: [科学上网, 开发工具, VPN]
 
 第四步：回到 Clash Verge 【订阅】栏，对你的自用节点右键选择【编辑代理组】
 弹出界面设置如下：
-![图片3.31](../src/image/图片3.31.png)
+![图片3.31](/img/blog/scientific-internet-access-guide-for-chinese-developers/04-clash-relay-group.png)
 第一行【代理组类型】选最后一栏【根据定义的代理链传递】（relay）。
 
 第二行【代理组组名】填你代理组的名字，填你喜欢的。

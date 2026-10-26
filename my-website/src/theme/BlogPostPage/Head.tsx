@@ -20,7 +20,7 @@ export default function BlogPostHead(): JSX.Element {
 
   const siteBaseUrl = `${siteConfig.url}${siteConfig.baseUrl}`;
   const canonicalUrl = `${siteConfig.url}${metadata.permalink}`;
-  const fallbackImage = `${siteBaseUrl}img/docusaurus-social-card.jpg`;
+  const fallbackImage = `${siteBaseUrl}img/site/social-card.jpg`;
   const imageUrl = assets.image
     ? toAbsoluteUrl(assets.image, siteConfig.url)
     : fallbackImage;

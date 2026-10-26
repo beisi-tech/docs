@@ -27,7 +27,7 @@ export default function Root({children}: {children: React.ReactNode}) {
     name: 'Beisi Docs',
     legalName: 'Fuzhou Beisi Network Technology Co., Ltd.',
     url: siteBaseUrl,
-    logo: `${siteBaseUrl}/img/logo.svg`,
+    logo: `${siteBaseUrl}/img/site/logo.svg`,
     description: '提供教程、开发规范、项目案例与博客的技术知识库。',
     sameAs: ['https://github.com/beisi-tech/docs'],
   };

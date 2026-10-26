@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '开发者学习资源',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/site/home-tree.svg').default,
     description: (
       <>
         提供覆盖前端、后端架构、云计算等热门技术方向的系统化学习资料，
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '核心项目矩阵',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/site/home-mountain.svg').default,
     description: (
       <>
         了解我们的创新项目，从企业级应用到开源工具，
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '技术社区支持',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/site/home-react.svg').default,
     description: (
       <>
         加入开发者社区，获取技术指导、参与代码评审，

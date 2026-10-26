@@ -77,3 +77,24 @@ tags: [标签1, 标签2, 标签3]
 - 在开头观点交代清楚后加入 `<!-- truncate -->`。
 - 除非内容确实需要对比，否则不用表格。
 - 除非文章讨论代码，否则不要为了显得技术化加入代码块。
+
+## 四、配图
+
+配图放在 `my-website/static/img/` 下，分三类。
+
+文章截图：
+
+- 博客：`blog/<slug>/`
+- 教程：`tutorial/<slug>/`
+- `<slug>` 用该文 frontmatter 里的 slug，全部小写。
+- 文件名：`两位序号-英文短横线.扩展名`，例如 `01-sign-in.png`。
+- 序号按正文出现顺序，从 `01` 开始。
+- 只用小写英文、数字和短横线。不用中文、空格，也不用微信导出的默认文件名。
+- 扩展名保持原图格式，不另转。
+- 正文写 `/img/blog/<slug>/01-name.jpg` 或 `/img/tutorial/<slug>/01-name.png`。
+
+站点资源不编号，放在 `site/`，文件名是角色：`logo.svg`、`favicon.ico`、`social-card.jpg`、`author-bes.png`、`home-tree.svg`。
+
+改文件名或目录时，同一轮改完所有引用：Markdown、`docusaurus.config.ts`、作者头像、主题组件。文章里的示例代码（比如 HTML 教程里的 `favicon.ico`）不是站内文件，不要改。
+
+后加的截图用该目录下一个序号。已经发出的文件不改名，除非这次改名会把引用一起换掉。

@@ -18,7 +18,7 @@ slug: docker
    解决：
    1. Windows 服务打开 hyper V
    2. 打开虚拟机平台  
-      ![alt text](../../../src/image/t_image20.png)
+      ![alt text](/img/tutorial/docker/01-virtual-machine-platform.png)
 
 ## 公司项目架构图
 
