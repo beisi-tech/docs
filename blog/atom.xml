@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-10-29T00:00:00.000Z</updated>
+    <updated>2026-10-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/site/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ChatGPT 接入 Grok 4.7]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7</id>
+        <link href="https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7"/>
+        <updated>2026-10-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[想在 ChatGPT 桌面端(原 Codex)里面用 Grok 4.7，推荐使用 ChatGPT 助手，接入很方便。]]></summary>
+        <content type="html"><![CDATA[<p>想在 ChatGPT 桌面端(原 Codex)里面用 Grok 4.7，推荐使用 ChatGPT 助手，接入很方便。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下载助手">下载助手<a href="https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7#%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B" class="hash-link" aria-label="下载助手的直接链接" title="下载助手的直接链接" translate="no">​</a></h2>
+<p>打开 <a href="https://agent.terln.cn/" target="_blank" rel="noopener noreferrer">agent.terln.cn</a>。</p>
+<p>页面写了，只支持 Apple 芯片的 Mac，和 Windows。Mac 是 M1、M2、M3、M4 及更新型号，Windows 是 10 1809 或更高。选对应的系统，下载安装。</p>
+<p><img decoding="async" loading="lazy" alt="下载 ChatGPT 助手，选 Apple 芯片 Mac 或 Windows" src="https://beisi-tech.github.io/docs/assets/images/01-download-a5d7d206cc57410b863a4af628affe2b.png" width="2940" height="2052" class="img_ev3q"></p>
+<p>下载或安装遇到问题，按页面上的提示，添加开发者微信 terlnai。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="订阅模式">订阅模式<a href="https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7#%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F" class="hash-link" aria-label="订阅模式的直接链接" title="订阅模式的直接链接" translate="no">​</a></h2>
+<p>打开助手。左侧「设置」里点「Codex 引擎」，右上角停在「订阅模式」。</p>
+<p>三档是 Plus、Pro、Max，价格和大概用量写在卡片上。选一档，用支付宝或微信付。图里箭头指的是微信，支付宝在左边，两个都能付。</p>
+<p><img decoding="async" loading="lazy" alt="在订阅模式里选套餐并付款" src="https://beisi-tech.github.io/docs/assets/images/02-subscription-e4755d23bcf2b0db3da1ade7ef67b833.png" width="2080" height="1520" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="自定义模式">自定义模式<a href="https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%BC%8F" class="hash-link" aria-label="自定义模式的直接链接" title="自定义模式的直接链接" translate="no">​</a></h2>
+<p>不想订阅，就接图灵 API。</p>
+<p>打开 <a href="https://api.terln.com/" target="_blank" rel="noopener noreferrer">api.terln.com</a>，注册一个账号，免费额度比较少，建议充值一些额度。然后点顶部的「API 密钥」，新建一把。名称填「GPT 助手」，以后好认。额度可以保持不限额，过期时间按自己需要选。点「创建」，把生成的 Key 复制下来。</p>
+<p><img decoding="async" loading="lazy" alt="在图灵 API 新建密钥" src="https://beisi-tech.github.io/docs/assets/images/03-create-api-key-c17bd97649e6be58ec6dcaef8f5b2c8e.png" width="2940" height="2052" class="img_ev3q"></p>
+<p>回到助手，切到「自定义模式」。</p>
+<p>Base URL 照抄：</p>
+<p><code>https://api.terln.com/v1</code></p>
+<p>API Key 填刚才复制的那一把。</p>
+<p><img decoding="async" loading="lazy" alt="自定义模式填 Base URL 和图灵的 API Key" src="https://beisi-tech.github.io/docs/assets/images/04-fill-api-cb79a68e154030cd48cab1f3867c9d78.png" width="2080" height="1520" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="启动">启动<a href="https://beisi-tech.github.io/docs/blog/chatgpt-grok-4-7#%E5%90%AF%E5%8A%A8" class="hash-link" aria-label="启动的直接链接" title="启动的直接链接" translate="no">​</a></h2>
+<p>订阅付完，或者上面两项填好，点窗口右下角的蓝色按钮，启动 ChatGPT。</p>
+<p><img decoding="async" loading="lazy" alt="点右下角按钮启动 ChatGPT" src="https://beisi-tech.github.io/docs/assets/images/05-start-f7c181969f0f5fc5fd37cd4d4f445866.png" width="2080" height="1520" class="img_ev3q"></p>
+<p>起来之后，打开模型选择器。列表里有 Grok 4.7，选上即可。</p>
+<p><img decoding="async" loading="lazy" alt="模型选择器里的 Grok 4.7" src="https://beisi-tech.github.io/docs/assets/images/06-grok-model-bced9523d1b94b2415663d89f7771147.png" width="1032" height="1068" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="ChatGPT" term="ChatGPT"/>
+        <category label="Grok" term="Grok"/>
+        <category label="Codex" term="Codex"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[视频号视频下载教程]]></title>
         <id>https://beisi-tech.github.io/docs/blog/wechat-channels-download</id>
@@ -999,33 +1037,5 @@
         <category label="Node.js" term="Node.js"/>
         <category label="Python" term="Python"/>
         <category label="开发工具" term="开发工具"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最近流行的 Claude Skill 是什么？]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/what-is-claude-skill</id>
-        <link href="https://beisi-tech.github.io/docs/blog/what-is-claude-skill"/>
-        <updated>2026-01-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[最近流行起来的 Claude Skill 是一项什么技术？本文带你一探究竟。]]></summary>
-        <content type="html"><![CDATA[<p>最近流行起来的 Claude Skill 是一项什么技术？本文带你一探究竟。</p>
-<p>Claude Skill 是什么？</p>
-<p>最近，Claude 背后的公司 Anthropic 推出了一个名为 “Claude Skills” 的新功能，让这款类似 ChatGPT 的 AI 助手可以更好地处理高度专业化、定制化的任务。简单来说，Claude Skill 是一组预先写好的操作指南和工具包，可以在需要时让 AI 加载使用。你可以把它想象成给 AI 准备了一本 “员工手册” 和一套 “工具箱”，当 AI 遇到某类问题时，手册会告诉它怎么做，每一步用什么工具，工具箱里的脚本和资料则帮助它动手完成任务。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="claude-skill-能做什么">Claude Skill 能做什么？<a href="https://beisi-tech.github.io/docs/blog/what-is-claude-skill#claude-skill-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88" class="hash-link" aria-label="Claude Skill 能做什么？的直接链接" title="Claude Skill 能做什么？的直接链接" translate="no">​</a></h2>
-<p>Claude Skills 让 AI 能自动完成许多重复或复杂的任务，大大提高效率和一致性。例如，它可以批量撰写新闻稿和文档（如 Word、PDF、PPT、Excel）、执行代码审查、快速检索信息，并根据最新数据生成有引用来源的报告或图表。这些技能模块平时并不占用 AI 的注意力，只有在真正需要时才会被调用，既聪明又节省资源。因此 Claude 能更稳定地给出高质量的结果，就像一位经验丰富的助手一样。</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="典型应用场景">典型应用场景<a href="https://beisi-tech.github.io/docs/blog/what-is-claude-skill#%E5%85%B8%E5%9E%8B%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF" class="hash-link" aria-label="典型应用场景的直接链接" title="典型应用场景的直接链接" translate="no">​</a></h2>
-<p>Claude Skill 的出现让 AI 更加贴近我们的日常工作和生活，可谓真正融入各类场景，成为高效可靠的专家级助手。典型应用包括：</p>
-<ul>
-<li><strong>个人助理</strong>：充当智能秘书，帮你安排日程、整理信息，并自动处理繁琐的办公任务。例如，它可以根据指令自动生成带复杂公式的 Excel 报表，或严格遵循公司品牌规范制作完整的演示文稿。</li>
-<li><strong>客户服务</strong>：作为客服助手，Claude 可以通过技能学习公司的服务流程和话术，快速准确地回答客户问题。企业甚至能把金牌客服解决疑难问题的经验封装成技能，让 AI 也能像专家一样应对 VIP 客户。</li>
-<li><strong>创作辅助</strong>：在内容创作上 Claude 也能发挥才华。借助相关技能，它可以先分析你的写作风格，帮你生成文章大纲，并自动上网查找参考资料作为依据 （例如撰写文案或报告时提供事实引用）。这使得 AI 成为写作灵感和内容润色的好帮手。</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="总的来说">总的来说<a href="https://beisi-tech.github.io/docs/blog/what-is-claude-skill#%E6%80%BB%E7%9A%84%E6%9D%A5%E8%AF%B4" class="hash-link" aria-label="总的来说的直接链接" title="总的来说的直接链接" translate="no">​</a></h2>
-<p>Claude Skill 让 AI 不再只是聊天工具，而是成为了一个真正能动手干活的智能助理。这项技术以轻松友好的方式将强大的 AI 能力带入日常生活，让没有技术背景的人也能轻松受益。</p>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="AI" term="AI"/>
-        <category label="Claude" term="Claude"/>
-        <category label="Skill" term="Skill"/>
     </entry>
 </feed>
