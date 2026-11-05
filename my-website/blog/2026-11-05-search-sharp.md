@@ -1,7 +1,7 @@
 ---
 slug: search-sharp
-title: 在闲鱼搜不到 GPT 会员？试试 SearchSharp
-description: 介绍一个收录闲鱼黑话的网站
+title: 介绍一个收录闲鱼黑话的网站
+description: 在闲鱼搜不到 GPT 会员？试试 SearchSharp
 authors: [xiaolinbenben]
 tags: [闲鱼, 实用工具, 黑话]
 ---
