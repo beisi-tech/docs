@@ -8,11 +8,11 @@
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/site/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[在闲鱼搜不到 GPT 会员？试试 SearchSharp]]></title>
+        <title type="html"><![CDATA[介绍一个收录闲鱼黑话的网站]]></title>
         <id>https://beisi-tech.github.io/docs/blog/search-sharp</id>
         <link href="https://beisi-tech.github.io/docs/blog/search-sharp"/>
         <updated>2026-11-05T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[介绍一个收录闲鱼黑话的网站]]></summary>
+        <summary type="html"><![CDATA[在闲鱼搜不到 GPT 会员？试试 SearchSharp]]></summary>
         <content type="html"><![CDATA[<p>想在闲鱼买个 GPT 会员，搜“ChatGPT”，结果几乎是空的。卖家还在，商品换了个名字。</p>
 <p><a href="https://search-sharp.com/" target="_blank" rel="noopener noreferrer">SearchSharp</a> 专门收集这类叫法。</p>
 <p>首页是一张张词条卡片，有显卡、Gemini Pro、华为汽车、Claude、Netflix，也有啃老族和余承东。</p>

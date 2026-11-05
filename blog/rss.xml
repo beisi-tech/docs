@@ -9,11 +9,11 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
         <item>
-            <title><![CDATA[在闲鱼搜不到 GPT 会员？试试 SearchSharp]]></title>
+            <title><![CDATA[介绍一个收录闲鱼黑话的网站]]></title>
             <link>https://beisi-tech.github.io/docs/blog/search-sharp</link>
             <guid>https://beisi-tech.github.io/docs/blog/search-sharp</guid>
             <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
-            <description><![CDATA[介绍一个收录闲鱼黑话的网站]]></description>
+            <description><![CDATA[在闲鱼搜不到 GPT 会员？试试 SearchSharp]]></description>
             <content:encoded><![CDATA[<p>想在闲鱼买个 GPT 会员，搜“ChatGPT”，结果几乎是空的。卖家还在，商品换了个名字。</p>
 <p><a href="https://search-sharp.com/" target="_blank" rel="noopener noreferrer">SearchSharp</a> 专门收集这类叫法。</p>
 <p>首页是一张张词条卡片，有显卡、Gemini Pro、华为汽车、Claude、Netflix，也有啃老族和余承东。</p>
