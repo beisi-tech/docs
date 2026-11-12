@@ -2,11 +2,76 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://beisi-tech.github.io/docs/blog</id>
     <title>倍司企业文档 Blog</title>
-    <updated>2026-11-05T00:00:00.000Z</updated>
+    <updated>2026-11-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://beisi-tech.github.io/docs/blog"/>
     <subtitle>倍司企业文档 Blog</subtitle>
     <icon>https://beisi-tech.github.io/docs/img/site/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[通过 GEO 让 AI 推荐你的产品]]></title>
+        <id>https://beisi-tech.github.io/docs/blog/geo-ai-recommend</id>
+        <link href="https://beisi-tech.github.io/docs/blog/geo-ai-recommend"/>
+        <updated>2026-11-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[买东西、找工具，越来越多人不再先去搜索，而是直接问豆包，问 ChatGPT。]]></summary>
+        <content type="html"><![CDATA[<p>买东西、找工具，越来越多人不再先去搜索，而是直接问豆包，问 ChatGPT。</p>
+<p>产品没出现在回答里，在这个入口上就是查无此人。</p>
+<p>这件事叫 GEO，生成式引擎优化。要做的事很具体：让 AI 看见你、读懂你、引用你，最后把名字报出来。</p>
+<p>SEO 是在搜索结果里抢位置。GEO 是让 AI 回答时直接说出你。</p>
+<p>产品可以是一个网站，也可以是一家店。图灵 API 就是网站，<a href="https://api.terln.com/" target="_blank" rel="noopener noreferrer">https://api.terln.com/</a>。没有官网的店，也一样可能被 AI 提到。它收录的是网上已经公开的信息，不限于你自己的站点。</p>
+<p>有人问「企业内部接入 AI 大模型，推荐哪一家的服务」。回答里出现了图灵 API，还说了它接哪些模型、好在哪，这就是有效果。用户没去搜索，也没点链接。</p>
+<p>有人问「福大学生街哪家的鱼丸好吃」。回答里报出某一家的名字，也是。这家店可以没有自己的网站。点评、地图、新闻里写过它，AI 检索到这些，一样能引用。</p>
+<p>以前要自己搜，再自己挑链接。现在 AI 直接给一份整理好的答案，看完就走。过去拼排名，现在拼有没有被引用。</p>
+<p>AI 推荐谁，没有喜好，是一套流程。现在的 AI 搜索大多是 RAG，检索增强生成，就两步。</p>
+<p>先检索。你一提问，它去网上抓一批页面，可能是新闻、点评、地图，也可能是官网或论坛。</p>
+<p>再生成。它从这些页面里抽事实，用自己的话答出来。</p>
+<p>第一步没抓到你，或者第二步没抽出你，答案里就不会有你。做 GEO，就是反过来：它怎么检索、怎么提取，你就怎么写、怎么发。</p>
+<p>全网那么多页面，它靠三层往下筛。</p>
+<p>能看见。你有站，就别把爬虫挡在外面，页面也别慢到它直接放弃。你是一家店，没有站，就看别人写你的那些页面能不能被抓到。</p>
+<p>读得懂。它喜欢定义清楚、列表明确、数字具体的内容。情绪化的软文、堆形容词的广告，它提不出来。</p>
+<p>信得过。单一来源它不太敢用。官网、测评、新闻、点评都这么说，它才愿意引。</p>
+<p><strong>找得到，读得懂，信得过。</strong></p>
+<p>它抓文章，像在做填空。写给它的内容，按说明书写，不要按散文写。</p>
+<p>每一段先写结论。能用句号就别用长逗号，能分段就别写长句，能编号就别揉成一段。</p>
+<p>四种写法最容易被搬走，同一篇里可以混着用。</p>
+<p>定义式，抢「是什么」。</p>
+<blockquote>
+<p>图灵 API 是面向企业与开发者的 AI 模型聚合平台，网站是 <a href="https://api.terln.com/" target="_blank" rel="noopener noreferrer">https://api.terln.com/</a>，提供 GPT、Gemini、Claude 系列模型，特点是易用、稳定、高性价比。</p>
+</blockquote>
+<p>用户问「图灵 API 是什么」，它会把这句当简介。</p>
+<p>要点式，抢「有哪些」。</p>
+<p>图灵 API 提供 GPT、Gemini、Claude 等模型，覆盖多模态对话、图片生成等场景。</p>
+<p>结论式，给它一个锚点。段尾收成一句判断，比如：因此，企业内部接入 AI 大模型，可以用图灵 API。像「本质上」「关键在于」「因此」这种句子，它更容易当成答案，而不是描写。</p>
+<p>对比式，抢「哪个好」。做一张参数表，表头写清楚。用户问你和另一家哪个好，它会先读这张表。问鱼丸也一样。价格、口味、离学生街多远，列清楚，比一段形容词有用。</p>
+<p>结构之外，再给它能核对的东西。</p>
+<p>能用数字就别写「很多、很快、很好」。没有数字，就不要编一个。</p>
+<p>写上第三方报告、认证、点评或标准，方便它去别的页面对。</p>
+<p>文首或文尾写清是谁在说、做过什么。店就写清店名和地址。它很看「谁说的」。</p>
+<p>有网站的，站本身也要能被抓到。别只发公司新闻和团建照片。开一个博客，放教程、参数表、对比。这些才是它愿意当信源的页面。没有网站的店，不必为了 GEO 先做一个站。把店名、地址、卖什么，留在别人能搜到的公开信息里。</p>
+<p>有网页，再加 Schema，用机器能读的标签说明这段是什么。有标价，再把价格放进 <code>Offer</code>。不要直接写在 <code>Product</code> 上，也不要编一个价格。</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"@context"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"https://schema.org"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"@type"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"Product"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"name"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"图灵 API"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"url"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"https://api.terln.com/"</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token property" style="color:#36acaa">"description"</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">"面向企业与开发者的 AI 模型聚合平台，提供 GPT、Gemini、Claude 系列模型"</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<p>文章用 <code>Article</code>，写标题、发布日期和作者。有门店、也有自己的网页，再用 <code>LocalBusiness</code>，填地址和电话。这一步要改网页代码。知道要加什么，就不容易被忽悠。</p>
+<p><code>robots.txt</code> 是门卫名单。没有站，就不用管它。有站的话，下面这种写法会把爬虫全挡掉，AI 也进不来：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">User-agent: *</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /</span><br></span></code></pre></div></div>
+<p>只挡你要挡的，其余放行：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">User-agent: BadBot</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">User-agent: *</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Disallow: /private/</span><br></span></code></pre></div></div>
+<p>还可以在网站根目录放一份 <code>llms.txt</code>，把有哪些内容整理成一份目录。建好后打开 <code>你的域名/llms.txt</code>，看它在不在。</p>
+<p>发什么，跟着用户的问法走。有站的话，三类页面最值得先做：榜单，比如「2026 年 AI 模型聚合平台对比」；功能页，比如「怎么同时接入 GPT 和 Claude」；教程，比如「企业怎么接多家模型」。</p>
+<p>「福大学生街哪家的鱼丸好吃」，靠的是店名、位置和别人的评价，不是一篇产品介绍。</p>
+<p>选题别猜。在搜索框输入行业词，先别回车，看下拉词。做模型接口，别人可能会问便宜、稳定、能不能接 Claude。做鱼丸，别人可能会问学生街、哪家好吃。下拉里出现什么，就回答什么。</p>
+<p>名字顺着问题出现。先讲清楚问题和通用做法，再说「以图灵 API 为例」。定义里一次，列表里一次，结尾判断里一次，全文三次左右就够。堆词没有用。</p>
+<p>发出去看不到阅读量，也看不到点赞。过 3 到 7 天，拿那些真实问题去问 ChatGPT、元宝、豆包。</p>
+<p>先问「介绍一下图灵 API」，看它认不认你。店就问店名。</p>
+<p>再问「企业内部接入 AI 大模型，推荐哪一家的服务」，或者「福大学生街哪家的鱼丸好吃」。不要带名字，看它推不推你。</p>
+<p>最后看它引用了哪些页面。这一步最有用。</p>
+<p>GEO 就是把产品翻译成机器好索引的语言。有站的，翻译进你的网页。没站的，翻译进别人已经能搜到的信息里。</p>]]></content>
+        <author>
+            <name>ZhiQing Lin</name>
+            <uri>https://xiaolinbenben.github.io</uri>
+        </author>
+        <category label="GEO" term="GEO"/>
+        <category label="AI" term="AI"/>
+        <category label="产品" term="产品"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[介绍一个收录闲鱼黑话的网站]]></title>
         <id>https://beisi-tech.github.io/docs/blog/search-sharp</id>
@@ -877,45 +942,5 @@
         <category label="Windows" term="Windows"/>
         <category label="工具" term="工具"/>
         <category label="视频会议" term="视频会议"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[AI时代，为何还在考八股文？]]></title>
-        <id>https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay</id>
-        <link href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay"/>
-        <updated>2026-01-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[最近福州中考一检的作文题火了，题目是关于“玫瑰的热烈”与“蒲公英的自由”。]]></summary>
-        <content type="html"><![CDATA[<p>最近福州中考一检的作文题火了，题目是关于“玫瑰的热烈”与“蒲公英的自由”。</p>
-<p>家长群炸锅的理由很简单：<strong>同一道题，AI 生成满分回答只要 10 秒，初三学生却要苦思冥想 40 分钟。</strong></p>
-<p>这就很有意思了。我们费劲巴拉考核的，究竟是孩子的思维能力，还是他们对套路的熟练度？</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="评分标准的皇帝新衣">评分标准的“皇帝新衣”<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#%E8%AF%84%E5%88%86%E6%A0%87%E5%87%86%E7%9A%84%E7%9A%87%E5%B8%9D%E6%96%B0%E8%A1%A3" class="hash-link" aria-label="评分标准的“皇帝新衣”的直接链接" title="评分标准的“皇帝新衣”的直接链接" translate="no">​</a></h2>
-<p>这道题最荒诞的地方，不在题目本身，而在它背后的那套标准。</p>
-<p>现在的作文早就成了流水线产品：培训机构整理模板，老师教你怎么套，学生背几篇范文就上考场。</p>
-<p>一个初三学生根本不需要理解什么“差异使世界精彩”。只要掌握“对比-分析-升华”的三段式结构，再硬塞几个名人名言，分数就不会低。</p>
-<p><strong>这哪是考语文，这是考填空。</strong></p>
-<p>更讽刺的是，福州这次考试还出了个乌龙：答题卡设计错误，把作文格印错了。这简直是绝妙的隐喻——连形式都出错的系统，还指望它能通过形式考核出什么有价值的内容？</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ai-扯下了遮羞布">AI 扯下了遮羞布<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#ai-%E6%89%AF%E4%B8%8B%E4%BA%86%E9%81%AE%E7%BE%9E%E5%B8%83" class="hash-link" aria-label="AI 扯下了遮羞布的直接链接" title="AI 扯下了遮羞布的直接链接" translate="no">​</a></h2>
-<p>当 ChatGPT 几秒钟就能生成十几篇“玫瑰与蒲公英”的高分作文时，这层窗户纸算是彻底捅破了。</p>
-<p>AI 写的东西完美符合标准：结构完整、论点清晰、立意积极。混在学生卷子里，阅卷老师估计都分不出来。</p>
-<p>我不是在吹 AI 牛逼，我是在问：<strong>当机器能完美完成甚至碾压人类时，为什么还要把这东西作为核心考核标准？</strong></p>
-<p>这就像在人手一个智能手机的时代，非要逼着孩子练算盘，还把算盘打得快不快作为数学能力的唯一标准。</p>
-<p>到底是在考思考能力，还是在考谁更像机器？</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="真实世界不按套路出牌">真实世界不按套路出牌<a href="https://beisi-tech.github.io/docs/blog/ai-vs-standardized-essay#%E7%9C%9F%E5%AE%9E%E4%B8%96%E7%95%8C%E4%B8%8D%E6%8C%89%E5%A5%97%E8%B7%AF%E5%87%BA%E7%89%8C" class="hash-link" aria-label="真实世界不按套路出牌的直接链接" title="真实世界不按套路出牌的直接链接" translate="no">​</a></h2>
-<p>最让我难受的是，等些孩子走出考场，面对的真实世界根本不是那么回事。</p>
-<p>生活里的难题，哪有什么“玫瑰与蒲公英”的二元对立？</p>
-<ul>
-<li>工作中遇到同事甩锅，怎么处理？</li>
-<li>项目进度延期，怎么向老板解释？</li>
-<li>面对两个都很烂的选择，怎么权衡利益？</li>
-</ul>
-<p>这些才是决定一个人未来的核心能力：情境理解、价值判断、人际沟通。而这些，恰恰是那套“八股文”怎么考也考不出来的。</p>
-<p>未来的评估，哪怕像个项目展示都比现在强：让学生去解决一个真问题，去说服别人，去设计方案。这才是 AI 还没法完全替代的人类价值。</p>
-<p>最后就想说一句大白话：<strong>去你大爷的八股文，真实世界的挑战从来不会按“玫瑰与蒲公英”出题。</strong></p>]]></content>
-        <author>
-            <name>ZhiQing Lin</name>
-            <uri>https://xiaolinbenben.github.io</uri>
-        </author>
-        <category label="AI" term="AI"/>
-        <category label="教育" term="教育"/>
-        <category label="思考" term="思考"/>
     </entry>
 </feed>
